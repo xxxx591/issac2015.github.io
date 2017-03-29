@@ -339,4 +339,8 @@
 	options:{
 		imagesPath: ""
 	}
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 9ca25f5c5cc30dbdee4b429f12b5e7af686607bd

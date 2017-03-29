@@ -311,4 +311,8 @@ ge1doot.transform3D.Image.prototype.draw = function () {
 ge1doot.transform3D.Image.prototype.isPointerInside = function (x, y) {
 	this.drawPoly(this.points);
 	return this.ctx.isPointInPath(x, y);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 9ca25f5c5cc30dbdee4b429f12b5e7af686607bd
