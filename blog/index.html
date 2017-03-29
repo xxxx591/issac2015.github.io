@@ -3,9 +3,38 @@
   <head>
     <meta charset="utf-8">
     <title>issac个人主页</title>
+    <link rel="stylesheet" href="../static/css/parallax.css">
   </head>
   <body>
-    <div id="app">Hello world.</div>
+    <div id="app"></div>
+
+    <div id="scrollbar" class="scrollbar">
+		<div class="handle">
+			<div class="mousearea"></div>
+		</div>
+	</div>
+	<div id="content" class="content pagespan">
+		<header>
+			<h1>issac</h1>
+			<h3>爱生活，爱运动</h3>
+		</header>
+
+		<div id="pos" class="pos" style="display:none;">
+			<span id="cur" class="cur"></span> <span class="slash">/</span> <sup id="max" class="max"></sup>
+		</div>
+
+		<p class="center">
+			my life.
+		</p>
+	</div>
+
+	<ul id="particles" class="particles"></ul>
+    <script type="text/javascript" src="../static/js/jquery-3.2.0.min.js"></script>
+    <script type="text/javascript" src="../static/js/modernizr.js"></script>
+    <script type="text/javascript" src="../static/js/sly.min.js"></script>
+    <script type="text/javascript" src="../static/js/plugins.js"></script>
+    <script type="text/javascript" src="../static/js/dot.js"></script>
+    
     <!-- built files will be auto injected -->
   </body>
 </html>
