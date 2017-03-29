@@ -231,21 +231,21 @@
 ().load({
 	imgdata:[
 		// north
-		{img:'imgs/1.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
-		{img:'imgs/2.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
-		{img:'imgs/3.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		{img:'imgs/jump2.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'imgs/img.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'imgs/my2.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
 		// east
-		{img:'imgs/4.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
-		{img:'imgs/5.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
-		{img:'imgs/6.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		{img:'imgs/boy.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'imgs/img2.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'imgs/my.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
 		// south
-		{img:'imgs/7.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
-		{img:'imgs/8.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
-		{img:'imgs/9.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		{img:'imgs/jump.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'imgs/love.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'imgs/img3.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
 		// west
-		{img:'imgs/10.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
-		{img:'imgs/11.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
-		{img:'imgs/12.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+		{img:'imgs/brother.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'imgs/runner.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'imgs/runner2.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
 	],
 	structure:[
 		{
