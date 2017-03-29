@@ -1,1 +1,257 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([2-9a-df-hj-mp-zA-WZ]|1\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('9 k=k||{json:s,f:s,1f:s,camera:s,loadJS:5(t,I,14){6(15 t=="string")t=[t];9 1g=5(17){9 g=c.createElement("g");6(I){6(g.18){g.1h=5(){6(g.18=="loaded"||g.18=="complete"){g.1h=s;6(--n===0)I(14||3)}}}p{g.onload=5(){6(--n===0)I(14||3)}}}g.17=17;c.getElementsByTagName("head")[0].appendChild(g)}1i(9 i=0,n=t.length;i<n;i++)1g(t[i])}}k.Screen=5(4){k.f=2;2.7=c.getElementById(4.1j)||4.1j;2.1k=2.7.tagName=="CANVAS"?2.7.getContext("2d"):3;2.C=2.7.C;2.D=0;2.E=0;2.J=0;2.K=0;2.L="default";2.4=4;2.q=5(){9 o=2.7;2.J=o.offsetWidth;2.K=o.offsetHeight;1i(2.D=0,2.E=0;o!=s;o=o.offsetParent){2.D+=o.offsetLeft;2.E+=o.offsetTop}6(2.1k){2.7.J=2.J;2.7.K=2.K}2.4.q&&2.4.q()}2.setCursor=5(M){6(M!==2.L&&\'19\'in a===3){2.L=M;2.C.L=M}}a.b(\'q\',5(){k.f.q()},3);!2.4.q&&2.q()}k.Pointer=5(4){k.1f=2;9 8=2;9 N=c.N;9 F=c.documentElement;2.4=4;2.f=k.f;2.7=2.f.7;2.X=0;2.Y=0;2.O=0;2.P=0;2.Q=0;2.R=0;2.G=0;2.H=0;2.1m=0;2.1n=0;2.d=0;2.S=0;2.u=3;2.v=3;2.r=3;2.w=3;9 l=0;9 m=0;6(4.1a)2.7.onclick=5(){h 3}6(!4.documentMove){c.1o=5(e){e.j()}}c.b("MSHoldVisual",5(e){e.j()},3);6(15 2.7.C.1p!=\'x\')2.7.C.1p="none";2.1b=5(e){6(!2.r){6(2.7.1q)2.7.1q();2.u=3;2.v=3;2.r=T;2.w=e;2.G=(e.y!==x?e.y:e.U[0].y);2.H=(e.z!==x?e.z:e.U[0].z);2.X=l=2.G-2.f.D;2.Y=m=2.H-2.f.E+((F&&F.V)||N.V);2.4.1r&&2.4.1r(e)}}2.1c=5(e){2.G=(e.y!==x?e.y:e.U[0].y);2.H=(e.z!==x?e.z:e.U[0].z);2.X=2.G-2.f.D;2.Y=2.H-2.f.E+((F&&F.V)||N.V);6(2.r){2.O=2.Q+(2.X-l);2.P=2.R-(2.Y-m)}6(1s.1t(2.X-l)>11||1s.1t(2.Y-m)>11){2.v=T;6(2.r){6(!2.u){2.1m=l;2.1n=m;2.4.1u&&2.4.1u(e);2.u=T}p{2.4.1v&&2.4.1v(e)}}p{l=2.X;m=2.Y}}2.4.1w&&2.4.1w(e)}2.1d=5(e){2.Q=2.O;2.R=2.P;6(!2.v){2.X=l;2.Y=m;2.4.1a&&2.4.1a(2.w)}p{2.4.W&&2.4.W(2.w)}2.u=3;2.r=3;2.v=3;2.4.W&&2.4.W(2.w);6(2.7.Z)2.7.Z();2.w=3}2.1x=5(e){6(2.7.Z)2.7.Z();2.u=3;2.v=3;2.r=3;2.Q=2.O;2.R=2.P;l=0;m=0}6(\'19\'in a){2.7.19=5(e){8.1b(e);h 3}2.7.1o=5(e){8.1c(e);h 3}2.7.ontouchend=5(e){8.1d(e);h 3}2.7.ontouchcancel=5(e){8.1x(e);h 3}}c.b("mousedown",5(e){6(e.A===8.7||(e.A.B&&e.A.B===8.7)||(e.A.B.B&&e.A.B.B===8.7)){6(15 e.1y!="x"){e.1y()}p{e.cancelBubble=T}e.j();8.1b(e)}},3);c.b("mousemove",5(e){8.1c(e)},3);c.b("mouseup",5(e){8.1d(e)},3);c.b(\'gesturechange\',5(e){e.j();6(e.d>1)8.d=0.1;p 6(e.d<1)8.d=-0.1;p 8.d=0;8.4.d&&8.4.d(e);h 3},3);6(a.navigator.msPointerEnabled){9 12=0;9 1e=new MSGesture();1e.A=2.7;2.7.b("MSPointerDown",5(e){6(e.1z==e.1A){1e.addPointer(e.pointerId);12++}},3);2.7.b("MSPointerOut",5(e){6(e.1z==e.1A){12--}},3);2.7.b("MSGestureHold",5(e){e.j()},3);2.7.b("MSGestureChange",5(e){6(12>1){6(e.j)e.j();8.d=e.velocityExpansion;8.4.d&&8.4.d(e)}h 3},3)}6(a.b)2.7.b(\'DOMMouseScroll\',5(e){6(e.j)e.j();8.S=e.detail*10;8.4.13&&8.4.13(e);h 3},3);2.7.onmousewheel=5(){8.S=-1B.S*.25;8.4.13&&8.4.13(1B);h 3}}a.requestAnimFrame=(5(){h a.requestAnimationFrame||a.webkitRequestAnimationFrame||a.mozRequestAnimationFrame||a.oRequestAnimationFrame||a.msRequestAnimationFrame||5(1C){a.setTimeout(1C,16)}})();',[],101,'||this|false|setup|function|if|elem|self|var|window|addEventListener|document|scale||screen|script|return||preventDefault|ge1doot|sX|sY|||else|resize|isDown|null|url|isDraging|hasMoved|evt|undefined|clientX|clientY|target|parentNode|style|left|top|html|Xr|Yr|callback|width|height|cursor|type|body|Xi|Yi|bXi|bYi|wheelDelta|true|touches|scrollTop|up|||releaseCapture|||nContact|wheel|data|typeof||src|readyState|ontouchstart|tap|pointerDown|pointerMove|pointerUp|myGesture|pointer|load|onreadystatechange|for|container|ctx||startX|startY|ontouchmove|msTouchAction|setCapture|down|Math|abs|startDrag|drag|move|pointerCancel|stopPropagation|pointerType|MSPOINTER_TYPE_TOUCH|event|run'.split('|'),0,{}))
+// ===== ge1doot global =====
+
+var ge1doot = ge1doot || {
+	json: null,
+	screen: null,
+	pointer: null,
+	camera: null,
+	loadJS: function (url, callback, data) {
+		if (typeof url == "string") url = [url];
+		var load = function (src) {
+			var script = document.createElement("script");
+				if (callback) {
+					if (script.readyState){
+						script.onreadystatechange = function () {
+							if (script.readyState == "loaded" || script.readyState == "complete"){
+								script.onreadystatechange = null;
+								if (--n === 0) callback(data || false);
+							}
+						}
+					} else {
+						script.onload = function() {
+							if (--n === 0) callback(data || false);
+						}
+					}
+				}
+				script.src = src;
+				document.getElementsByTagName("head")[0].appendChild(script);
+		}
+		for (var i = 0, n = url.length; i < n; i++) load(url[i]);
+	}
+}
+
+// ===== html/canvas container =====
+
+ge1doot.Screen = function (setup) {
+	ge1doot.screen = this;
+	this.elem = document.getElementById(setup.container) || setup.container;
+	this.ctx = this.elem.tagName == "CANVAS" ? this.elem.getContext("2d") : false;
+	this.style = this.elem.style;
+	this.left = 0;
+	this.top = 0;
+	this.width = 0;
+	this.height = 0;
+	this.cursor = "default";
+	this.setup = setup;
+	this.resize = function () {
+		var o = this.elem;
+		this.width  = o.offsetWidth;
+		this.height = o.offsetHeight;
+		for (this.left = 0, this.top = 0; o != null; o = o.offsetParent) {
+			this.left += o.offsetLeft;
+			this.top  += o.offsetTop;
+		}
+		if (this.ctx) {
+			this.elem.width  = this.width;
+			this.elem.height = this.height;
+		}
+		this.setup.resize && this.setup.resize();
+	}
+	this.setCursor = function (type) {
+		if (type !== this.cursor && 'ontouchstart' in window === false) {
+			this.cursor = type;
+			this.style.cursor = type;
+		}
+	}
+	window.addEventListener('resize', function () {
+		ge1doot.screen.resize();
+	}, false);
+	!this.setup.resize && this.resize();
+}
+
+// ==== unified touch events handler ====
+
+ge1doot.Pointer = function (setup) {
+	ge1doot.pointer = this;
+	var self        = this;
+	var body        = document.body;
+	var html        = document.documentElement;
+	this.setup      = setup;
+	this.screen     = ge1doot.screen;
+	this.elem       = this.screen.elem;
+	this.X          = 0;
+	this.Y          = 0;
+	this.Xi         = 0;
+	this.Yi         = 0;
+	this.bXi        = 0;
+	this.bYi        = 0;
+	this.Xr         = 0;
+	this.Yr         = 0;
+	this.startX     = 0;
+	this.startY     = 0;
+	this.scale      = 0;
+	this.wheelDelta = 0;
+	this.isDraging  = false;
+	this.hasMoved   = false;
+	this.isDown     = false;
+	this.evt        = false;
+	var sX          = 0;
+	var sY          = 0;
+	// prevent default behavior
+	if (setup.tap) this.elem.onclick = function () { return false; }
+	if (!setup.documentMove) {
+		document.ontouchmove = function(e) { e.preventDefault(); }
+	}
+	document.addEventListener("MSHoldVisual", function(e) { e.preventDefault(); }, false);
+	if (typeof this.elem.style.msTouchAction != 'undefined') this.elem.style.msTouchAction = "none";
+
+	this.pointerDown = function (e) {
+		if (!this.isDown) {
+			if (this.elem.setCapture) this.elem.setCapture();
+			this.isDraging = false;
+			this.hasMoved = false;
+			this.isDown = true;
+			this.evt = e;
+			this.Xr = (e.clientX !== undefined ? e.clientX : e.touches[0].clientX);
+			this.Yr = (e.clientY !== undefined ? e.clientY : e.touches[0].clientY);
+			this.X  = sX = this.Xr - this.screen.left;
+			this.Y  = sY = this.Yr - this.screen.top + ((html && html.scrollTop) || body.scrollTop);
+			this.setup.down && this.setup.down(e);
+		}
+	}
+	this.pointerMove = function(e) {
+		this.Xr = (e.clientX !== undefined ? e.clientX : e.touches[0].clientX);
+		this.Yr = (e.clientY !== undefined ? e.clientY : e.touches[0].clientY);
+		this.X  = this.Xr - this.screen.left;
+		this.Y  = this.Yr - this.screen.top + ((html && html.scrollTop) || body.scrollTop);
+		if (this.isDown) {
+			this.Xi = this.bXi + (this.X - sX);
+			this.Yi = this.bYi - (this.Y - sY);
+		}
+		if (Math.abs(this.X - sX) > 11 || Math.abs(this.Y - sY) > 11) {
+			this.hasMoved = true;
+			if (this.isDown) {
+				if (!this.isDraging) {
+					this.startX = sX;
+					this.startY = sY;
+					this.setup.startDrag && this.setup.startDrag(e);
+					this.isDraging = true;
+				} else {
+					this.setup.drag && this.setup.drag(e);
+				}
+			} else {
+				sX = this.X;
+				sY = this.Y;
+			}
+		}
+		this.setup.move && this.setup.move(e);
+	}
+	this.pointerUp = function(e) {
+		this.bXi = this.Xi;
+		this.bYi = this.Yi;
+		if (!this.hasMoved) {
+			this.X = sX;
+			this.Y = sY;
+			this.setup.tap && this.setup.tap(this.evt);
+		} else {
+			this.setup.up && this.setup.up(this.evt);
+		}
+		this.isDraging = false;
+		this.isDown = false;
+		this.hasMoved = false;
+		this.setup.up && this.setup.up(this.evt);
+		if (this.elem.releaseCapture) this.elem.releaseCapture();
+		this.evt = false;
+	}
+	this.pointerCancel = function(e) {
+		if (this.elem.releaseCapture) this.elem.releaseCapture();
+		this.isDraging = false;
+		this.hasMoved = false;
+		this.isDown = false;
+		this.bXi = this.Xi;
+		this.bYi = this.Yi;
+		sX = 0;
+		sY = 0;
+	}
+	if ('ontouchstart' in window) {
+		this.elem.ontouchstart      = function (e) { self.pointerDown(e); return false;  }
+		this.elem.ontouchmove       = function (e) { self.pointerMove(e); return false;  }
+		this.elem.ontouchend        = function (e) { self.pointerUp(e); return false;    }
+		this.elem.ontouchcancel     = function (e) { self.pointerCancel(e); return false;}
+	}
+	document.addEventListener("mousedown", function (e) {
+		if (
+			e.target === self.elem || 
+			(e.target.parentNode && e.target.parentNode === self.elem) || 
+			(e.target.parentNode.parentNode && e.target.parentNode.parentNode === self.elem)
+		) {
+			if (typeof e.stopPropagation != "undefined") {
+				e.stopPropagation();
+			} else {
+				e.cancelBubble = true;
+			}
+			e.preventDefault();
+			self.pointerDown(e); 
+		}
+	}, false);
+	document.addEventListener("mousemove", function (e) { self.pointerMove(e); }, false);
+	document.addEventListener("mouseup",   function (e) {
+		self.pointerUp(e);
+	}, false);
+	document.addEventListener('gesturechange', function(e) {
+		e.preventDefault();
+		if (e.scale > 1) self.scale = 0.1; else if (e.scale < 1) self.scale = -0.1; else self.scale = 0;
+		self.setup.scale && self.setup.scale(e);
+		return false;
+	}, false);
+	if (window.navigator.msPointerEnabled) {
+		var nContact = 0;
+		var myGesture = new MSGesture();
+		myGesture.target = this.elem;
+		this.elem.addEventListener("MSPointerDown", function(e) {
+			if (e.pointerType == e.MSPOINTER_TYPE_TOUCH) {
+				myGesture.addPointer(e.pointerId);
+				nContact++;
+			}
+		}, false);
+		this.elem.addEventListener("MSPointerOut", function(e) {
+			if (e.pointerType == e.MSPOINTER_TYPE_TOUCH) {
+				nContact--;
+			}
+		}, false);
+		this.elem.addEventListener("MSGestureHold", function(e) {
+			e.preventDefault();
+		}, false);
+		this.elem.addEventListener("MSGestureChange", function(e) {
+			if (nContact > 1) {
+				if (e.preventDefault) e.preventDefault(); 
+				self.scale = e.velocityExpansion;
+				self.setup.scale && self.setup.scale(e);
+			}
+			return false;
+		}, false);
+	}
+	if (window.addEventListener) this.elem.addEventListener('DOMMouseScroll', function(e) { 
+		if (e.preventDefault) e.preventDefault(); 
+		self.wheelDelta = e.detail * 10;
+		self.setup.wheel && self.setup.wheel(e);
+		return false; 
+	}, false); 
+	this.elem.onmousewheel = function () { 
+		self.wheelDelta = -event.wheelDelta * .25;
+		self.setup.wheel && self.setup.wheel(event);
+		return false; 
+	}
+}
+// ===== request animation frame =====
+
+window.requestAnimFrame = (function(){
+		return  window.requestAnimationFrame || 
+		window.webkitRequestAnimationFrame   || 
+		window.mozRequestAnimationFrame      || 
+		window.oRequestAnimationFrame        || 
+		window.msRequestAnimationFrame       || 
+		function( run ){
+			window.setTimeout(run, 16);
+		};
+})();
