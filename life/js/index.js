@@ -1,1 +1,342 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<62?'':e(parseInt(c/62)))+((c=c%62)>35?String.fromCharCode(c+29):c.toString(36))};if('0'.replace(0,e)==0){while(c--)r[e(c)]=k[c];k=[function(e){return r[e]||e}];e=function(){return'([78efjm-oqt-vA-W]|[12]\\w)'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('"use strict";(u(){m 18=[],1p=[],P,H,I,f,q,19=0,1a=[1,2],1b=u(v,Q){8.v=v;8.P=P;8.1B=Q.o||K;8.13=[];J(!Q.e){R(m i=0;i<4;i++){8.13[i]=L M.U.1q(v.C.x+(Q.x[i]*v.14)+(Q.z[i]*v.15),v.C.y+Q.y[i],v.C.z+(Q.x[i]*v.15)+(-Q.z[i]*v.14))}8.13[3].next=K}},1c=u(1C,e,1d){8.e=L M.U.Image(8,1C+e.e,1,{1D:u(e){e.v.1D=V;e.v.1E(e)}});8.1e=K;8.15=e.A;8.14=e.B;8.C=L M.U.1q(e.x,e.y,e.z);8.tx=e.x+(e.A*N.1f(f.1g)*20);8.tz=e.z-(e.B*N.1f(f.1g)*20);8.1r=[];R(m i=-1,p;p=1d[++i];){1p[i]=(p.e===V?1:2);8.1r.1H(L 1b(8,p))}},1I=u(1h){1b.1i.1s=M.U.1s;I=L M.Screen({container:"canvas"});P=I.P;I.resize();H=L M.Pointer({tap:u(){J(f.S){J(f.S===f.n.W){f.n.x=0;f.n.z=0;f.n.W=K}1j{f.n.W=f.S;f.n.x=f.S.tx;f.n.z=f.S.tz;R(m i=0,d;d=18[i++];){m dx=f.n.x-d.C.x;m dz=f.n.z-d.C.z;m 1J=N.1f(dx*dx+dz*dz);m 1K=(1J>D)?1a[0]:1a[1];d.e.setLevel(1K)}}}}});f=L M.U.Camera({1g:N.1f(I.1v)*10,easeTranslation:0.025,easeRotation:0.06,disableRz:V},{1w:u(){8.S=K;J(H.1L){8.n.W=K;8.n.ry=-H.Xi*0.01;8.n.rx=(H.Y-I.1k*0.5)/(I.1k*0.5)}1j{J(8.n.W){8.n.ry=N.atan2(8.n.W.C.x-8.x,8.n.W.C.z-8.z)}}8.n.rx*=0.9}});f.z=-10000;f.py=0;R(m i=0,e;e=1h.1O[i++];){18.1H(L 1c(1h.1P.1Q,e,1h.1d))}setInterval(u(){1a=(19>t)?[2,3]:[1,2];19=0},O);1x()},1x=u(){P.clearRect(0,0,I.1v,I.1k);f.1w();R(m k=-1,l;l=1p[++k];){q=K;R(m i=0,d;d=18[i++];){(l===1&&d.17())||(d.1e&&d.1r[k].17())}}J(f.S&&!H.1L){I.1R("H")}1j{I.1R("1w")}19++;requestAnimFrame(1x)};1b.1i.17=u(){m c=8.1B;J(c.q||!q){m s=c.q?8.v.q:1;q="rgba("+N.1y(c.r*s)+","+N.1y(c.g*s)+","+N.1y(c.b*s)+","+(c.a||1)+")";P.fillStyle=q}J(!c.q||8.v.q<1){R(m i=0;8.13[i++].1S(););8.1s();P.o()}}1c.1i.1E=u(e){m d=[-1,1,1,-1,1,1,-1,-1];m w=e.1T.1v*0.5;m h=e.1T.1k*0.5;R(m i=0;i<4;i++){e.13[i]=L M.U.1q(8.C.x+(w*8.14*d[i]),8.C.y+(h*d[i+4]),8.C.z+(w*8.15*d[i]))}}1c.1i.17=u(){8.C.1S();J(8.C.Z>-(f.1g>>1)&&8.e.U(V)){8.q=0.5+N.abs(8.14*f.cosY-8.15*f.sinY)*0.6;8.1e=V;8.e.17();J(H.hasMoved||H.isDown){J(8.e.isPointerInside(H.X,H.Y))f.S=8}}1j 8.1e=K;1U V}1U{1z:u(1V){window.addEventListener(\'1z\',u(){M.loadJS("js/imageTransform3D.js",1I,1V)},K)}}})().1z({1O:[{e:\'E/boy.F\',x:-O,y:0,z:D,A:0,B:1},{e:\'E/e.F\',x:0,y:0,z:D,A:0,B:1},{e:\'E/runner.F\',x:O,y:0,z:D,A:0,B:1},{e:\'E/jump.F\',x:D,y:0,z:O,A:-1,B:0},{e:\'E/love.F\',x:D,y:0,z:0,A:-1,B:0},{e:\'E/img2.F\',x:D,y:0,z:-O,A:-1,B:0},{e:\'E/runner2.F\',x:O,y:0,z:-D,A:0,B:-1},{e:\'E/img3.F\',x:0,y:0,z:-D,A:0,B:-1},{e:\'E/my.F\',x:-O,y:0,z:-D,A:0,B:-1},{e:\'E/brother.F\',x:-D,y:0,z:-O,A:1,B:0},{e:\'E/jump2.F\',x:-D,y:0,z:0,A:1,B:0},{e:\'E/my2.F\',x:-D,y:0,z:O,A:1,B:0}],1d:[{o:{r:j,g:j,b:j,q:1},x:[-1X,-1l,-1l,-1X],z:[-7,-7,-7,-7],y:[7,7,-7,-7]},{o:{r:j,g:j,b:j,q:1},x:[-501,2,2,-7],z:[-7,-7,-7,-7],y:[7,7,-7,-7]},{o:{r:j,g:j,b:j,q:1},x:[0,1Y,1Y,0],z:[-7,-7,-7,-7],y:[7,7,-7,-7]},{o:{r:j,g:j,b:j,q:1},x:[1l,1Z,1Z,1l],z:[-7,-7,-7,-7],y:[7,7,-7,-7]},{o:{r:0,g:0,b:0,a:0.2},x:[-1m,1m,1m,-1m],z:[-7,-7,-7,-7],y:[11,11,-G,-G]},{o:{r:0,g:0,b:0,a:0.2},x:[-20,20,20,-20],z:[-7,-7,-7,-7],y:[21,21,11,11]},{o:{r:0,g:0,b:0,a:0.2},x:[-20,20,20,-20],z:[-7,-7,-7,-7],y:[-G,-G,-7,-7]},{o:{r:0,g:0,b:0,a:0.2},x:[-20,20,10,-10],z:[-7,-7,-12,-12],y:[-7,-7,-7,-7]},{o:{r:32,g:32,b:32},x:[-t,t,t,-t],z:[-11,-11,-t,-t],y:[-7,-7,-7,-7]},{o:{r:16,g:16,b:16},x:[-10,10,10,-10],z:[-12,-12,-12,-12],y:[22,22,-7,-7]},{o:{r:j,g:j,b:j},x:[-G,-G,-G,-G],z:[0,-20,-20,0],y:[-T,-T,T,T]},{o:{r:j,g:j,b:j},x:[G,G,G,G],z:[0,-20,-20,0],y:[-T,-T,T,T]},{e:V},{o:{r:j,g:23,b:0},x:[-t,t,t,-t],z:[1n,1n,1o,1o],y:[7,7,7,7]},{o:{r:j,g:23,b:0},x:[-t,t,t,-t],z:[1n,1n,1o,1o],y:[-7,-7,-7,-7]}],1P:{1Q:""}});',[],128,'|||||||500|this||||||img|camera||||255|||var|target|fill||light|||50|function|parent|||||nx|nz|pc|1500|imgs|jpg|320|pointer|scr|if|false|new|ge1doot|Math|1000|ctx|face|for|over|190|transform3D|true|elem|||||150|100|points|normalZ|normalX||draw|diapo|fps|quality|Poly|Diapo|structure|visible|sqrt|focalLength|json|prototype|else|height|490|420|450|550|layers|Point|poly|drawPoly|||width|move|run|round|load||color|path|isLoaded|loaded|||push|init|dist|lev|isDraging|||imgdata|options|imagesPath|setCursor|projection|texture|return|data||1001|502|1002||250|300|128'.split('|'),0,{}))
+"use strict";
+
+(function () {
+	/* ==== definitions ==== */
+	var diapo = [], layers = [], ctx, pointer, scr, camera, light, fps = 0, quality = [1,2],
+	// ---- poly constructor ----
+	Poly = function (parent, face) {
+		this.parent = parent;
+		this.ctx    = ctx;
+		this.color  = face.fill || false;
+		this.points = [];
+		if (!face.img) {
+			// ---- create points ----
+			for (var i = 0; i < 4; i++) {
+				this.points[i] = new ge1doot.transform3D.Point(
+					parent.pc.x + (face.x[i] * parent.normalZ) + (face.z[i] * parent.normalX),
+					parent.pc.y +  face.y[i],
+					parent.pc.z + (face.x[i] * parent.normalX) + (-face.z[i] * parent.normalZ)
+				);
+			}
+			this.points[3].next = false;
+		}
+	},
+	// ---- diapo constructor ----
+	Diapo = function (path, img, structure) {
+		// ---- create image ----
+		this.img = new ge1doot.transform3D.Image(
+			this, path + img.img, 1, {
+				isLoaded: function(img) {
+					img.parent.isLoaded = true;
+					img.parent.loaded(img);
+				}
+			}
+		);
+		this.visible  = false;
+		this.normalX  = img.nx;
+		this.normalZ  = img.nz;
+		// ---- point center ----
+		this.pc = new ge1doot.transform3D.Point(img.x, img.y, img.z);
+		// ---- target positions ----
+		this.tx = img.x + (img.nx * Math.sqrt(camera.focalLength) * 20);
+		this.tz = img.z - (img.nz * Math.sqrt(camera.focalLength) * 20);
+		// ---- create polygons ----
+		this.poly = [];
+		for (var i = -1, p; p = structure[++i];) {
+			layers[i] = (p.img === true ? 1 : 2);
+			this.poly.push(
+				new Poly(this, p)
+			);
+		}
+	},
+	// ---- init section ----
+	init = function (json) {
+		// draw poly primitive
+		Poly.prototype.drawPoly = ge1doot.transform3D.drawPoly;
+		// ---- init screen ----
+		scr = new ge1doot.Screen({
+			container: "canvas"
+		});
+		ctx = scr.ctx;
+		scr.resize();
+		// ---- init pointer ----
+		pointer = new ge1doot.Pointer({
+			tap: function () {
+				if (camera.over) {
+					if (camera.over === camera.target.elem) {
+						// ---- return to the center ----
+						camera.target.x = 0;
+						camera.target.z = 0;
+						camera.target.elem = false;
+					} else {
+						// ---- goto diapo ----
+						camera.target.elem = camera.over;
+						camera.target.x = camera.over.tx;
+						camera.target.z = camera.over.tz;
+						// ---- adapt tesselation level to distance ----
+						for (var i = 0, d; d = diapo[i++];) {
+							var dx = camera.target.x - d.pc.x;
+							var dz = camera.target.z - d.pc.z;
+							var dist = Math.sqrt(dx * dx + dz * dz);
+							var lev = (dist > 1500) ? quality[0] : quality[1];
+							d.img.setLevel(lev);
+						}
+					}
+				}
+			}
+		});
+		// ---- init camera ----
+		camera = new ge1doot.transform3D.Camera({
+			focalLength: Math.sqrt(scr.width) * 10,
+			easeTranslation: 0.025,
+			easeRotation: 0.06,
+			disableRz: true
+		}, {
+			move: function () {
+				this.over = false;
+				// ---- rotation ----
+				if (pointer.isDraging) {
+					this.target.elem = false;
+					this.target.ry = -pointer.Xi * 0.01;
+					this.target.rx = (pointer.Y - scr.height * 0.5) / (scr.height * 0.5);
+				} else {
+					if (this.target.elem) {
+						this.target.ry = Math.atan2(
+							this.target.elem.pc.x - this.x,
+							this.target.elem.pc.z - this.z
+						);
+					}
+				}
+				this.target.rx *= 0.9;
+			}
+		});
+		camera.z  = -10000;
+		camera.py = 0;
+		// ---- create images ----
+		for (var i = 0, img; img = json.imgdata[i++];) {
+			diapo.push(
+				new Diapo(
+					json.options.imagesPath, 
+					img, 
+					json.structure
+				)
+			);
+		}	
+		// ---- start engine ---- >>>
+		setInterval(function() {
+			quality = (fps > 50) ? [2,3] : [1,2];
+			fps = 0;
+		}, 1000);
+		run();
+	},
+	// ---- main loop ----
+	run = function () {
+		// ---- clear screen ----
+		ctx.clearRect(0, 0, scr.width, scr.height);
+		// ---- camera ----
+		camera.move();
+		// ---- draw layers ----
+		for (var k = -1, l; l = layers[++k];) {
+			light = false;
+			for (var i = 0, d; d = diapo[i++];) {
+				(l === 1 && d.draw()) || 
+				(d.visible && d.poly[k].draw());
+			}
+		}
+		// ---- cursor ----
+		if (camera.over && !pointer.isDraging) {
+			scr.setCursor("pointer");
+		} else {
+			scr.setCursor("move");
+		}
+		// ---- loop ----
+		fps++;
+		requestAnimFrame(run);
+	};
+	/* ==== prototypes ==== */
+	Poly.prototype.draw = function () {
+		// ---- color light ----
+		var c = this.color;
+		if (c.light || !light) {
+			var s = c.light ? this.parent.light : 1;
+			// ---- rgba color ----
+			light = "rgba(" + 
+				Math.round(c.r * s) + "," +
+				Math.round(c.g * s) + "," + 
+				Math.round(c.b * s) + "," + (c.a || 1) + ")";
+			ctx.fillStyle = light;
+		}
+		// ---- paint poly ----
+		if (!c.light || this.parent.light < 1) {
+			// ---- projection ----
+			for (
+				var i = 0; 
+				this.points[i++].projection();
+			);
+			this.drawPoly();
+			ctx.fill();
+		}
+	}
+	/* ==== image onload ==== */
+	Diapo.prototype.loaded = function (img) {
+		// ---- create points ----
+		var d = [-1,1,1,-1,1,1,-1,-1];
+		var w = img.texture.width  * 0.5;
+		var h = img.texture.height * 0.5;
+		for (var i = 0; i < 4; i++) {
+			img.points[i] = new ge1doot.transform3D.Point(
+				this.pc.x + (w * this.normalZ * d[i]),
+				this.pc.y + (h * d[i + 4]),
+				this.pc.z + (w * this.normalX * d[i])
+			);
+		}
+	}
+	/* ==== images draw ==== */
+	Diapo.prototype.draw = function () {
+		// ---- visibility ----
+		this.pc.projection();
+		if (this.pc.Z > -(camera.focalLength >> 1) && this.img.transform3D(true)) {
+			// ---- light ----
+			this.light = 0.5 + Math.abs(this.normalZ * camera.cosY - this.normalX * camera.sinY) * 0.6;
+			// ---- draw image ----
+			this.visible = true;
+			this.img.draw();
+			// ---- test pointer inside ----
+			if (pointer.hasMoved || pointer.isDown) {
+				if (
+					this.img.isPointerInside(
+						pointer.X,
+						pointer.Y
+					)
+				) camera.over = this;
+			}
+		} else this.visible = false;
+		return true;
+	}
+	return {
+		// --- load data ----
+		load : function (data) {
+			window.addEventListener('load', function () {
+				ge1doot.loadJS(
+					"js/imageTransform3D.js",
+					init, data
+				);
+			}, false);
+		}
+	}
+})
+
+
+
+().load({
+	imgdata:[
+		// north
+		{img:'imgs/jump2.jpg', x:-1000, y:0, z:1500, nx:0, nz:1},
+		{img:'imgs/img.jpg', x:0,     y:0, z:1500, nx:0, nz:1},
+		{img:'imgs/my2.jpg', x:1000,  y:0, z:1500, nx:0, nz:1},
+		// east
+		{img:'imgs/boy.jpg', x:1500,  y:0, z:1000, nx:-1, nz:0},
+		{img:'imgs/img2.jpg', x:1500,  y:0, z:0, nx:-1, nz:0},
+		{img:'imgs/my.jpg', x:1500,  y:0, z:-1000, nx:-1, nz:0},
+		// south
+		{img:'imgs/jump.jpg', x:1000,  y:0, z:-1500, nx:0, nz:-1},
+		{img:'imgs/love.jpg', x:0,     y:0, z:-1500, nx:0, nz:-1},
+		{img:'imgs/img3.jpg', x:-1000, y:0, z:-1500, nx:0, nz:-1},
+		// west
+		{img:'imgs/brother.jpg', x:-1500, y:0, z:-1000, nx:1, nz:0},
+		{img:'imgs/runner.jpg', x:-1500, y:0, z:0, nx:1, nz:0},
+		{img:'imgs/runner2.jpg', x:-1500, y:0, z:1000, nx:1, nz:0}
+	],
+	structure:[
+		{
+			// wall
+			fill: {r:255, g:255, b:255, light:1},
+			x: [-1001,-490,-490,-1001],
+			z: [-500,-500,-500,-500],
+			y: [500,500,-500,-500]
+		},{
+			// wall
+			fill: {r:255, g:255, b:255, light:1},
+			x: [-501,2,2,-500],
+			z: [-500,-500,-500,-500],
+			y: [500,500,-500,-500]
+		},{
+			// wall
+			fill: {r:255, g:255, b:255, light:1},
+			x: [0,502,502,0],
+			z: [-500,-500,-500,-500],
+			y: [500,500,-500,-500]
+		},{
+			// wall
+			fill: {r:255, g:255, b:255, light:1},
+			x: [490,1002,1002,490],
+			z: [-500,-500,-500,-500],
+			y: [500,500,-500,-500]
+		},{
+			// shadow
+			fill: {r:0, g:0, b:0, a:0.2},
+			x: [-420,420,420,-420],
+			z: [-500,-500,-500,-500],
+			y: [150, 150,-320,-320]
+		},{
+			// shadow
+			fill: {r:0, g:0, b:0, a:0.2},
+			x: [-20,20,20,-20],
+			z: [-500,-500,-500,-500],
+			y: [250, 250,150,150]
+		},{
+			// shadow
+			fill: {r:0, g:0, b:0, a:0.2},
+			x: [-20,20,20,-20],
+			z: [-500,-500,-500,-500],
+			y: [-320, -320,-500,-500]
+		},{
+			// shadow
+			fill: {r:0, g:0, b:0, a:0.2},
+			x: [-20,20,10,-10],
+			z: [-500,-500,-100,-100],
+			y: [-500, -500,-500,-500]
+		},{
+			// base
+			fill: {r:32, g:32, b:32},
+			x: [-50,50,50,-50],
+			z: [-150,-150,-50,-50],
+			y: [-500,-500,-500,-500]
+		},{
+			// support
+			fill: {r:16, g:16, b:16},
+			x: [-10,10,10,-10],
+			z: [-100,-100,-100,-100],
+			y: [300,300,-500,-500]
+		},{
+			// frame
+			fill: {r:255, g:255, b:255},
+			x: [-320,-320,-320,-320],
+			z: [0,-20,-20,0],
+			y: [-190,-190,190,190]
+		},{
+			// frame
+			fill: {r:255, g:255, b:255},
+			x: [320,320,320,320],
+			z: [0,-20,-20,0],
+			y: [-190,-190,190,190]
+		},
+		{img:true},
+		{
+			// ceilingLight
+			fill: {r:255, g:128, b:0},
+			x: [-50,50,50,-50],
+			z: [450,450,550,550],
+			y: [500,500,500,500]
+		},{
+			// groundLight
+			fill: {r:255, g:128, b:0},
+			x: [-50,50,50,-50],
+			z: [450,450,550,550],
+			y: [-500,-500,-500,-500]
+		}
+	],
+	options:{
+		imagesPath: ""
+	}
+});
