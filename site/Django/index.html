@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Django - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Django";
+    var mkdocs_page_input_path = "Django.md";
+    var mkdocs_page_url = "/Django/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../AngularJS/index.html">AngularJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../JavaScript/index.html">JavaScript</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nodejs/index.html">Nodejs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webpack/index.html">webpack</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Linux/index.html">Linux指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">Django</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#_1">一、创建一个项目：</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_2">二、开发服务器</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_3">三、创建模型</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#api">四、玩转API</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_4">五、创建一个管理员用户</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_5">六、编写你的第一个视图</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#urls">七、移除模板中硬编码的URLs</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>后台语言 &raquo;</li>
+        
+      
+    
+    <li>Django</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 300;font-size: 135%;}
+
+</style>
+
+<h1 id="_1">一、创建一个项目：</h1>
+<p>在命令行（终端）中，cd（例如cd exam)到你想要用来保存代码的目录，然后运行如下命令：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ django-admin startproject mysite
+</code></pre>
+</blockquote>
+</blockquote>
+<p>备注：django中文编码</p>
+<blockquote>
+<blockquote>
+<pre><code># coding=utf8
+</code></pre>
+</blockquote>
+</blockquote>
+<p>/usr/local/lib/python2.7/dist-packages/django</p>
+<p>192.168.40.144</p>
+<h1 id="_2">二、开发服务器</h1>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py runserver
+$ python manage.py runserver 8089
+</code></pre>
+</blockquote>
+</blockquote>
+<p>在Windows通过debain的主机ip访问</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py runserver 10.251.121.37:8989
+$ python manage.py runserver 10.251.121.37:8989
+</code></pre>
+</blockquote>
+</blockquote>
+<p>执行django的测试文件：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py test polls
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="_3">三、创建模型</h1>
+<p>确保你在与manage.py相同的目录下，并且键入以下命令来创建你的应用： </p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py startapp polls            #创建了polls应用文件
+</code></pre>
+</blockquote>
+</blockquote>
+<p>1、编辑polls/models.py文件，并让它看起来像这样：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.db import models
+
+class Question(models.Model):         #自动分配id为主键
+        question_text = models.CharField(max_length=200)
+        pub_date = models.DateTimeField('date published')
+
+class Choice(models.Model):
+        question = models.ForeignKey(Question)
+        choice_text = models.CharField(max_length=200)
+        votes = models.IntegerField(default=0)
+</code></pre>
+</blockquote>
+</blockquote>
+<p>2、再次编辑mysite/settings.py文件，并修改INSTALLED_APPS设置以包含字符串'polls'。</p>
+<blockquote>
+<blockquote>
+<pre><code>INSTALLED_APPS = (
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'polls',
+)
+</code></pre>
+</blockquote>
+</blockquote>
+<p>现在Django知道要包含polls应用。 让我们运行另外一个命令：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py makemigrations polls
+#$ python manage.py makemigrations
+</code></pre>
+</blockquote>
+</blockquote>
+<p>sqlmigrate命令接收迁移文件的名字并返回它们的SQL语句：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py sqlmigrate weibodata 0004
+</code></pre>
+</blockquote>
+</blockquote>
+<p>现在，再次运行migrate以在你的数据库中创建模型所对应的表：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py migrate
+
+
+$ python manage.py runserver
+</code></pre>
+</blockquote>
+</blockquote>
+<p>备注：记住实现模型变更的三个步骤：</p>
+<p>1、修改你的模型（在models.py文件中）。</p>
+<p>2、运行        $ python manage.py runserver</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py makemigrations   //为这些修改创建迁移文件
+</code></pre>
+</blockquote>
+<p>Ps：sqlmigrate命令接收迁移文件的名字并返回它们的SQL语句：</p>
+<blockquote>
+<pre><code>$ python manage.py sqlmigrate polls 0001
+</code></pre>
+</blockquote>
+</blockquote>
+<p>3、运行</p>
+<blockquote>
+<blockquote>
+<pre><code>python manage.py migrate
+</code></pre>
+</blockquote>
+</blockquote>
+<p>将这些改变更新到数据库中。</p>
+<h1 id="api">四、玩转API</h1>
+<p>使用如下命令来调用Python shell：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py shell
+</code></pre>
+</blockquote>
+</blockquote>
+<p>探索这些数据库 API：</p>
+<blockquote>
+<blockquote>
+<pre><code>&gt;&gt;&gt; from polls.models import Question, Choice, mysitedata
+&gt;&gt;&gt; from django.utils import timezone
+&gt;&gt;&gt; Question.objects.all()
+[]
+&gt;&gt;&gt; q = Question(question_text="What's new?", pub_date=timezone.now())
+&gt;&gt;&gt; q.save()
+</code></pre>
+</blockquote>
+</blockquote>
+<p>或者：Question(question_text="这但是是", pub_date=timezone.now()).save()</p>
+<blockquote>
+<blockquote>
+<pre><code>mysitedata(mysite_text="测试", pub_date=timezone.now(),m_name="这", m_URL="www.baidu,com", o1_type=0,t1_color=1,fir_ss1="内部系统",sec_ss2="热门").save()
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="_4">五、创建一个管理员用户</h1>
+<p>1、首先，我们需要创建一个能够登录管理站点的用户。 运行如下命令：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ python manage.py createsuperuser
+</code></pre>
+</blockquote>
+</blockquote>
+<p>键入你想要使用的用户名，然后按下回车键：</p>
+<blockquote>
+<blockquote>
+<pre><code>Username: admin
+</code></pre>
+</blockquote>
+</blockquote>
+<p>然后提示你输入想要使用的邮件地址：</p>
+<blockquote>
+<blockquote>
+<pre><code>Email address: admin@example.com
+</code></pre>
+</blockquote>
+</blockquote>
+<p>最后一步是输入你的密码。 你将被要求输入你的密码两次，第二次输入是为了确认第一次的输入。</p>
+<blockquote>
+<blockquote>
+<pre><code>Password: **********
+Password (again): *********
+Superuser created successfully.
+</code></pre>
+</blockquote>
+</blockquote>
+<p>现在，打开一个浏览器访问你本地域名中的 “/admin/” —— 例如http://127.0.0.1:8000/admin/</p>
+<p>2、我们需要告诉管理站点Question 对象要有一个管理界面。 要做这件事，需要打开polls/admin.py文件，把它编辑成这样：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.contrib import admin
+from .models import Question
+admin.site.register(Question)
+</code></pre>
+</blockquote>
+</blockquote>
+<p>添加关联对象</p>
+<p>好了，我们已经有自己的Question管理界面。 但是一个Question有多个Choices，管理界面中并没有将选项显示出来。</p>
+<p>有两种方法来解决这个问题。 第一种是像我们为Question做的一样，在管理站点中注册Choice。这简单：</p>
+<p>在polls/admin.py文件中</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.contrib import admin
+from .models import Choice, Question
+# ...
+admin.site.register(Choice)
+</code></pre>
+</blockquote>
+</blockquote>
+<p>但事实上，这是一种不高效的方式来添加Choice对象到系统中。在创建Question对象的同时可以直接添加一组Choice将会更好。让我们实现这个功能。</p>
+<p>移除对Choice模型的register()调用。然后将Question的注册代码编辑为：</p>
+<p>在polls/admin.py文件中</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.contrib import admin
+from .models import Choice, Question
+class ChoiceInline(admin.StackedInline):
+        model = Choice
+        extra = 3
+
+class QuestionAdmin(admin.ModelAdmin):
+        fieldsets = [
+            (None,               {'fields': ['question_text']}),
+            ('Date information', {'fields': ['pub_date'], 'classes': ['collapse']}),
+        ]
+        inlines = [ChoiceInline]
+admin.site.register(Question, QuestionAdmin)
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="_5">六、编写你的第一个视图</h1>
+<p>让我们来编写第一个视图。 打开polls/views.py文件并将以下Python代码写入：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.http import HttpResponse
+
+def index(request):
+        return HttpResponse("Hello, world. You're at the polls index.")
+</code></pre>
+</blockquote>
+</blockquote>
+<p>为了能够调用这个视图，我们需要将这个视图映射到URL上 —— 利用一个URLconf。
+为了在投票应用目录内部创建URLconf，需要创建一个urls.py文件。你的应用的目录现在看起来应该像这样：</p>
+<blockquote>
+<blockquote>
+<pre><code>polls/
+        __init__.py
+        admin.py
+        models.py
+        tests.py
+        urls.py
+        views.py
+</code></pre>
+</blockquote>
+</blockquote>
+<p>在polls/urls.py文件中键入如下代码：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.conf.urls import url
+
+from . import views
+
+urlpatterns = [
+    url(r'^$', views.index, name='index'),
+]
+</code></pre>
+</blockquote>
+</blockquote>
+<p>下一步，让主URLconf可以链接到polls.urls模块。在mysite/urls.py中插入一个include()：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.conf.urls import include, url
+from django.contrib import admin
+
+urlpatterns = [
+        url(r'^polls/', include('polls.urls')),
+        url(r'^admin/', include(admin.site.urls)),
+]
+</code></pre>
+</blockquote>
+</blockquote>
+<p>现在我们已经将一个index视图关联到URLconf中。在你的浏览器中浏览 http://localhost:8000/polls/ , 你会看到 “Hello, world. You’re at the polls index.”, 正如你在index 视图中定义的那样.
+备注：编写更多的视图
+现在让我们给polls/views.py添加一些更多的视图。这些视图和之前的略有不同，因为它们另带了一个参数：
+def detail(request, question_id):
+        return HttpResponse("You're looking at question %s." % question_id)</p>
+<p>def results(request, question_id):
+        response = "You're looking at the results of question %s."
+        return HttpResponse(response % question_id)</p>
+<p>def vote(request, question_id):
+        return HttpResponse("You're voting on question %s." % question_id)
+通过下面的url() 调用将这些新的视图和polls.urls模块关联起来：
+from django.conf.urls import url</p>
+<p>from . import views</p>
+<p>urlpatterns = [
+    # ex: /polls/
+    url(r'^$', views.index, name='index'),
+    # ex: /polls/5/
+    url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
+    # ex: /polls/5/results/
+    url(r'^(?P<question_id>[0-9]+)/results/$', views.results, name='results'),
+    # ex: /polls/5/vote/
+    url(r'^(?P<question_id>[0-9]+)/vote/$', views.vote, name='vote'),
+]
+备注：编写拥有实际功能的视图
+1、快捷方式：render()
+常见的习惯是载入一个模板、填充一个context 然后返回一个含有模板渲染结果的HttpResponse对象。Django为此提供一个快捷方式。
+在polls/views.py文件中
+from django.shortcuts import render
+from .models import Question</p>
+<p>def index(request):
+        latest_question_list = Question.objects.order_by('-pub_date')[:5]
+        context = {'latest_question_list': latest_question_list}
+        return render(request, 'polls/index.html', context)
+将以下的代码放入模板文件：在polls/templates/polls/index.html文件中
+{% if latest_question_list %}
+        <ul>
+        {% for question in latest_question_list %}
+            <li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+        {% endfor %}
+        </ul>
+{% else %}
+        <p>No polls are available.</p>
+{% endif %}
+2、快捷方式：get_object_or_404()
+一种常见的习惯是使用get()并在对象不存在时引发Http404。Django为此提供一个快捷方式。
+在polls/views.py文件中：</p>
+<blockquote>
+<blockquote>
+<pre><code>from django.shortcuts import get_object_or_404, render
+
+from .models import Question
+# ...
+def detail(request, question_id):
+    question = get_object_or_404(Question, pk=question_id)
+    return render(request, 'polls/detail.html', {'question': question})
+在polls/templates/polls/detail.html文件中：
+&lt;h1&gt;{{ question.question_text }}&lt;/h1&gt;
+&lt;ul&gt;
+{% for choice in question.choice_set.all %}
+    &lt;li&gt;{{ choice.choice_text }}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="urls">七、移除模板中硬编码的URLs</h1>
+<p>还记得吗，当我们在polls/index.html模板中编写一个指向Question的链接时，链接中一部分是硬编码的：
+<li><a href="/polls/{{ question.id }}/">{{ question.question_text }}</a></li>
+这种硬编码、紧耦合的方法有一个问题，就是如果我们想在拥有许多模板文件的项目中修改URLs，那将会变得很有挑战性。 然而，因为你在polls.urls模块的url()函数中定义了name 参数，你可以通过使用{% url %}模板标签来移除对你的URL配置中定义的特定的URL的依赖：
+<li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li></p>
+<p>它的工作原理是在polls.urls模块里查找指定的URL的定义。你可以看到名为‘detail’的URL的准确定义：</p>
+<blockquote>
+<blockquote>
+<pre><code>...
+# the 'name' value as called by the {% url %} template tag
+url(r'^(?P&lt;question_id&gt;[0-9]+)/$', views.detail, name='detail'),
+...
+如果你想把polls应用中detail视图的URL改成其它样子比如 polls/specifics/12/，就可以不必在该模板（或者多个模板）中修改它，只需要修改 polls/urls.py：
+...
+# added the word 'specifics'
+url(r'^specifics/(?P&lt;question_id&gt;[0-9]+)/$', views.detail, name='detail'),
+...
+</code></pre>
+</blockquote>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../MkDocs/index.html" class="btn btn-neutral float-right" title="MkDocs和Wekan">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../python/index.html" class="btn btn-neutral" title="python"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../python/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../MkDocs/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

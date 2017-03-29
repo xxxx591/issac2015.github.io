@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>AngularJS - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "AngularJS";
+    var mkdocs_page_input_path = "AngularJS.md";
+    var mkdocs_page_url = "/AngularJS/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">AngularJS</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#angularjs-ng-x">AngularJS 的 ng-X</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_1">数据绑定</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#html">重复 HTML 元素</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_2">创建自定义的指令</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs">AngularJS模型</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_3">双向绑定</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#css">CSS 类</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs-scope">AngularJS Scope(作用域)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scope">如何使用 Scope</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scope_1">Scope 概述</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#scope_2">Scope 作用范围</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_4">根作用域</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_5">过滤器</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs-service">AngularJS 服务(Service)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_6">创建自定义服务</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs_1">AngularJS 模块</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_7">函数会影响到全局命名空间</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs_2">AngularJS 包含</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_8">跨域包含</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs_3">AngularJS 动画</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#nganimate">ngAnimate 做了什么?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#angularjs_4">AngularJS 依赖注入</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../JavaScript/index.html">JavaScript</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nodejs/index.html">Nodejs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webpack/index.html">webpack</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Linux/index.html">Linux指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Django/index.html">Django</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>JavaScript &raquo;</li>
+        
+      
+    
+    <li>AngularJS</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 300;font-size: 135%;}
+
+</style>
+
+<h2 id="angularjs-ng-x">AngularJS 的 ng-X</h2>
+<p>AngularJS 通过 ng-directives 扩展了 HTML。</p>
+<blockquote>
+<pre><code>ng-app 指令定义一个 AngularJS 应用程序。
+ng-app 指令告诉 AngularJS，&lt;div&gt; 元素是 AngularJS 应用程序 的"所有者"。
+ng-model 指令把元素值（比如输入域的值）绑定到应用程序。
+ng-model 指令把输入域的值绑定到应用程序变量 name。
+ng-bind 指令把应用程序数据绑定到 HTML 视图。
+ng-bind 指令把应用程序变量 name 绑定到某个段落的 innerHTML。
+</code></pre>
+</blockquote>
+<h2 id="_1">数据绑定</h2>
+<p>上面实例中的 {{ firstName }} 表达式是一个 AngularJS 数据绑定表达式。</p>
+<p>AngularJS 中的数据绑定，同步了 AngularJS 表达式与 AngularJS 数据。</p>
+<p>{{ firstName }} 是通过 ng-model="firstName" 进行同步。</p>
+<blockquote></blockquote>
+<h2 id="html">重复 HTML 元素</h2>
+<p>ng-repeat 指令会重复一个 HTML 元素：</p>
+<blockquote>
+<pre><code>&lt;div ng-app="" ng-init="names=['Jani','Hege','Kai']"&gt;
+  &lt;p&gt;使用 ng-repeat 来循环数组&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li ng-repeat="x in names"&gt;
+      {{ x }}
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+</blockquote>
+<h2 id="_2">创建自定义的指令</h2>
+<p>除了 AngularJS 内置的指令外，我们还可以创建自定义指令。</p>
+<p>你可以使用 .directive 函数来添加自定义的指令。</p>
+<p>要调用自定义指令，HTML 元素上需要添加自定义指令名。</p>
+<p>使用驼峰法来命名一个指令 runoobDirective, 但在使用它时需要以 - 分割, runoob-directive:</p>
+<blockquote>
+<pre><code>&lt;body ng-app="myApp"&gt;
+    &lt;runoob-directive&gt;&lt;/runoob-directive&gt;
+    &lt;script&gt;
+        var app = angular.module("myApp", []);
+        app.directive("runoobDirective", function() {
+            return {
+                template : "&lt;h1&gt;自定义指令!&lt;/h1&gt;"
+            };
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >限制使用</span></p>
+<p>你可以限制你的指令只能通过特定的方式来调用。</p>
+<blockquote>
+<pre><code>var app = angular.module("myApp", []);
+app.directive("runoobDirective", function() {
+    return {
+        restrict : "A",
+        template : "&lt;h1&gt;自定义指令!&lt;/h1&gt;"
+    };
+});
+&lt;runoob-directive&gt;&lt;/runoob-directive&gt;          //不会显示
+&lt;div runoob-directive&gt;&lt;/div&gt;               //通过html可以显示
+</code></pre>
+</blockquote>
+<p>restrict 值可以是以下几种:</p>
+<blockquote>
+<pre><code>E 作为元素名使用
+A 作为属性使用
+C 作为类名使用
+M 作为注释使用
+</code></pre>
+</blockquote>
+<p>restrict 默认值为 EA, 即可以通过元素名和属性名来调用指令。</p>
+<blockquote></blockquote>
+<h2 id="angularjs">AngularJS模型</h2>
+<p>ng-model 指令</p>
+<p>ng-model 指令可以将输入域的值与 AngularJS 创建的变量绑定。</p>
+<blockquote>
+<pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+    名字: &lt;input ng-model="name"&gt;
+&lt;/div&gt;
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.name = "John Doe";
+});
+&lt;/script&gt;
+</code></pre>
+</blockquote>
+<h2 id="_3">双向绑定</h2>
+<p>双向绑定，在修改输入域的值时， AngularJS 属性的值也将修改：</p>
+<blockquote>
+<pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+    名字: &lt;input ng-model="name"&gt;
+    &lt;h1&gt;你输入了: {{name}}&lt;/h1&gt;
+&lt;/div&gt;
+</code></pre>
+</blockquote>
+<h2 id="css">CSS 类</h2>
+<p>ng-model 指令基于它们的状态为 HTML 元素提供了 CSS 类</p>
+<p>ng-model 指令根据表单域的状态添加/移除以下类：</p>
+<blockquote>
+<pre><code>ng-empty
+ng-not-empty
+ng-touched
+ng-untouched
+ng-valid
+ng-invalid
+ng-dirty
+ng-pending
+ng-pristine
+</code></pre>
+</blockquote>
+<h2 id="angularjs-scope">AngularJS Scope(作用域)</h2>
+<p>Scope(作用域) 是应用在 HTML (视图) 和 JavaScript (控制器)之间的纽带。</p>
+<p>Scope 是一个对象，有可用的方法和属性。</p>
+<p>Scope 可应用在视图和控制器上。</p>
+<blockquote></blockquote>
+<h2 id="scope">如何使用 Scope</h2>
+<p>当你在 AngularJS 创建控制器时，你可以将 $scope 对象当作一个参数传递:  控制器中的属性对应了视图上的属性</p>
+<blockquote>
+<pre><code>&lt;div ng-app="myApp" ng-controller="myCtrl"&gt;
+    &lt;h1&gt;{{carname}}&lt;/h1&gt;
+&lt;/div&gt;
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.carname = "Volvo";
+});
+&lt;/script&gt;
+</code></pre>
+</blockquote>
+<p>当在控制器中添加 $scope 对象时，视图 (HTML) 可以获取了这些属性。</p>
+<p>视图中，你不需要添加 $scope 前缀, 只需要添加属性名即可，如： {{carname}}。</p>
+<blockquote></blockquote>
+<h2 id="scope_1">Scope 概述</h2>
+<p>AngularJS 应用组成如下：</p>
+<blockquote>
+<pre><code>View(视图), 即 HTML。
+Model(模型), 当前视图中可用的数据。
+Controller(控制器), 即 JavaScript 函数，可以添加或修改属性。
+</code></pre>
+</blockquote>
+<p>scope 是模型。</p>
+<p>scope 是一个 JavaScript 对象，带有属性和方法，这些属性和方法可以在视图和控制器中使用。</p>
+<blockquote></blockquote>
+<h2 id="scope_2">Scope 作用范围</h2>
+<p>了解你当前使用的 scope 是非常重要的。</p>
+<p>在以上两个实例中，只有一个作用域 scope，所以处理起来比较简单，但在大型项目中， HTML DOM 中有多个作用域，这时你就需要知道你使用的 scope 对应的作用域是哪一个。</p>
+<blockquote></blockquote>
+<h2 id="_4">根作用域</h2>
+<p>所有的应用都有一个 $rootScope，它可以作用在 ng-app 指令包含的所有 HTML 元素中。</p>
+<p>$rootScope 可作用于整个应用中。是各个 controller 中 scope 的桥梁。用 rootscope 定义的值，可以在各个 controller 中使用。</p>
+<blockquote></blockquote>
+<h2 id="_5">过滤器</h2>
+<p>过滤器可以使用一个管道字符（|）添加到表达式和指令中。</p>
+<p><span class="ESPAN" >过滤输入</span></p>
+<p>输入过滤器可以通过一个管道字符（|）和一个过滤器添加到指令中，该过滤器后跟一个冒号和一个模型名称。
+filter 过滤器从数组中选择一个子集：</p>
+<blockquote>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;script src="https://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div ng-app="myApp" ng-controller="namesCtrl"&gt;
+&lt;p&gt;输入过滤:&lt;/p&gt;
+&lt;p&gt;&lt;input type="text" ng-model="test"&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li ng-repeat="x in names | filter:test | orderBy:'country'"&gt;
+    {{ (x.name | uppercase) + ', ' + x.country }}
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src="http://www.runoob.com/try/demo_source/namesController.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</blockquote>
+<h2 id="angularjs-service">AngularJS 服务(Service)</h2>
+<p>AngularJS 中你可以创建自己的服务，或使用内建服务。</p>
+<p><span class="ESPAN" >什么是服务？</span></p>
+<p>在 AngularJS 中，服务是一个函数或对象，可在你的 AngularJS 应用中使用。</p>
+<p>AngularJS 内建了30 多个服务。</p>
+<p>有个 $location 服务，它可以返回当前页面的 URL 地址。</p>
+<blockquote>
+<pre><code>var app = angular.module('myApp', []);
+app.controller('customersCtrl', function($scope, $location) {
+    $scope.myUrl = $location.absUrl();
+});
+</code></pre>
+</blockquote>
+<p>注意 $location 服务是作为一个参数传递到 controller 中。如果要使用它，需要在 controller 中定义。</p>
+<blockquote></blockquote>
+<h2 id="_6">创建自定义服务</h2>
+<p>你可以创建访问自定义服务，链接到你的模块中：</p>
+<blockquote>
+<pre><code>创建名为hexafy 的访问:
+app.service('hexafy', function() {
+    this.myFunc = function (x) {
+        return x.toString(16);
+    }
+});
+</code></pre>
+</blockquote>
+<p>要使用访问自定义服务，需要在定义过滤器的时候独立添加:</p>
+<blockquote>
+<pre><code>使用自定义的的服务 hexafy 将一个数字转换为16进制数:
+app.controller('myCtrl', function($scope, hexafy) {
+    $scope.hex = hexafy.myFunc(255);
+});
+</code></pre>
+</blockquote>
+<h2 id="angularjs_1">AngularJS 模块</h2>
+<p>模块定义了一个应用程序。</p>
+<p>模块是应用程序中不同部分的容器。</p>
+<p>模块是应用控制器的容器。</p>
+<p>控制器通常属于一个模块。</p>
+<p><span class="ESPAN" >创建模块</span></p>
+<p>你可以通过 AngularJS 的 angular.module 函数来创建模块：</p>
+<blockquote>
+<pre><code>&lt;div ng-app="myApp"&gt;...&lt;/div&gt;
+&lt;script&gt;
+    var app = angular.module("myApp", []); 
+&lt;/script&gt;
+</code></pre>
+</blockquote>
+<p>"myApp" 参数对应执行应用的 HTML 元素。</p>
+<p>现在你可以在 AngularJS 应用中添加控制器，指令，过滤器等。</p>
+<p>在模块定义中 [] 参数用于定义模块的依赖关系。
+中括号[]表示该模块没有依赖，如果有依赖的话会在中括号写上依赖的模块名字。</p>
+<blockquote></blockquote>
+<h2 id="_7">函数会影响到全局命名空间</h2>
+<p>JavaScript 中应避免使用全局函数。因为他们很容易被其他脚本文件覆盖。</p>
+<p>AngularJS 模块让所有函数的作用域在该模块下，避免了该问题。</p>
+<blockquote></blockquote>
+<h2 id="angularjs_2">AngularJS 包含</h2>
+<p>使用 AngularJS, 你可以使用 ng-include 指令来包含 HTML 内容:</p>
+<blockquote>
+<pre><code>&lt;body ng-app=""&gt;
+    &lt;div ng-include="'runoob.htm'"&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >包含 AngularJS 代码</span></p>
+<p>ng-include 指令除了可以包含 HTML 文件外，还可以包含 AngularJS 代码:</p>
+<blockquote>
+<pre><code>sites.htm 文件代码：
+&lt;table&gt;
+&lt;tr ng-repeat="x in names"&gt;
+&lt;td&gt;{{ x.Name }}&lt;/td&gt;
+&lt;td&gt;{{ x.Url }}&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+</blockquote>
+<p>包含的文件 "sites.htm" 中有 AngularJS 代码，它将被正常执行：</p>
+<blockquote>
+<pre><code>sites.htm 文件代码：
+&lt;div ng-app="myApp" ng-controller="sitesCtrl"&gt; 
+  &lt;div ng-include="'sites.htm'"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+var app = angular.module('myApp', []);
+app.controller('sitesCtrl', function($scope, $http) {
+    $http.get("sites.php").then(function (response) {
+        $scope.names = response.data.records;
+    });
+});
+&lt;/script&gt;
+</code></pre>
+</blockquote>
+<h2 id="_8">跨域包含</h2>
+<p>默认情况下， ng-include 指令不允许包含其他域名的文件。</p>
+<p>如果你需要包含其他域名的文件，你需要设置域名访问白名单：</p>
+<blockquote>
+<pre><code>&lt;body ng-app="myApp"&gt;
+&lt;div ng-include="'http://c.runoob.com/runoobtest/angular_include.php'"&gt;&lt;/div&gt;
+&lt;script&gt;
+var app = angular.module('myApp', [])
+app.config(function($sceDelegateProvider) {
+    $sceDelegateProvider.resourceUrlWhitelist([
+        'http://c.runoob.com/runoobtest/**'
+    ]);
+});
+&lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+</blockquote>
+<h2 id="angularjs_3">AngularJS 动画</h2>
+<p>AngularJS 提供了动画效果，可以配合 CSS 使用。</p>
+<p>AngularJS 使用动画需要引入 angular-animate.min.js 库。</p>
+<blockquote>
+<pre><code>&lt;script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular-animate.min.js"&gt;&lt;/script&gt;
+</code></pre>
+</blockquote>
+<p>还需在应用中使用模型 ngAnimate：</p>
+<blockquote>
+<pre><code>&lt;body ng-app="ngAnimate"&gt;
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >什么是动画？</span></p>
+<p>动画是通过改变 HTML 元素产生的动态变化效果。</p>
+<blockquote>
+<pre><code>&lt;body ng-app="ngAnimate"&gt;
+    隐藏 DIV: &lt;input type="checkbox" ng-model="myCheck"&gt;
+    &lt;div ng-hide="myCheck"&gt;&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+</blockquote>
+<p>如果我们应用已经设置了应用名，可以把 ngAnimate 直接添加在模型中：</p>
+<blockquote>
+<pre><code>&lt;body ng-app="myApp"&gt;
+    &lt;h1&gt;隐藏 DIV: &lt;input type="checkbox" ng-model="myCheck"&gt;&lt;/h1&gt;
+    &lt;div ng-hide="myCheck"&gt;&lt;/div&gt;
+    &lt;script&gt;
+        var app = angular.module('myApp', ['ngAnimate']);
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+</blockquote>
+<h2 id="nganimate">ngAnimate 做了什么?</h2>
+<p>ngAnimate 模型可以添加或移除 class 。</p>
+<p>ngAnimate 模型并不能使 HTML 元素产生动画，但是 ngAnimate 会监测事件，类似隐藏显示 HTML 元素 ，如果事件发生 ngAnimate 就会使用预定义的 class 来设置 HTML 元素的动画。</p>
+<p>AngularJS 添加/移除 class 的指令:</p>
+<blockquote>
+<pre><code>ng-show
+ng-hide
+ng-class
+ng-view
+ng-include
+ng-repeat
+ng-if
+ng-switch
+</code></pre>
+</blockquote>
+<h2 id="angularjs_4">AngularJS 依赖注入</h2>
+<p><span class="ESPAN" >什么是依赖注入</span></p>
+<p>wiki 上的解释是：依赖注入（Dependency Injection，简称DI）是一种软件设计模式，在这种模式下，一个或更多的依赖（或服务）被注入（或者通过引用传递）到一个独立的对象（或客户端）中，然后成为了该客户端状态的一部分。</p>
+<p>该模式分离了客户端依赖本身行为的创建，这使得程序设计变得松耦合，并遵循了依赖反转和单一职责原则。与服务定位器模式形成直接对比的是，它允许客户端了解客户端如何使用该系统找到依赖</p>
+<p>AngularJS 提供很好的依赖注入机制。以下5个核心组件用来作为依赖注入：</p>
+<blockquote>
+<pre><code>value
+factory
+service
+provider
+constant
+</code></pre>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ReactJS/index.html" class="btn btn-neutral float-right" title="ReactJS">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="前言"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ReactJS/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>webpack - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "webpack";
+    var mkdocs_page_input_path = "webpack.md";
+    var mkdocs_page_url = "/webpack/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../AngularJS/index.html">AngularJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../JavaScript/index.html">JavaScript</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nodejs/index.html">Nodejs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">webpack</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#1">1、概述</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#2">2、配置文件</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3">3、插件</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4packagejson">4、配置package.json</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#5">5、开发环境</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Linux/index.html">Linux指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Django/index.html">Django</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>JavaScript &raquo;</li>
+        
+      
+    
+    <li>webpack</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 300;font-size: 135%;}
+
+</style>
+
+<h1 id="1">1、概述</h1>
+<p>Webpack 是一个前端资源加载/打包工具。</p>
+<p>它将根据模块的依赖关系进行静态分析，然后将这些模块按照指定的规则生成对应的静态资源。</p>
+<blockquote></blockquote>
+<h1 id="2">2、配置文件</h1>
+<p>我们可以将一些编译选项放在配置文件中，以便于统一管理：</p>
+<p>创建 <code>webpack.config.js</code> 文件，代码如下所示：</p>
+<blockquote>
+<pre><code>module.exports = {
+    entry: "./runoob1.js",
+    output: {
+        path: __dirname,
+        filename: "bundle.js"
+    },
+    module: {
+        loaders: [
+            { test: /\.css$/, loader: "style!css" }
+        ]
+    }
+};
+</code></pre>
+</blockquote>
+<p>接下来我们只需要执行 webpack 命令即可生成 bundle.js 文件：</p>
+<blockquote>
+<pre><code>webpack
+</code></pre>
+</blockquote>
+<p>webpack 命令执行后，会默认载入当前目录的 webpack.config.js 文件。</p>
+<blockquote></blockquote>
+<h1 id="3">3、插件</h1>
+<p>插件在 webpack 的配置信息 plugins 选项中指定，用于完成一些 loader 不能完成的工。</p>
+<p>使用内置插件需要通过以下命令来安装：</p>
+<blockquote>
+<pre><code>npm install webpack --save-dev
+</code></pre>
+</blockquote>
+<p>比如我们可以安装内置的 BannerPlugin 插件，用于在文件头部输出一些注释信息。
+修改 webpack.config.js，代码如下：</p>
+<blockquote>
+<pre><code>var webpack=require('webpack');
+module.exports = {
+    entry: "./runoob1.js",        # entry：指入口文件的配置项
+    output: {                     # output：配置打包结果
+        path: __dirname,          # path定义了输出的文件夹
+        filename: "bundle.js"     # filename则定义了打包结果文件的名称
+    },
+    module: {                     # module：定义了对模块的处理逻辑
+        loaders: [                #loaders  定义了一系列的加载器，以及一些正则。当需要加载的文件匹配test的正则时，就会调用后面的loader对文件进行处理，这正是webpack强大的原因。
+            { test: /\.css$/, loader: "style!css" }
+        ]
+    },
+    plugins:[
+        new webpack.BannerPlugin('菜鸟教程 webpack 实例')
+    ]
+};
+</code></pre>
+</blockquote>
+<p>然后运行 webpack，打开 bundle.js，可以看到文件头部出现了我们指定的注释信息。</p>
+<blockquote></blockquote>
+<h1 id="4packagejson">4、配置package.json</h1>
+<p>打开package.json，并找到scripts代码块</p>
+<p>修改scripts为</p>
+<blockquote>
+<pre><code>"scripts": { "build": "webpack" }
+</code></pre>
+</blockquote>
+<p>并且执行：</p>
+<blockquote>
+<pre><code>npm run build
+</code></pre>
+</blockquote>
+<h1 id="5">5、开发环境</h1>
+<p>当项目逐渐变大，webpack 的编译时间会变长，可以通过参数让编译的输出内容带有进度和颜色。</p>
+<blockquote>
+<pre><code>$webpack --progress --colors
+</code></pre>
+</blockquote>
+<p>如果不想每次修改模块后都重新编译，那么可以启动 <code>监听模式</code></p>
+<p>开启监听模式后，没有变化的模块会在编译后缓存到内存中，而不会每次都被重新编译，所以监听模式的整体速度是很快的。</p>
+<blockquote>
+<pre><code>webpack --progress --colors --watch
+</code></pre>
+</blockquote>
+<p>当然，我们可以使用 webpack-dev-server 开发服务，这样我们就能通过 localhost:8080 启动一个 express 静态资源 web 服务器，并且会以监听模式自动运行 webpack，在浏览器打开 http://localhost:8080/ 或 http://localhost:8080/webpack-dev-server/ 可以浏览项目中的页面和编译后的资源输出，并且通过一个 socket.io 服务实时监听它们的变化并自动刷新页面。</p>
+<blockquote>
+<pre><code># 安装
+cnpm install webpack-dev-server -g
+# 运行
+webpack-dev-server --progress --colors
+</code></pre>
+</blockquote>
+<p>在浏览器打开 <a href="http://localhost:8080/">http://localhost:8080/</a> 输出结果如下：</p>
+<p><img src="./images/webpack/img1.jpg" style="display: block;margin: auto;width: 450px;"/></p>
+<p>配置webpack-dev-server</p>
+<p>修改package.json为</p>
+<blockquote>
+<pre><code>"scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --hot --inline --devtool eval --progress --colors --content-base build"
+},
+</code></pre>
+</blockquote>
+<p>--devtool eval:为你的代码创建源地址。</p>
+<p>--progress: 显示合并代码进度</p>
+<p>--colors: 在命令行中显示颜色</p>
+<p>--content-base build:指向设置的输出目录</p>
+<blockquote></blockquote>
+<p>并且在index.html里加入：</p>
+<blockquote>
+<pre><code>&lt;script src="http://localhost:8080/webpack-dev-server.js"&gt;&lt;/script&gt;
+</code></pre>
+</blockquote>
+<p>修改webpack.config.js : </p>
+<blockquote>
+<pre><code>var path = require('path');
+module.exports = {
+  entry: ['webpack/hot/dev-server', path.resolve(__dirname, './prod/index.js')],
+  output: {
+    path: path.resolve(__dirname, './build'),
+    filename: 'bundle.js',
+  }
+};
+</code></pre>
+</blockquote>
+<p>运行</p>
+<blockquote>
+<pre><code>npm run dev
+</code></pre>
+</blockquote>
+<p>打开<a href="http://localhost:8080">http://localhost:8080</a>，修改文件后保存，浏览器可自动刷新内容</p>
+<blockquote></blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../win32/index.html" class="btn btn-neutral float-right" title="win32">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Nodejs/index.html" class="btn btn-neutral" title="Nodejs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Nodejs/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../win32/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

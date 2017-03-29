@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Nodejs - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Nodejs";
+    var mkdocs_page_input_path = "Nodejs.md";
+    var mkdocs_page_url = "/Nodejs/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../AngularJS/index.html">AngularJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../JavaScript/index.html">JavaScript</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">Nodejs</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#1nodejs">1、Node.js 创建第一个应用</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#2npm">2、NPM 使用介绍</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#3nodejs-repl">3、Node.js REPL(交互式解释器)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#4">4、流的概念</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#5">5、路径的问题</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#6expresurl">6、expres的URL传递参数</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#7">7、使用严格模式</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#8commonjs">8、CommonJS规范</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#9">9、深入了解模块原理</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#10moduleexports-vs-exports">10、module.exports vs exports</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#11fs">11、fs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#12">12、异步还是同步</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#13stream">13、stream 流</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#14pipe">14、pipe</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#15">15、什么是全栈工程师：</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#16crypto">16、crypto 加密和哈希算法</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#17bower-npm">17、bower 和 npm 的区别</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webpack/index.html">webpack</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Linux/index.html">Linux指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Django/index.html">Django</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>JavaScript &raquo;</li>
+        
+      
+    
+    <li>Nodejs</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 900;font-size: 135%;}
+.rst-content blockquote {margin-bottom:10px;}
+</style>
+
+<h1 id="1nodejs">1、Node.js 创建第一个应用</h1>
+<p>在我们创建 Node.js 第一个 "Hello, World!" 应用前，让我们先了解下 Node.js 应用是由哪几部分组成的：</p>
+<p>1、<code>引入 required 模块</code>：我们可以使用 require 指令来载入 Node.js 模块。</p>
+<p>2、<code>创建服务器</code>：服务器可以监听客户端的请求，类似于 Apache 、Nginx 等 HTTP 服务器。</p>
+<p>3、<code>接收请求与响应请求</code> 服务器很容易创建，客户端可以使用浏览器或终端发送 HTTP 请求，服务器接收请求后返回响应数据。</p>
+<blockquote></blockquote>
+<h1 id="2npm">2、NPM 使用介绍</h1>
+<p>NPM是随同NodeJS一起安装的包管理工具，能解决NodeJS代码部署上的很多问题，常见的使用场景有以下几种：</p>
+<blockquote>
+<p>1、允许用户从NPM服务器下载别人编写的第三方包到本地使用。</p>
+<p>2、允许用户从NPM服务器下载并安装别人编写的命令行程序到本地使用。</p>
+<p>3、允许用户将自己编写的包或命令行程序上传到NPM服务器供别人使用。</p>
+</blockquote>
+<p>由于新版的nodejs已经集成了npm，所以之前npm也一并安装好了。同样可以通过输入 "npm -v" 来测试是否成功安装。</p>
+<p><span class="hSPAN">2.1、使用 npm 命令安装模块</span></p>
+<p>npm 安装 Node.js 模块语法格式如下：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ npm install &lt;Module Name&gt;
+$ npm install &lt;Module Name&gt; -g
+$ npm install &lt;Module Name&gt; --save
+
+$ npm install express   //安装常用的 Node.js web框架模块 express
+</code></pre>
+</blockquote>
+</blockquote>
+<p>安装好之后，express 包就放在了工程目录下的 node_modules 目录中，因此在代码中只需要通过 require('express') 的方式就好，无需指定第三方包路径。</p>
+<blockquote>
+<blockquote>
+<pre><code>var express = require('express');
+</code></pre>
+</blockquote>
+</blockquote>
+<p><span class="hSPAN">2.2、卸载模块</span></p>
+<p>我们可以使用以下命令来卸载 Node.js 模块。</p>
+<blockquote>
+<blockquote>
+<pre><code>$ npm uninstall express
+</code></pre>
+</blockquote>
+</blockquote>
+<p>卸载后，你可以到 /node_modules/ 目录下查看包是否还存在，或者使用以下命令查看：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ npm ls
+</code></pre>
+</blockquote>
+</blockquote>
+<p><span class="hSPAN">2.3、更新模块</span></p>
+<p>我们可以使用以下命令更新模块：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ npm update express
+</code></pre>
+</blockquote>
+</blockquote>
+<p><span class="hSPAN">2.4、搜索模块</span></p>
+<p>使用以下来搜索模块：</p>
+<blockquote>
+<blockquote>
+<pre><code>$ npm search express
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="3nodejs-repl">3、Node.js REPL(交互式解释器)</h1>
+<p><span class="hSPAN">3.1、REPL 命令</span></p>
+<blockquote>
+<blockquote>
+<pre><code>ctrl + c - 退出当前终端。
+ctrl + c 按下两次 - 退出 Node REPL。
+ctrl + d - 退出 Node REPL.
+向上/向下 键 - 查看输入的历史命令
+tab 键 - 列出当前命令
+.help - 列出使用命令
+.break - 退出多行表达式
+.clear - 退出多行表达式
+.save filename - 保存当前的 Node REPL 会话到指定文件
+.load filename - 载入当前 Node REPL 会话的文件内容。
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="4">4、流的概念</h1>
+<p>在程序设计中，数据输入/输出（I/O）操作是必不可少的，C++语言的数据输入/输出操作是通过I/O流库来实现的。C++中把数据之间的传输操作称为流，流既可以表示数据从内存传送到某个载体或设备中，即输出流，也可以表示数据从某个载体或设备传送到内存缓冲区变量中，即输入流。在进行I/O操作时，首先是打开操作，使流和文件发生联系，建立联系后的文件才允许数据流入和流出，输入或输出结束后，使用关闭操作使文件与流断开联系。</p>
+<blockquote></blockquote>
+<h1 id="5">5、路径的问题</h1>
+<pre><code>__dirname   该行代码所在的目录。
+__filename  该行代码所在的文件的路径（包括该文件）
+process.cwd() 总是返回运行 node 命令时所在的文件夹的绝对路径
+
+
+访问上一级文件路径
+var path = require('path')
+path.resolve(__dirname, '..')
+</code></pre>
+<blockquote></blockquote>
+<h1 id="6expresurl">6、expres的URL传递参数</h1>
+<p>1、例如：127.0.0.1:3000/index，这种情况下，我们为了得到index，我们可以通过使用req.params得到，通过这种方法我们就可以很好的处理Node中的路由处理问题，同时利用这点可以非常方便的实现MVC模式；</p>
+<p>2、例如：127.0.0.1:3000/index?id=12，这种情况下，这种方式是获取客户端get方式传递过来的值，通过使用req.query.id就可以获得，类似于PHP的get方法；</p>
+<p>3、例如：127.0.0.1：300/index，然后post了一个id=2的值，这种方式是获取客户端post过来的数据，可以通过req.body.id获取，类似于PHP的post方法；</p>
+<p>4、例如：127.0.0.1:3000/index/:id=12
+    使用req.params.id</p>
+<p>注：post请求需要</p>
+<blockquote>
+<pre><code>var express        =         require("express");  
+var bodyParser     =         require("body-parser");  
+var app            =         express();  
+// need it...  
+app.use(bodyParser.urlencoded({ extended: false }));  
+app.post('/login',function(req,res){  
+  var user_name=req.body.user;  
+  var password=req.body.password;  
+  console.log("User name = "+user_name+", password is "+password);  
+  res.end("yes");  
+});
+</code></pre>
+</blockquote>
+<h1 id="7">7、使用严格模式</h1>
+<p>如果在JavaScript文件开头写上'use strict';，那么Node在执行该JavaScript时将使用严格模式。但是，在服务器环境下，如果有很多JavaScript文件，每个文件都写上'use strict';很麻烦。我们可以给Nodejs传递一个参数，让Node直接为所有js文件开启严格模式：</p>
+<blockquote>
+<pre><code>node --use_strict calc.js
+</code></pre>
+</blockquote>
+<p>后续代码，如无特殊说明，我们都会直接给Node传递--use_strict参数来开启严格模式。</p>
+<p>为了编写可维护的代码，我们把很多函数分组，分别放到不同的文件里，这样，每个文件包含的代码就相对较少，很多编程语言都采用这种组织代码的方式。在Node环境中，一个.js文件就称之为一个模块（module）。</p>
+<p>使用模块还可以避免函数名和变量名冲突。相同名字的函数和变量完全可以分别存在不同的模块中，因此，我们自己在编写模块时，不必考虑名字会与其他模块冲突。</p>
+<p>在上一节，我们编写了一个hello.js文件，这个hello.js文件就是一个模块，模块的名字就是文件名（去掉.js后缀），所以hello.js文件就是名为hello的模块。</p>
+<p>我们把hello.js改造一下，创建一个函数，这样我们就可以在其他地方调用这个函数：</p>
+<blockquote>
+<pre><code>'use strict';
+var s = 'Hello';
+function greet(name) {
+    console.log(s + ', ' + name + '!');
+}
+module.exports = greet;
+</code></pre>
+</blockquote>
+<p>函数greet()是我们在hello模块中定义的，你可能注意到最后一行是一个奇怪的赋值语句，它的意思是，把函数greet作为模块的输出暴露出去，这样其他模块就可以使用greet函数了。</p>
+<p>问题是其他模块怎么使用hello模块的这个greet函数呢？我们再编写一个main.js文件，调用hello模块的greet函数：</p>
+<blockquote>
+<pre><code>'use strict';
+// 引入hello模块:
+var greet = require('./hello');
+var s = 'Michael';
+greet(s); // Hello, Michael!
+</code></pre>
+</blockquote>
+<p>在使用require()引入模块的时候，请注意模块的相对路径。因为main.js和hello.js位于同一个目录，所以我们用了当前目录.：</p>
+<blockquote>
+<pre><code>var greet = require('./hello'); // 不要忘了写相对目录!
+</code></pre>
+</blockquote>
+<p>如果只写模块名：</p>
+<blockquote>
+<pre><code>var greet = require('hello');
+</code></pre>
+</blockquote>
+<p>则Node会依次在内置模块、全局模块和当前模块下查找hello.js，你很可能会得到一个错误：</p>
+<blockquote>
+<pre><code>module.js
+    throw err;
+          ^
+Error: Cannot find module 'hello'
+    at Function.Module._resolveFilename
+    at Function.Module._load
+    ...
+    at Function.Module._load
+    at Function.Module.runMain
+</code></pre>
+</blockquote>
+<p>遇到这个错误，你要检查：</p>
+<blockquote>
+<pre><code>模块名是否写对了；
+模块文件是否存在；
+相对路径是否写对了。
+</code></pre>
+</blockquote>
+<h1 id="8commonjs">8、CommonJS规范</h1>
+<p>这种模块加载机制被称为CommonJS规范。在这个规范下，每个.js文件都是一个模块，它们内部各自使用的变量名和函数名都互不冲突，例如，hello.js和main.js都申明了全局变量var s = 'xxx'，但互不影响。</p>
+<p>一个模块想要对外暴露变量（函数也是变量），可以用module.exports = variable;，一个模块要引用其他模块暴露的变量，用var ref = require('module_name');就拿到了引用模块的变量。</p>
+<h1 id="9">9、深入了解模块原理</h1>
+<p>如果你想详细地了解CommonJS的模块实现原理，请继续往下阅读。如果不想了解，请直接跳到最后做练习。</p>
+<p>当我们编写JavaScript代码时，我们可以申明全局变量：</p>
+<blockquote>
+<pre><code>var s = 'global';
+</code></pre>
+</blockquote>
+<p>在浏览器中，大量使用全局变量可不好。如果你在a.js中使用了全局变量s，那么，在b.js中也使用全局变量s，将造成冲突，b.js中对s赋值会改变a.js的运行逻辑。</p>
+<p>也就是说，JavaScript语言本身并没有一种模块机制来保证不同模块可以使用相同的变量名。</p>
+<p>那Node.js是如何实现这一点的？</p>
+<p>其实要实现“模块”这个功能，并不需要语法层面的支持。Node.js也并不会增加任何JavaScript语法。实现“模块”功能的奥妙就在于JavaScript是一种函数式编程语言，它支持闭包。如果我们把一段JavaScript代码用一个函数包装起来，这段代码的所有“全局”变量就变成了函数内部的局部变量。</p>
+<p>请注意我们编写的hello.js代码是这样的：</p>
+<blockquote>
+<pre><code>var s = 'Hello';
+var name = 'world';
+console.log(s + ' ' + name + '!');
+</code></pre>
+</blockquote>
+<p>Node.js加载了hello.js后，它可以把代码包装一下，变成这样执行：</p>
+<blockquote>
+<pre><code>(function () {
+    // 读取的hello.js代码:
+    var s = 'Hello';
+    var name = 'world';
+</code></pre>
+</blockquote>
+<pre><code>    console.log(s + ' ' + name + '!');
+    // hello.js代码结束
+})();
+</code></pre>
+<p>这样一来，原来的全局变量s现在变成了匿名函数内部的局部变量。如果Node.js继续加载其他模块，这些模块中定义的“全局”变量s也互不干扰。</p>
+<p>所以，Node利用JavaScript的函数式编程的特性，轻而易举地实现了模块的隔离。</p>
+<p>但是，模块的输出module.exports怎么实现？</p>
+<p>这个也很容易实现，Node可以先准备一个对象module：</p>
+<blockquote>
+<pre><code>// 准备module对象:
+var module = {
+    id: 'hello',
+    exports: {}
+};
+var load = function (module) {
+    // 读取的hello.js代码:
+    function greet(name) {
+        console.log('Hello, ' + name + '!');
+    }
+    module.exports = greet;
+    // hello.js代码结束
+    return module.exports;
+};
+var exported = load(module);
+// 保存module:
+save(module, exported);
+</code></pre>
+</blockquote>
+<p>可见，变量module是Node在加载js文件前准备的一个变量，并将其传入加载函数，我们在hello.js中可以直接使用变量module原因就在于它实际上是函数的一个参数：</p>
+<blockquote>
+<pre><code>module.exports = greet;
+</code></pre>
+</blockquote>
+<p>通过把参数module传递给load()函数，hello.js就顺利地把一个变量传递给了Node执行环境，Node会把module变量保存到某个地方。</p>
+<p>由于Node保存了所有导入的module，当我们用require()获取module时，Node找到对应的module，把这个module的exports变量返回，这样，另一个模块就顺利拿到了模块的输出：</p>
+<blockquote>
+<pre><code>var greet = require('./hello');
+</code></pre>
+</blockquote>
+<p>以上是Node实现JavaScript模块的一个简单的原理介绍。</p>
+<blockquote></blockquote>
+<h1 id="10moduleexports-vs-exports">10、module.exports vs exports</h1>
+<p>很多时候，你会看到，在Node环境中，有两种方法可以在一个模块中输出变量：</p>
+<p>方法一：对module.exports赋值：</p>
+<blockquote>
+<pre><code>// hello.js
+function hello() {
+    console.log('Hello, world!');
+}
+function greet(name) {
+    console.log('Hello, ' + name + '!');
+}
+module.exports = {
+    hello: hello,
+    greet: greet
+};
+</code></pre>
+</blockquote>
+<p>方法二：直接使用exports：</p>
+<blockquote>
+<pre><code>// hello.js
+function hello() {
+    console.log('Hello, world!');
+}
+function greet(name) {
+    console.log('Hello, ' + name + '!');
+}
+function hello() {
+    console.log('Hello, world!');
+}
+exports.hello = hello;
+exports.greet = greet;
+</code></pre>
+</blockquote>
+<p>最终，我们强烈建议使用module.exports = xxx的方式来输出模块变量，这样，你只需要记忆一种方法。</p>
+<p><span class="ESPAN" >练习</span></p>
+<p>编写hello.js，输出一个或多个函数；编写main.js，引入hello模块，调用其函数。</p>
+<p>hello.js</p>
+<blockquote>
+<pre><code>'use strict';
+var s = 'Hello';
+function greet(name) {
+    console.log(s + ', ' + name + '!');
+}
+function hi(name) {
+    console.log('Hi, ' + name + '!');
+}
+function goodbye(name) {
+    console.log('Goodbye, ' + name + '!');
+}
+module.exports = {
+    greet: greet,
+    hi: hi,
+    goodbye: goodbye
+};
+</code></pre>
+</blockquote>
+<p>main.js</p>
+<blockquote>
+<pre><code>'use strict';
+const hello = require('./hello');
+var s = 'Michael';
+hello.greet(s);
+hello.goodbye(s);
+</code></pre>
+</blockquote>
+<p>因为Node.js是运行在服务区端的JavaScript环境，服务器程序和浏览器程序相比，最大的特点是没有浏览器的安全限制了，而且，服务器程序必须能接收网络请求，读写文件，处理二进制内容，所以，Node.js内置的常用模块就是为了实现基本的服务器功能。这些模块在浏览器环境中是无法被执行的，因为它们的底层代码是用C/C++在Node.js运行环境中实现的。</p>
+<blockquote></blockquote>
+<h1 id="11fs">11、fs</h1>
+<p>Node.js内置的fs模块就是文件系统模块，负责读写文件。</p>
+<p>和所有其它JavaScript模块不同的是，fs模块同时提供了异步和同步的方法。</p>
+<p>回顾一下什么是异步方法。因为JavaScript的单线程模型，执行IO操作时，JavaScript代码无需等待，而是传入回调函数后，继续执行后续JavaScript代码。比如jQuery提供的getJSON()操作：</p>
+<blockquote>
+<pre><code>$.getJSON('http://example.com/ajax', function (data) {
+    console.log('IO结果返回后执行...');
+});
+</code></pre>
+</blockquote>
+<p>console.log('不等待IO结果直接执行后续代码...');
+而同步的IO操作则需要等待函数返回：</p>
+<blockquote>
+<pre><code>// 根据网络耗时，函数将执行几十毫秒~几秒不等:
+var data = getJSONSync('http://example.com/ajax');
+</code></pre>
+</blockquote>
+<p>同步操作的好处是代码简单，缺点是程序将等待IO操作，在等待时间内，无法响应其它任何事件。而异步读取不用等待IO操作，但代码较麻烦。</p>
+<blockquote></blockquote>
+<h1 id="12">12、异步还是同步</h1>
+<p>在fs模块中，提供同步方法是为了方便使用。那我们到底是应该用异步方法还是同步方法呢？</p>
+<p>由于Node环境执行的JavaScript代码是服务器端代码，所以，绝大部分需要在服务器运行期反复执行业务逻辑的代码，必须使用异步代码，否则，同步代码在执行时期，服务器将停止响应，因为JavaScript只有一个执行线程。</p>
+<p>服务器启动时如果需要读取配置文件，或者结束时需要写入到状态文件时，可以使用同步代码，因为这些代码只在启动和结束时执行一次，不影响服务器正常运行时的异步执行。</p>
+<blockquote></blockquote>
+<h1 id="13stream">13、stream 流</h1>
+<p>stream 是Node.js提供的又一个仅在服务区端可用的模块，目的是支持“流”这种数据结构。</p>
+<p>什么是流？流是一种抽象的数据结构。想象水流，当在水管中流动时，就可以从某个地方（例如自来水厂）源源不断地到达另一个地方（比如你家的洗手池）。我们也可以把数据看成是数据流，比如你敲键盘的时候，就可以把每个字符依次连起来，看成字符流。这个流是从键盘输入到应用程序，实际上它还对应着一个名字：标准输入流（stdin）。</p>
+<p>如果应用程序把字符一个一个输出到显示器上，这也可以看成是一个流，这个流也有名字：标准输出流（stdout）。流的特点是数据是有序的，而且必须依次读取，或者依次写入，不能像Array那样随机定位。</p>
+<ul>
+<li>
+<p>1、有些流用来读取数据，比如从文件读取数据时，可以打开一个文件流，然后从文件流中不断地读取数据。</p>
+</li>
+<li>
+<p>2、有些流用来写入数据，比如向文件写入数据时，只需要把数据不断地往文件流中写进去就可以了。</p>
+</li>
+</ul>
+<p>在Node.js中，流也是一个对象，我们只需要响应流的事件就可以了：data事件表示流的数据已经可以读取了，end事件表示这个流已经到末尾了，没有数据可以读取了，error事件表示出错了。</p>
+<p>下面是一个从文件流读取文本内容的示例：</p>
+<blockquote>
+<pre><code>'use strict';
+var fs = require('fs');
+// 打开一个流:
+var rs = fs.createReadStream('sample.txt', 'utf-8');
+rs.on('data', function (chunk) {
+    console.log('DATA:')
+    console.log(chunk);
+});
+rs.on('end', function () {
+    console.log('END');
+});
+rs.on('error', function (err) {
+    console.log('ERROR: ' + err);
+});
+</code></pre>
+</blockquote>
+<p>要注意，data事件可能会有多次，每次传递的chunk是流的一部分数据。</p>
+<p>要以流的形式写入文件，只需要不断调用write()方法，最后以end()结束：</p>
+<blockquote>
+<pre><code>'use strict';
+var fs = require('fs');
+var ws1 = fs.createWriteStream('output1.txt', 'utf-8');
+ws1.write('使用Stream写入文本数据...\n');
+ws1.write('END.');
+ws1.end();
+var ws2 = fs.createWriteStream('output2.txt');
+ws2.write(new Buffer('使用Stream写入二进制数据...\n', 'utf-8'));
+ws2.write(new Buffer('END.', 'utf-8'));
+ws2.end();
+</code></pre>
+</blockquote>
+<p>所有可以读取数据的流都继承自stream.Readable，所有可以写入的流都继承自stream.Writable。</p>
+<blockquote></blockquote>
+<h1 id="14pipe">14、pipe</h1>
+<p>就像可以把两个水管串成一个更长的水管一样，两个流也可以串起来。一个Readable流和一个Writable流串起来后，所有的数据自动从Readable流进入Writable流，这种操作叫pipe。</p>
+<p>在Node.js中，Readable流有一个pipe()方法，就是用来干这件事的。</p>
+<p>让我们用pipe()把一个文件流和另一个文件流串起来，这样源文件的所有数据就自动写入到目标文件里了，所以，这实际上是一个复制文件的程序：</p>
+<blockquote>
+<pre><code>'use strict';
+var fs = require('fs');
+var rs = fs.createReadStream('sample.txt');
+var ws = fs.createWriteStream('copied.txt');
+rs.pipe(ws);
+</code></pre>
+</blockquote>
+<p>默认情况下，当Readable流的数据读取完毕，end事件触发后，将自动关闭Writable流。如果我们不希望自动关闭Writable流，需要传入参数：</p>
+<blockquote>
+<pre><code>readable.pipe(writable, { end: false });
+</code></pre>
+</blockquote>
+<h1 id="15">15、什么是全栈工程师：</h1>
+<p>Node.js开发的目的就是为了用JavaScript编写Web服务器程序。因为JavaScript实际上已经统治了浏览器端的脚本，其优势就是有世界上数量最多的前端开发人员。如果已经掌握了JavaScript前端开发，再学习一下如何将JavaScript应用在后端开发，就是名副其实的全栈了。</p>
+<blockquote></blockquote>
+<h1 id="16crypto">16、crypto 加密和哈希算法</h1>
+<p>crypto模块的目的是为了提供通用的加密和哈希算法。用纯JavaScript代码实现这些功能不是不可能，但速度会非常慢。Nodejs用C/C++实现这些算法后，通过cypto这个模块暴露为JavaScript接口，这样用起来方便，运行速度也快。</p>
+<h1 id="17bower-npm">17、bower 和 npm 的区别</h1>
+<p>--- 备注 npm 从3开始就支持扁平化了，不需要bower
+可以测试 npm install jquery --save   和 bower install jquery --save</p>
+<p>1、npm 是伴随Node.js 出现的一个包管理器，最开始只能支持 Node.js 的模块管理，但是后来， npm 官网经过一次改版，打出的口号是，javascript 的包管理器，所以，其已经不在局限于是Node.js 的模块管理了，已经通用到了所有 js 的包管理工具了，可以说，前后通吃了。</p>
+<p>要讲出问题本质。npm install jquery 和 bower install jquery 到底区别在哪里？难道 npm install 出来的 jquery.js 就不能被浏览器加载了吗？</p>
+<p>关键在于npm的依赖管理是奇特的倒向树结构（不同于linux越底层依赖越小）。一个普通的前端包的依赖树非常冗长，甚至可能触及windows下256字符的路径长度限制。同时和其它安装包不能共享依赖代码。导致文件非常多，不适合前端代码部署。而bower让模块开发者定义了简洁的输出文件。</p>
+<p>不过下一代 npm3 会从根本上改善这一问题，所有依赖包会水平处理共享。随着CommonJS普及，前后端今后统一使用npm是大势所趋。</p>
+<p>2、npm是node js的包管理器，用来下载安装node js的第三方工具包，也可以用来发布你自己开发的工具包。bower是一个前端库管理的工具，管理一些js库，比如说jQuery，bootstrap等。通过bower，你就不用自己去找jQuery文件了，通过配置文件就可以自动完成了。通过npm可以安装bower，命令如下： npm install -g bower</p>
+<p>bower 的话，从一开始，就是专门为前端表现设计的包管理器，一切全部为前端考虑的。</p>
+<p>3、npm 和bower 的最大区别，就是 npm 支持嵌套地依赖管理，而 bower只能支持扁平的依赖（嵌套的依赖，由程序员自己解决）。</p>
+<p>嵌套依赖，指的就是，你依赖的软件包，还有它自己的依赖，好像摘葡萄，一摘一大串。在服务器环境的时候，这并没什么关系，因为存储空间够大，一切代码都是本地运行，只要解决完依赖就行了，</p>
+<p>但是到了用户产品的浏览器里，就很成问题了，你不能让用户去下载好几M的js代码，那就太糟糕了。在这个情况下，就需要程序员自己手动解决用到的类库的嵌套依赖问题。比如确保各种各样的插件都依赖同一个版本的jQuery。</p>
+<p>为什么有很多项目 bower 和 npm 都用呢，那是因为要用 bower 管理前端的包，而用 npm 去管理一些后端的包和构建工具，例如，yeoman，grunt，gulp，jshint 等等等等。</p>
+<p>所有的包管理器，都有自己的弊端，要视需要选用对自己的项目最合适的。</p>
+<blockquote></blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../webpack/index.html" class="btn btn-neutral float-right" title="webpack">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../electron/index.html" class="btn btn-neutral" title="electron"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../electron/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../webpack/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

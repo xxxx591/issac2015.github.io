@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>JavaScript - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "JavaScript";
+    var mkdocs_page_input_path = "JavaScript.md";
+    var mkdocs_page_url = "/JavaScript/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../AngularJS/index.html">AngularJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">JavaScript</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#_1">前端相关：</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#javascript">为什么我们要学JavaScript？</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_2">调试：</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_3">语法:</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_4">比较运算符:</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_5">对象</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#strict">strict模式:</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_6">多行字符串:</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_7">数组</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#map">Map</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_8">数据类型</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_9">字符串属性和方法</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#javascript_1">JavaScript 调试工具</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_10">函数</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_11">变量作用域</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_12">名字空间</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_13">方法</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_14">高阶函数</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_15">排序算法</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_16">闭包</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#generator">generator</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_17">操作对象</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#date">Date</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#regexp">正则表达式RegExp</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_18">面向对象编程</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_19">模板字符串</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_20">迭代</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#return">小心你的return语句</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#javascript_2">JavaScript中的匿名函数及函数的闭包：</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nodejs/index.html">Nodejs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webpack/index.html">webpack</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Linux/index.html">Linux指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Django/index.html">Django</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>JavaScript &raquo;</li>
+        
+      
+    
+    <li>JavaScript</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 300;font-size: 135%;}
+
+</style>
+
+<h1 id="_1">前端相关：</h1>
+<ul>
+<li><a href="https://nodejs.org/en/">node</a> --- 是javascript语言的环境和平台，</li>
+<li><a href="https://www.npmjs.com/">npm</a> --- bower 是一类，包管理，</li>
+<li><a href="http://webpack.github.io/">webpack</a> --- browserify , 是一类，javascript预编译模块的方案，</li>
+<li><a href="https://github.com/requirejs/requirejs">requirejs</a> --- seajs , 是一类, 基于commonjs，amd，cmd，umd 之类的模块类包加载方案的框架，</li>
+<li><a href="http://www.gruntjs.net/">grunt</a> --- gulp , 前端工具，合并、压缩、编译 sass/less，browser 自动载入资源，</li>
+<li><a href="https://github.com/facebook/react">react</a> --- angular , vue , backbone , 是一类，mvc , mvvm , mvp 之类的前端框架，</li>
+<li>jquery --- zepto , prototype , 是一类，前端 DOM , BOM 类库 ，</li>
+<li>ext --- yui , kissy , dojo , 是一类，前端应用组件，</li>
+<li>underscore --- 函数式编程库。</li>
+</ul>
+<h1 id="javascript">为什么我们要学JavaScript？</h1>
+<p>简单粗暴的回答就是：因为你没有选择。在Web世界里，只有JavaScript能跨平台、跨浏览器驱动网页，与用户交互。
+并且，新兴的Node.js把JavaScript引入到了服务器端，JavaScript已经变成了全能型选手。</p>
+<p>JavaScript确实很容易上手，但其精髓却不为大多数开发人员所熟知。编写高质量的JavaScript代码更是难上加难。</p>
+<p>一个合格的开发人员应该精通JavaScript和其他编程语言。如果你已经掌握了其他编程语言，或者你还什么都不会，请立刻开始学习JavaScript，不要被Web时代所淘汰。</p>
+<p>为了让JavaScript成为全球标准，几个公司联合ECMA（European Computer Manufacturers Association）组织定制了JavaScript语言的标准，被称为ECMAScript标准。</p>
+<p>所以简单说来就是，ECMAScript是一种语言标准，而JavaScript是网景公司对ECMAScript标准的一种实现。</p>
+<p>把JavaScript代码放入一个单独的.js文件中更利于维护代码，并且多个页面可以各自引用同一份.js文件。</p>
+<p>你也许会想，直接在我的硬盘上创建好HTML和JavaScript文件，然后用浏览器打开，不就可以看到效果了吗？</p>
+<p>这种方式运行部分JavaScript代码没有问题，但由于浏览器的安全限制，以file://开头的地址无法执行如联网等JavaScript代码，最终，你还是需要架设一个Web服务器，然后以http://开头的地址来正常执行所有JavaScript代码。</p>
+<blockquote></blockquote>
+<h1 id="_2">调试：</h1>
+<p>先点击“控制台(Console)“，在这个面板里可以直接输入JavaScript代码，按回车后执行。</p>
+<p>要查看一个变量的内容，在Console中输入console.log(a);，回车后显示的值就是变量的内容。</p>
+<p>如果你对自己还有更高的要求，可以研究开发者工具的“源码(Sources)”，掌握断点、单步执行等高级调试技巧。</p>
+<blockquote></blockquote>
+<h1 id="_3">语法:</h1>
+<p>JavaScript的语法和Java语言类似，每个语句以;结束，语句块用{...}。但是，JavaScript并不强制要求在每个语句的结尾加;，浏览器中负责执行JavaScript代码的引擎会自动在每个语句的结尾补上;。</p>
+<p>注意：让JavaScript引擎自动加分号在某些情况下会改变程序的语义，导致运行结果与期望不一致。在本教程中，我们不会省略;，所有语句都会添加;。</p>
+<p>注意花括号{...}内的语句具有缩进，通常是4个空格。缩进不是JavaScript语法要求必须的，但缩进有助于我们理解代码的层次，所以编写代码时要遵守缩进规则。</p>
+<p>JavaScript本身对嵌套的层级没有限制，但是过多的嵌套无疑会大大增加看懂代码的难度。遇到这种情况，需要把部分代码抽出来，作为函数来调用，这样可以减少代码的复杂度。</p>
+<blockquote></blockquote>
+<h1 id="_4">比较运算符:</h1>
+<p>要特别注意相等运算符==。JavaScript在设计时，有两种比较运算符：</p>
+<p>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p>
+<p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p>
+<p>由于JavaScript这个设计缺陷，不要使用==比较，始终坚持使用===比较。</p>
+<p>数组用[]表示，元素之间用,分隔。[1, 2, 3.14, 'Hello', null, true];</p>
+<blockquote></blockquote>
+<h1 id="_5">对象</h1>
+<p>JavaScript的对象是一组由键-值组成的无序集合，例如：</p>
+<blockquote>
+<pre><code>var person = {
+    name: 'Bob',
+    age: 20,
+    tags: ['js', 'web', 'mobile'],
+    city: 'Beijing',
+    hasCar: true,
+    zipcode: null
+};
+</code></pre>
+</blockquote>
+<p>JavaScript对象的键都是字符串类型，值可以是任意数据类型。</p>
+<p>在JavaScript中，使用等号=对变量进行赋值。可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量，但是要注意只能用var申明一次，例如：</p>
+<blockquote>
+<pre><code>var a = 123; // a的值是整数123
+a = 'ABC'; // a变为字符串
+</code></pre>
+</blockquote>
+<p>这种变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。</p>
+<blockquote></blockquote>
+<h1 id="strict">strict模式:</h1>
+<p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p>
+<blockquote>
+<pre><code>i = 10; // i现在是全局变量
+</code></pre>
+</blockquote>
+<p>在同一个页面的不同的JavaScript文件中，如果都不用var申明，恰好都使用了变量i，将造成变量i互相影响，产生难以调试的错误结果。</p>
+<p>使用var申明的变量则不是全局变量，它的范围被限制在该变量被申明的函数体内（函数的概念将稍后讲解），同名变量在不同的函数体内互不冲突。</p>
+<p>为了修补JavaScript这一严重设计缺陷，ECMA在后续规范中推出了strict模式，在strict模式下运行的JavaScript代码，强制通过var申明变量，未使用var申明变量就使用的，将导致运行错误。</p>
+<p>启用strict模式的方法是在JavaScript代码的第一行写上：</p>
+<p><span class="ESPAN" >'use strict';</span></p>
+<p>这是一个字符串，不支持strict模式的浏览器会把它当做一个字符串语句执行，支持strict模式的浏览器将开启strict模式运行JavaScript。</p>
+<p>不用var申明的变量会被视为全局变量，为了避免这一缺陷，所有的JavaScript代码都应该使用strict模式。我们在后面编写的JavaScript代码将全部采用strict模式。</p>
+<blockquote></blockquote>
+<h1 id="_6">多行字符串:</h1>
+<p>由于多行字符串用\n写起来比较费事，所以最新的ES6标准新增了一种多行字符串的表示方法，用<code>...</code>表示：</p>
+<blockquote>
+<pre><code>`这是一个
+多行
+字符串`;
+</code></pre>
+</blockquote>
+<p>需要特别注意的是，字符串是不可变的，如果对字符串的某个索引赋值，不会有任何错误，但是，也没有任何效果：</p>
+<blockquote>
+<pre><code>var s = 'Test';
+s[0] = 'X';
+alert(s); // s仍然为'Test'
+</code></pre>
+</blockquote>
+<p>对象二</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    school: 'No.1 Middle School',
+    height: 1.70,
+    weight: 65,
+    score: null
+};
+
+xiaoming.name; // '小明'
+xiaoming.birth; // 1990
+</code></pre>
+</blockquote>
+<p>访问属性是通过.操作符完成的，但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用''括起来：</p>
+<blockquote>
+<pre><code>var xiaohong = {
+    name: '小红',
+    'middle-school': 'No.1 Middle School'
+};
+</code></pre>
+</blockquote>
+<p>xiaohong的属性名middle-school不是一个有效的变量，就需要用''括起来。访问这个属性也无法使用.操作符，必须用['xxx']来访问：</p>
+<blockquote>
+<pre><code>xiaohong['middle-school']; // 'No.1 Middle School'
+xiaohong['name']; // '小红'
+xiaohong.name; // '小红'
+</code></pre>
+</blockquote>
+<p>也可以用xiaohong['name']来访问xiaohong的name属性，不过xiaohong.name的写法更简洁。我们在编写JavaScript代码的时候，属性名尽量使用标准的变量名，这样就可以直接通过object.prop的形式访问一个属性了。</p>
+<p>如果访问一个不存在的属性会返回什么呢？JavaScript规定，访问不存在的属性不报错，而是返回undefined：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明'
+};
+xiaoming.age; // undefined
+</code></pre>
+</blockquote>
+<p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明'
+};
+xiaoming.age; // undefined
+xiaoming.age = 18; // 新增一个age属性
+xiaoming.age; // 18
+delete xiaoming.age; // 删除age属性
+xiaoming.age; // undefined
+delete xiaoming['name']; // 删除name属性
+xiaoming.name; // undefined
+delete xiaoming.school; // 删除一个不存在的school属性也不会报错
+</code></pre>
+</blockquote>
+<p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    school: 'No.1 Middle School',
+    height: 1.70,
+    weight: 65,
+    score: null
+};
+'name' in xiaoming; // true
+'grade' in xiaoming; // false
+</code></pre>
+</blockquote>
+<p>不过要小心，如果in判断一个属性存在，这个属性不一定是xiaoming的，它可能是xiaoming继承得到的：</p>
+<blockquote>
+<pre><code>'toString' in xiaoming; // true
+</code></pre>
+</blockquote>
+<p>要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明'
+};
+xiaoming.hasOwnProperty('name'); // true
+xiaoming.hasOwnProperty('toString'); // false
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >Map和Set</span></p>
+<p>JavaScript的默认对象表示方式{}可以视为其他语言中的Map或Dictionary的数据结构，即一组键值对。</p>
+<p>但是JavaScript的对象有个小问题，就是键必须是字符串。但实际上Number或者其他数据类型作为键也是非常合理的。</p>
+<p>为了解决这个问题，最新的ES6规范引入了新的数据类型Map。</p>
+<p><span class="ESPAN" >Map</span></p>
+<p>Map是一组键值对的结构，具有极快的查找速度。</p>
+<p>举个例子，假设要根据同学的名字查找对应的成绩，如果用Array实现，需要两个Array：</p>
+<blockquote>
+<pre><code>var names = ['Michael', 'Bob', 'Tracy'];
+var scores = [95, 75, 85];
+</code></pre>
+</blockquote>
+<p>给定一个名字，要查找对应的成绩，就先要在names中找到对应的位置，再从scores取出对应的成绩，Array越长，耗时越长。</p>
+<p>如果用Map实现，只需要一个“名字”-“成绩”的对照表，直接根据名字查找成绩，无论这个表有多大，查找速度都不会变慢。用JavaScript写一个Map如下：</p>
+<blockquote>
+<pre><code>var m = new Map([['Michael', 95], ['Bob', 75], ['Tracy', 85]]);
+m.get('Michael'); // 95
+</code></pre>
+</blockquote>
+<p>初始化Map需要一个二维数组，或者直接初始化一个空Map。Map具有以下方法：</p>
+<blockquote>
+<pre><code>var m = new Map(); // 空Map
+m.set('Adam', 67); // 添加新的key-value
+m.set('Bob', 59);
+m.has('Adam'); // 是否存在key 'Adam': true
+m.get('Adam'); // 67
+m.delete('Adam'); // 删除key 'Adam'
+m.get('Adam'); // undefined
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >Set</span></p>
+<p>Set和Map类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在Set中，没有重复的key。</p>
+<p>要创建一个Set，需要提供一个Array作为输入，或者直接创建一个空Set：</p>
+<blockquote>
+<pre><code>var s1 = new Set(); // 空Set
+var s2 = new Set([1, 2, 3]); // 含1, 2, 3
+</code></pre>
+</blockquote>
+<p>重复元素在Set中自动被过滤：</p>
+<blockquote>
+<pre><code>var s = new Set([1, 2, 3, 3, '3']);
+s; // Set {1, 2, 3, "3"}
+</code></pre>
+</blockquote>
+<p>注意数字3和字符串'3'是不同的元素。</p>
+<p>通过add(key)方法可以添加元素到Set中，可以重复添加，但不会有效果：</p>
+<blockquote>
+<pre><code>&gt;&gt;&gt; s.add(4)
+&gt;&gt;&gt; s
+{1, 2, 3, 4}
+&gt;&gt;&gt; s.add(4)
+&gt;&gt;&gt; s
+{1, 2, 3, 4}
+</code></pre>
+</blockquote>
+<p>通过delete(key)方法可以删除元素：</p>
+<blockquote>
+<pre><code>var s = new Set([1, 2, 3]);
+s; // Set {1, 2, 3}
+s.delete(3);
+s; // Set {1, 2}
+</code></pre>
+</blockquote>
+<p>小结</p>
+<p>Map和Set是ES6标准新增的数据类型，请根据浏览器的支持情况决定是否要使用。</p>
+<blockquote></blockquote>
+<h1 id="_7">数组</h1>
+<p>大多数其他编程语言不允许直接改变数组的大小，越界访问索引会报错。然而，JavaScript的Array却不会有任何错误。在编写代码时，不建议直接修改Array的大小，访问索引时要确保索引不会越界。</p>
+<p>访问属性是通过.操作符完成的，但这要求属性名必须是一个有效的变量名。如果属性名包含特殊字符，就必须用''括起来：</p>
+<blockquote>
+<pre><code>var xiaohong = {
+    name: '小红',
+    'middle-school': 'No.1 Middle School'
+};
+</code></pre>
+</blockquote>
+<p>xiaohong的属性名middle-school不是一个有效的变量，就需要用''括起来。访问这个属性也无法使用.操作符，必须用['xxx']来访问：</p>
+<blockquote>
+<pre><code>xiaohong['middle-school']; // 'No.1 Middle School'
+xiaohong['name']; // '小红'
+xiaohong.name; // '小红'
+</code></pre>
+</blockquote>
+<p>由于JavaScript的对象是动态类型，你可以自由地给一个对象添加或删除属性：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明'
+};
+xiaoming.age; // undefined
+xiaoming.age = 18; // 新增一个age属性
+xiaoming.age; // 18
+delete xiaoming.age; // 删除age属性
+xiaoming.age; // undefined
+delete xiaoming['name']; // 删除name属性
+xiaoming.name; // undefined
+delete xiaoming.school; // 删除一个不存在的school属性也不会报错
+</code></pre>
+</blockquote>
+<p>如果我们要检测xiaoming是否拥有某一属性，可以用in操作符：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    school: 'No.1 Middle School',
+    height: 1.70,
+    weight: 65,
+    score: null
+};
+'name' in xiaoming; // true
+'grade' in xiaoming; // false
+</code></pre>
+</blockquote>
+<p>不过要小心，如果in判断一个属性存在，这个属性不一定是xiaoming的，它可能是xiaoming继承得到的：</p>
+<blockquote>
+<pre><code>'toString' in xiaoming; // true
+</code></pre>
+</blockquote>
+<p>要判断一个属性是否是xiaoming自身拥有的，而不是继承得到的，可以用hasOwnProperty()方法：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明'
+};
+xiaoming.hasOwnProperty('name'); // true
+xiaoming.hasOwnProperty('toString'); // false
+</code></pre>
+</blockquote>
+<p>for循环最常用的地方是利用索引来遍历数组：</p>
+<blockquote>
+<pre><code>var arr = ['Apple', 'Google', 'Microsoft'];
+var i, x;
+for (i=0; i&lt;arr.length; i++) {
+    x = arr[i];
+    alert(x);
+}
+</code></pre>
+</blockquote>
+<p>for循环的一个变体是for ... in循环，它可以把一个对象的所有属性依次循环出来：</p>
+<blockquote>
+<pre><code>var o = {
+    name: 'Jack',
+    age: 20,
+    city: 'Beijing'
+};
+for (var key in o) {
+    alert(key); // 'name', 'age', 'city'
+}
+</code></pre>
+</blockquote>
+<p>由于Array也是对象，而它的每个元素的索引被视为对象的属性，因此，for ... in循环可以直接循环出Array的索引：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+for (var i in a) {
+    alert(i); // '0', '1', '2'
+    alert(a[i]); // 'A', 'B', 'C'
+}
+</code></pre>
+</blockquote>
+<p>请注意，for ... in对Array的循环得到的是String而不是Number。</p>
+<p>请注意，直接给Array的length赋一个新的值会导致Array大小的变化：</p>
+<blockquote>
+<pre><code>var arr = [1, 2, 3];
+arr.length; // 3
+arr.length = 6;
+arr; // arr变为[1, 2, 3, undefined, undefined, undefined]
+arr.length = 2;
+arr; // arr变为[1, 2]
+</code></pre>
+</blockquote>
+<p>请注意，如果通过索引赋值时，索引超过了范围，同样会引起Array大小的变化：</p>
+<blockquote>
+<pre><code>var arr = [1, 2, 3];
+arr[5] = 'x';
+arr; // arr变为[1, 2, 3, undefined, undefined, 'x']
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >push和pop</span></p>
+<p>push()向Array的末尾添加若干元素，pop()则把Array的最后一个元素删除掉：</p>
+<blockquote>
+<pre><code>var arr = [1, 2];
+arr.push('A', 'B'); // 返回Array新的长度: 4
+arr; // [1, 2, 'A', 'B']
+arr.pop(); // pop()返回'B'
+arr; // [1, 2, 'A']
+arr.pop(); arr.pop(); arr.pop(); // 连续pop 3次
+arr; // []
+arr.pop(); // 空数组继续pop不会报错，而是返回undefined
+arr; // []
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >unshift和shift</span></p>
+<p>如果要往Array的头部添加若干元素，使用unshift()方法，shift()方法则把Array的第一个元素删掉：</p>
+<blockquote>
+<pre><code>var arr = [1, 2];
+arr.unshift('A', 'B'); // 返回Array新的长度: 4
+arr; // ['A', 'B', 1, 2]
+arr.shift(); // 'A'
+arr; // ['B', 1, 2]
+arr.shift(); arr.shift(); arr.shift(); // 连续shift 3次
+arr; // []
+arr.shift(); // 空数组继续shift不会报错，而是返回undefined
+arr; // []
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >reverse</span></p>
+<p>reverse()把整个Array的元素给掉个个，也就是反转：</p>
+<blockquote>
+<pre><code>var arr = ['one', 'two', 'three'];
+arr.reverse(); 
+arr; // ['three', 'two', 'one']
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >splice</span></p>
+<p>splice()方法是修改Array的“万能方法”，它可以从指定的索引开始删除若干元素，然后再从该位置添加若干元素：</p>
+<blockquote>
+<pre><code>var arr = ['Microsoft', 'Apple', 'Yahoo', 'AOL', 'Excite', 'Oracle'];
+    // 从索引2开始删除3个元素,然后再添加两个元素:
+arr.splice(2, 3, 'Google', 'Facebook'); // 返回删除的元素 ['Yahoo', 'AOL', 'Excite']
+arr; // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+    // 只删除,不添加:
+arr.splice(2, 2); // ['Google', 'Facebook']
+arr; // ['Microsoft', 'Apple', 'Oracle']
+    // 只添加,不删除:
+arr.splice(2, 0, 'Google', 'Facebook'); // 返回[],因为没有删除任何元素
+arr; // ['Microsoft', 'Apple', 'Google', 'Facebook', 'Oracle']
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >join</span></p>
+<p>join()方法是一个非常实用的方法，它把当前Array的每个元素都用指定的字符串连接起来，然后返回连接后的字符串：</p>
+<blockquote>
+<pre><code>var arr = ['A', 'B', 'C', 1, 2, 3];
+arr.join('-'); // 'A-B-C-1-2-3'
+</code></pre>
+</blockquote>
+<p>如果Array的元素不是字符串，将自动转换为字符串后再连接。</p>
+<blockquote></blockquote>
+<h1 id="map">Map</h1>
+<p>Map是一组键值对的结构，具有极快的查找速度。</p>
+<p>如果用Map实现，只需要一个“名字”-“成绩”的对照表，直接根据名字查找成绩，无论这个表有多大，查找速度都不会变慢。用JavaScript写一个Map如下：</p>
+<blockquote>
+<pre><code>var m = new Map([['Michael', 95], ['Bob', 75], ['Tracy', 85]]);
+m.get('Michael'); // 95
+</code></pre>
+</blockquote>
+<p>初始化Map需要一个二维数组，或者直接初始化一个空Map。Map具有以下方法：</p>
+<blockquote>
+<pre><code>var m = new Map(); // 空Map
+m.set('Adam', 67); // 添加新的key-value
+m.set('Bob', 59);
+m.has('Adam'); // 是否存在key 'Adam': true
+m.get('Adam'); // 67
+m.delete('Adam'); // 删除key 'Adam'
+m.get('Adam'); // undefined
+</code></pre>
+</blockquote>
+<h1 id="_8">数据类型</h1>
+<p>JavaScript 有多种数据类型：数字，字符串，数组，对象等等：</p>
+<blockquote>
+<pre><code>var length = 16;                                  // Number 通过数字字面量赋值 
+var points = x * 10;                              // Number 通过表达式字面量赋值
+var lastName = "Johnson";                         // String 通过字符串字面量赋值
+var cars = ["Saab", "Volvo", "BMW"];              // Array  通过数组字面量赋值
+var person = {firstName:"John", lastName:"Doe"};  // Object 通过对象字面量赋值
+</code></pre>
+</blockquote>
+<p><span class="ESPAN">JavaScript 变量</span></p>
+<p>与代数一样，JavaScript 变量可用于存放值（比如 x=5）和表达式（比如 z=x+y）。
+变量可以使用短名称（比如 x 和 y），也可以使用描述性更好的名称（比如 age, sum, totalvolume）。</p>
+<blockquote>
+<blockquote>
+<ul>
+<li>变量必须以字母开头</li>
+<li>变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）</li>
+<li>变量名称对大小写敏感（y 和 Y 是不同的变量）</li>
+</ul>
+</blockquote>
+</blockquote>
+<p>一条语句，多个变量</p>
+<p>您可以在一条语句中声明很多变量。该语句以 var 开头，并使用逗号分隔变量即可：</p>
+<blockquote>
+<pre><code>var lastname="Doe", age=30, job="carpenter";
+</code></pre>
+</blockquote>
+<p>声明也可横跨多行：</p>
+<blockquote>
+<pre><code>var lastname="Doe",
+age=30,
+job="carpenter";
+</code></pre>
+</blockquote>
+<p><span class="ESPAN">JavaScript 对象</span></p>
+<p>对象由花括号分隔。在括号内部，对象的属性以名称和值对的形式 (name : value) 来定义。属性由逗号分隔：</p>
+<blockquote>
+<pre><code>var person={firstname:"John", lastname:"Doe", id:5566};
+</code></pre>
+</blockquote>
+<p>上面例子中的对象 (person) 有三个属性：firstname、lastname 以及 id。
+空格和折行无关紧要。声明可横跨多行：</p>
+<blockquote>
+<pre><code>var person={
+firstname : "John",
+lastname  : "Doe",
+id        :  5566
+};
+</code></pre>
+</blockquote>
+<p>对象属性有两种寻址方式：
+实例</p>
+<blockquote>
+<pre><code>name=person.lastname;
+name=person["lastname"];
+</code></pre>
+</blockquote>
+<p><span class="ESPAN">声明变量类型</span></p>
+<p>当您声明新变量时，可以使用关键词 "new" 来声明其类型：</p>
+<blockquote>
+<pre><code>var carname=new String;
+var x=      new Number;
+var y=      new Boolean;
+var cars=   new Array;
+var person= new Object;
+</code></pre>
+</blockquote>
+<p>JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。</p>
+<p>JavaScript 对象是变量的容器。</p>
+<p><span class="ESPAN">局部 JavaScript 变量</span></p>
+<p>在 JavaScript 函数内部声明的变量（使用 var）是局部变量，所以只能在函数内部访问它。（该变量的作用域是局部的）。</p>
+<p>您可以在不同的函数中使用名称相同的局部变量，因为只有声明过该变量的函数才能识别出该变量。</p>
+<p>只要函数运行完毕，本地变量就会被删除。</p>
+<p>JavaScript 局部作用域</p>
+<p>变量在函数内声明，变量为局部作用域。</p>
+<p>局部变量：只能在函数内部访问。</p>
+<p><span class="ESPAN">全局 JavaScript 变量</span></p>
+<p>在函数外声明的变量是全局变量，网页上的所有脚本和函数都能访问它。</p>
+<p>JavaScript 全局变量</p>
+<p>变量在函数外定义，即为全局变量。</p>
+<p>全局变量有 全局作用域: 网页中所有脚本和函数均可使用。 </p>
+<p><span class="ESPAN">JavaScript 变量生命周期</span></p>
+<p>JavaScript 变量生命周期在它声明时初始化。</p>
+<p>局部变量在函数执行完毕后销毁。</p>
+<p>全局变量在页面关闭后销毁。</p>
+<p><span class="ESPAN">下表中列举了在字符串中可以使用转义字符转义的特殊字符：</span></p>
+<blockquote>
+<blockquote>
+<p><table class="reference">
+<tbody><tr>
+<th>代码</th>
+  <th>输出</th>
+</tr>
+<tr>
+<td>\'</td>
+  <td>单引号</td>
+</tr>
+<tr>
+<td>\"</td>
+  <td>双引号</td>
+</tr>
+<tr>
+<td>\\</td>
+  <td>反斜杠</td>
+</tr>
+<tr>
+<td>\n</td>
+  <td>换行</td>
+</tr>
+<tr>
+<td>\r</td>
+  <td>回车</td>
+</tr>
+<tr>
+<td>\t</td>
+  <td>tab(制表符)</td>
+</tr>
+<tr>
+<td>\b</td>
+  <td>退格符</td>
+</tr>
+<tr>
+<td>\f</td>
+  <td>换页符</td>
+</tr>
+</tbody></table></p>
+</blockquote>
+</blockquote>
+<h1 id="_9">字符串属性和方法</h1>
+<p>原始值字符串，如 "John", 没有属性和方法(因为他们不是对象)。</p>
+<p>原始值可以使用 JavaScript 的属性和方法，因为 JavaScript 在执行方法和属性时可以把原始值当作对象。</p>
+<p><span class="ESPAN">字符串属性</span></p>
+<blockquote>
+<blockquote>
+<p><table class="reference">
+<tbody><tr>
+<th style="width:24%">属性</th>
+    <th>描述</th>
+  </tr>
+<tr>
+<td>constructor</td>
+    <td>返回创建字符串属性的函数</td>
+  </tr>
+<tr>
+<td>length</td>
+    <td>返回字符串的长度</td>
+  </tr>
+<tr>
+<td>prototype</td>
+    <td>允许您向对象添加属性和方法</td>
+  </tr>
+</tbody></table></p>
+</blockquote>
+</blockquote>
+<p><span class="ESPAN">字符串方法</span></p>
+<blockquote>
+<blockquote>
+<p><table class="reference">
+<tbody><tr>
+<th style="width:24%">Method</th>
+    <th>描述</th>
+  </tr>
+<tr>
+<td>charAt()</td>
+    <td>返回指定索引位置的字符</td>
+  </tr>
+<tr>
+<td>charCodeAt()</td>
+    <td>返回指定索引位置字符的 Unicode 值</td>
+  </tr>
+<tr>
+<td>concat()</td>
+    <td>连接两个或多个字符串，返回连接后的字符串</td>
+  </tr>
+<tr>
+<td>fromCharCode()</td>
+    <td>将 Unicode 转换为字符串</td>
+  </tr>
+<tr>
+<td>indexOf()</td>
+    <td>返回字符串中检索指定字符第一次出现的位置</td>
+  </tr>
+<tr>
+<td>lastIndexOf()</td>
+    <td>返回字符串中检索指定字符最后一次出现的位置</td>
+  </tr>
+<tr>
+<td>localeCompare()</td>
+    <td>用本地特定的顺序来比较两个字符串</td>
+  </tr>
+<tr>
+<td>match()</td>
+    <td>找到一个或多个正则表达式的匹配</td>
+  </tr>
+<tr>
+<td>replace()</td>
+    <td>替换与正则表达式匹配的子串</td>
+  </tr>
+<tr>
+<td>search()</td>
+    <td>检索与正则表达式相匹配的值</td>
+  </tr>
+<tr>
+<td>slice()</td>
+    <td>提取字符串的片断，并在新的字符串中返回被提取的部分</td>
+  </tr>
+<tr>
+<td>split()</td>
+    <td>把字符串分割为子字符串数组</td>
+  </tr>
+<tr>
+<td>substr()</td>
+    <td>从起始索引号提取字符串中指定数目的字符</td>
+  </tr>
+<tr>
+<td>substring()</td>
+    <td>提取字符串中两个指定的索引号之间的字符</td>
+  </tr>
+<tr>
+<td>toLocaleLowerCase()</td>
+    <td>根据主机的语言环境把字符串转换为小写，只有几种语言（如土耳其语）具有地方特有的大小写映射</td>
+  </tr>
+<tr>
+<td>toLocaleUpperCase()</td>
+    <td>根据主机的语言环境把字符串转换为大写，只有几种语言（如土耳其语）具有地方特有的大小写映射</td>
+  </tr>
+<tr>
+<td>toLowerCase()</td>
+    <td>把字符串转换为小写</td>
+  </tr>
+<tr>
+<td>toString()</td>
+    <td>返回字符串对象值</td>
+  </tr>
+<tr>
+<td>toUpperCase()</td>
+    <td>把字符串转换为大写</td>
+  </tr>
+<tr>
+<td>trim()</td>
+    <td>移除字符串首尾空白</td>
+  </tr>
+<tr>
+<td>valueOf()</td>
+    <td>返回某个字符串对象的原始值</td>
+  </tr>
+</tbody></table></p>
+</blockquote>
+</blockquote>
+<h1 id="javascript_1">JavaScript 调试工具</h1>
+<p>在程序代码中寻找错误叫做代码调试。</p>
+<p>调试很难，但幸运的是，很多浏览器都内置了调试工具。</p>
+<p>内置的调试工具可以开始或关闭，严重的错误信息会发送给用户。</p>
+<p>有了调试工具，我们就可以设置断点 (代码停止执行的位置), 且可以在代码执行时检测变量。</p>
+<p>浏览器启用调试工具一般是按下 F12 键，并在调试菜单中选择 "Console" 。</p>
+<p><span class="ESPAN">console.log() 方法</span></p>
+<p>如果浏览器支持调试，你可以使用 console.log() 方法在调试窗口上打印 JavaScript 值：</p>
+<p><span class="ESPAN">设置断点</span></p>
+<p>在调试窗口中，你可以设置 JavaScript 代码的断点。</p>
+<p>在每个断点上，都会停止执行 JavaScript 代码，以便于我们检查 JavaScript 变量的值。</p>
+<p>在检查完毕后，可以重新执行代码（如播放按钮）。</p>
+<p><span class="ESPAN">debugger 关键字</span></p>
+<p>debugger 关键字用于停止执行 JavaScript，并调用调试函数。</p>
+<p>这个关键字与在调试工具中设置断点的效果是一样的。</p>
+<p>如果没有调试可用，debugger 语句将无法工作。</p>
+<p>开启 debugger ，代码在第三行前停止执行。</p>
+<p><span class="ESPAN">主要浏览器的调试工具</span></p>
+<p>通常，浏览器启用调试工具一般是按下 F12 键，并在调试菜单中选择 "Console" 。</p>
+<blockquote></blockquote>
+<h1 id="_10">函数</h1>
+<p><span class="ESPAN">函数作为方法调用</span></p>
+<p>在 JavaScript 中你可以将函数定义为对象的方法。</p>
+<p>以下实例创建了一个对象 (myObject), 对象有两个属性 (firstName 和 lastName), 及一个方法 (fullName):</p>
+<blockquote>
+<blockquote>
+<pre><code>var myObject = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function () {
+        return this.firstName + " " + this.lastName;
+    }
+}
+myObject.fullName();         // 返回 "John Doe"
+</code></pre>
+</blockquote>
+</blockquote>
+<p>fullName 方法是一个函数。函数属于对象。 myObject 是函数的所有者。</p>
+<p>this对象，拥有 JavaScript 代码。实例中 this 的值为 myObject 对象。</p>
+<p>函数作为对象方法调用，会使得 this 的值成为对象本身。</p>
+<p><span class="ESPAN">使用构造函数调用函数</span></p>
+<p>如果函数调用前使用了 new 关键字, 则是调用了构造函数。</p>
+<p>这看起来就像创建了新的函数，但实际上 JavaScript 函数是重新创建的对象：</p>
+<blockquote>
+<blockquote>
+<pre><code>// 构造函数:
+function myFunction(arg1, arg2) {
+    this.firstName = arg1;
+    this.lastName  = arg2;
+}
+// This creates a new object
+var x = new myFunction("John","Doe");
+x.firstName;                             // 返回 "John"
+</code></pre>
+</blockquote>
+</blockquote>
+<p>构造函数的调用会创建一个新的对象。新对象会继承构造函数的属性和方法。</p>
+<p>构造函数中 this 关键字没有任何的值。</p>
+<p>this 的值在函数调用时实例化对象(new object)时创建。</p>
+<p><span class="ESPAN">使作为函数方法调用函数</span></p>
+<p>在 JavaScript 中, 函数是对象。JavaScript 函数有它的属性和方法。
+call() 和 apply() 是预定义的函数方法。 </p>
+<p>两个方法可用于调用函数，两个方法的第一个参数必须是对象本身。</p>
+<blockquote>
+<blockquote>
+<pre><code>function myFunction(a, b) {
+    return a * b;
+}
+myFunction.call(myObject, 10, 2);      // 返回 20
+
+
+function myFunction(a, b) {
+    return a * b;
+}
+myArray = [10,2];
+myFunction.apply(myObject, myArray);   // 返回 20
+</code></pre>
+</blockquote>
+</blockquote>
+<p>两个方法都使用了对象本身作为第一个参数。 两者的区别在于第二个参数： apply传入的是一个参数数组，也就是将多个参数组合成为一个数组传入，而call则作为call的参数传入（从第二个参数开始）。</p>
+<p>在 JavaScript 严格模式(strict mode)下, 在调用函数时第一个参数会成为 this 的值， 即使该参数不是一个对象。</p>
+<p>在 JavaScript 非严格模式(non-strict mode)下, 如果第一个参数的值是 null 或 undefined, 它将使用全局对象替代。</p>
+<p>通过 call() 或 apply() 方法你可以设置 this 的值, 且作为已存在对象的新方法调用。</p>
+<p>如果没有return语句，函数执行完毕后也会返回结果，只是结果为undefined。</p>
+<p>前面我们讲到了JavaScript引擎有一个在行末自动添加分号的机制，这可能让你栽到return语句的一个大坑。</p>
+<p>函数二</p>
+<p>一、在JavaScript中，定义函数的方式如下：</p>
+<blockquote>
+<pre><code>function abs(x) {
+    if (x &gt;= 0) {
+        return x;
+    } else {
+        return -x;
+    }
+}
+</code></pre>
+</blockquote>
+<p>二、第二种定义函数的方式如下：</p>
+<blockquote>
+<pre><code>var abs = function (x) {
+    if (x &gt;= 0) {
+        return x;
+    } else {
+        return -x;
+    }
+};
+</code></pre>
+</blockquote>
+<p>在这种方式下，function (x) { ... }是一个匿名函数，它没有函数名。但是，这个匿名函数赋值给了变量abs，所以，通过变量abs就可以调用该函数。</p>
+<p>上述两种定义完全等价，注意第二种方式按照完整语法需要在函数体末尾加一个;，表示赋值语句结束。</p>
+<p><span class="ESPAN" >调用函数</span></p>
+<p>调用函数时，按顺序传入参数即可：</p>
+<blockquote>
+<pre><code>abs(10); // 返回10
+abs(-9); // 返回9
+</code></pre>
+</blockquote>
+<p>由于JavaScript允许传入任意个参数而不影响调用，因此传入的参数比定义的参数多也没有问题，虽然函数内部并不需要这些参数：</p>
+<blockquote>
+<pre><code>abs(10, 'blablabla'); // 返回10
+abs(-9, 'haha', 'hehe', null); // 返回9
+</code></pre>
+</blockquote>
+<p>传入的参数比定义的少也没有问题：</p>
+<blockquote>
+<pre><code>abs(); // 返回NaN
+</code></pre>
+</blockquote>
+<p>此时abs(x)函数的参数x将收到undefined，计算结果为NaN。</p>
+<p><span class="ESPAN" >arguments</span></p>
+<p>JavaScript还有一个免费赠送的关键字arguments，它只在函数内部起作用，并且永远指向当前函数的调用者传入的所有参数。arguments类似Array但它不是一个Array：</p>
+<blockquote>
+<pre><code>function foo(x) {
+    alert(x); // 10
+    for (var i=0; i&lt;arguments.length; i++) {
+        alert(arguments[i]); // 10, 20, 30
+    }
+}
+foo(10, 20, 30);
+</code></pre>
+</blockquote>
+<p>利用arguments，你可以获得调用者传入的所有参数。也就是说，即使函数不定义任何参数，还是可以拿到参数的值：</p>
+<blockquote>
+<pre><code>function abs() {
+    if (arguments.length === 0) {
+        return 0;
+    }
+    var x = arguments[0];
+    return x &gt;= 0 ? x : -x;
+}
+abs(); // 0
+abs(10); // 10
+abs(-9); // 9
+</code></pre>
+</blockquote>
+<p>ES6标准引入了rest参数，上面的函数可以改写为：</p>
+<blockquote>
+<pre><code>function foo(a, b, ...rest) {
+    console.log('a = ' + a);
+    console.log('b = ' + b);
+    console.log(rest);
+}
+foo(1, 2, 3, 4, 5);
+// 结果:
+// a = 1
+// b = 2
+// Array [ 3, 4, 5 ]
+foo(1);
+// 结果:
+// a = 1
+// b = undefined
+// Array []
+</code></pre>
+</blockquote>
+<p>rest参数只能写在最后，前面用...标识，从运行结果可知，传入的参数先绑定a、b，多余的参数以数组形式交给变量rest，所以，不再需要arguments我们就获取了全部参数</p>
+<p>如果传入的参数连正常定义的参数都没填满，也不要紧，rest参数会接收一个空数组（注意不是undefined）。</p>
+<p>因为rest参数是ES6新标准，所以你需要测试一下浏览器是否支持。</p>
+<blockquote></blockquote>
+<h1 id="_11">变量作用域</h1>
+<p>如果一个变量在函数体内部申明，则该变量的作用域为整个函数体，在函数体外不可引用该变量：</p>
+<p>如果两个不同的函数各自申明了同一个变量，那么该变量只在各自的函数体内起作用。换句话说，不同函数内部的同名变量互相独立，互不影响：</p>
+<p>由于JavaScript的函数可以嵌套，此时，内部函数可以访问外部函数定义的变量，反过来则不行：</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    var x = 1;
+    function bar() {
+        var y = x + 1; // bar可以访问foo的变量x!
+    }
+    var z = y + 1; // ReferenceError! foo不可以访问bar的变量y!
+}
+</code></pre>
+</blockquote>
+<p>如果内部函数和外部函数的变量名重名怎么办？</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    var x = 1;
+    function bar() {
+        var x = 'A';
+        alert('x in bar() = ' + x); // 'A'
+    }
+    alert('x in foo() = ' + x); // 1
+    bar();
+}
+</code></pre>
+</blockquote>
+<p>这说明JavaScript的函数在查找变量时从自身函数定义开始，从“内”向“外”查找。如果内部函数定义了与外部函数重名的变量，则内部函数的变量将“屏蔽”外部函数的变量。</p>
+<p><span class="ESPAN" >变量提升</span></p>
+<p>JavaScript的函数定义有个特点，它会先扫描整个函数体的语句，把所有申明的变量“提升”到函数顶部：</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    var x = 'Hello, ' + y;
+    alert(x);
+    var y = 'Bob';
+}
+foo();
+</code></pre>
+</blockquote>
+<p>虽然是strict模式，但语句var x = 'Hello, ' + y;并不报错，原因是变量y在稍后申明了。但是alert显示Hello, undefined，说明变量y的值为undefined。这正是因为JavaScript引擎自动提升了变量y的声明，但不会提升变量y的赋值。</p>
+<p>对于上述foo()函数，JavaScript引擎看到的代码相当于：</p>
+<blockquote>
+<pre><code>function foo() {
+    var y; // 提升变量y的申明
+    var x = 'Hello, ' + y;
+    alert(x);
+    y = 'Bob';
+}
+</code></pre>
+</blockquote>
+<p>由于JavaScript的这一怪异的“特性”，我们在函数内部定义变量时，请严格遵守“在函数内部首先申明所有变量”这一规则。最常见的做法是用一个var申明函数内部用到的所有变量：</p>
+<blockquote>
+<pre><code>function foo() {
+    var
+        x = 1, // x初始化为1
+        y = x + 1, // y初始化为2
+        z, i; // z和i为undefined
+    // 其他语句:
+    for (i=0; i&lt;100; i++) {
+        ...
+    }
+}
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >全局作用域</span></p>
+<p>不在任何函数内定义的变量就具有全局作用域。实际上，JavaScript默认有一个全局对象window，全局作用域的变量实际上被绑定到window的一个属性：</p>
+<blockquote>
+<pre><code>'use strict';
+var course = 'Learn JavaScript';
+alert(course); // 'Learn JavaScript'
+alert(window.course); // 'Learn JavaScript'
+</code></pre>
+</blockquote>
+<p>因此，直接访问全局变量course和访问window.course是完全一样的。</p>
+<p>你可能猜到了，由于函数定义有两种方式，以变量方式var foo = function () {}定义的函数实际上也是一个全局变量，因此，顶层函数的定义也被视为一个全局变量，并绑定到window对象：</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    alert('foo');
+}
+foo(); // 直接调用foo()
+window.foo(); // 通过window.foo()调用
+</code></pre>
+</blockquote>
+<p>进一步大胆地猜测，我们每次直接调用的alert()函数其实也是window的一个变量：</p>
+<p>这说明JavaScript实际上只有一个全局作用域。任何变量（函数也视为变量），如果没有在当前函数作用域中找到，就会继续往上查找，最后如果在全局作用域中也没有找到，则报ReferenceError错误。</p>
+<blockquote></blockquote>
+<h1 id="_12">名字空间</h1>
+<p>全局变量会绑定到window上，不同的JavaScript文件如果使用了相同的全局变量，或者定义了相同名字的顶层函数，都会造成命名冲突，并且很难被发现。</p>
+<p>减少冲突的一个方法是把自己的所有变量和函数全部绑定到一个全局变量中。例如：</p>
+<blockquote>
+<pre><code>// 唯一的全局变量MYAPP:
+var MYAPP = {};
+// 其他变量:
+MYAPP.name = 'myapp';
+MYAPP.version = 1.0;
+// 其他函数:
+MYAPP.foo = function () {
+    return 'foo';
+};
+</code></pre>
+</blockquote>
+<p>把自己的代码全部放入唯一的名字空间MYAPP中，会大大减少全局变量冲突的可能。</p>
+<p>许多著名的JavaScript库都是这么干的：jQuery，YUI，underscore等等。</p>
+<p><span class="ESPAN" >局部作用域</span></p>
+<p>由于JavaScript的变量作用域实际上是函数内部，我们在for循环等语句块中是无法定义具有局部作用域的变量的：</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    for (var i=0; i&lt;100; i++) {
+        //
+    }
+    i += 100; // 仍然可以引用变量i
+}
+</code></pre>
+</blockquote>
+<p>为了解决块级作用域，ES6引入了新的关键字let，用let替代var可以申明一个块级作用域的变量：</p>
+<blockquote>
+<pre><code>'use strict';
+function foo() {
+    var sum = 0;
+    for (let i=0; i&lt;100; i++) {
+        sum += i;
+    }
+    i += 1; // SyntaxError
+}
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >常量</span></p>
+<p>由于var和let申明的是变量，如果要申明一个常量，在ES6之前是不行的，我们通常用全部大写的变量来表示“这是一个常量，不要修改它的值”：</p>
+<blockquote>
+<pre><code>var PI = 3.14;
+</code></pre>
+</blockquote>
+<p>ES6标准引入了新的关键字const来定义常量，const与let都具有块级作用域：</p>
+<blockquote>
+<pre><code>'use strict';
+const PI = 3.14;
+PI = 3; // 某些浏览器不报错，但是无效果！
+PI; // 3.14
+</code></pre>
+</blockquote>
+<h1 id="_13">方法</h1>
+<p>在一个对象中绑定函数，称为这个对象的方法。</p>
+<p>在JavaScript中，对象的定义是这样的：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    birth: 1990
+};
+</code></pre>
+</blockquote>
+<p>但是，如果我们给xiaoming绑定一个函数，就可以做更多的事情。比如，写个age()方法，返回xiaoming的年龄：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+};
+xiaoming.age; // function xiaoming.age()
+xiaoming.age(); // 今年调用是25,明年调用就变成26了
+</code></pre>
+</blockquote>
+<p>绑定到对象上的函数称为方法，和普通函数也没啥区别，但是它在内部使用了一个this关键字，这个东东是什么？</p>
+<p>在一个方法内部，this是一个特殊变量，它始终指向当前对象，也就是xiaoming这个变量。所以，this.birth可以拿到xiaoming的birth属性。</p>
+<p>让我们拆开写：</p>
+<blockquote>
+<pre><code>function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+}
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: getAge
+};
+xiaoming.age(); // 25, 正常结果
+getAge(); // NaN
+</code></pre>
+</blockquote>
+<p>单独调用函数getAge()怎么返回了NaN？请注意，我们已经进入到了JavaScript的一个大坑里。</p>
+<p>JavaScript的函数内部如果调用了this，那么这个this到底指向谁？</p>
+<p>答案是，视情况而定！</p>
+<p>如果以对象的方法形式调用，比如xiaoming.age()，该函数的this指向被调用的对象，也就是xiaoming，这是符合我们预期的。</p>
+<p>如果单独调用函数，比如getAge()，此时，该函数的this指向全局对象，也就是window。</p>
+<p>坑爹啊！</p>
+<p>更坑爹的是，如果这么写：</p>
+<blockquote>
+<pre><code>var fn = xiaoming.age; // 先拿到xiaoming的age函数
+fn(); // NaN
+</code></pre>
+</blockquote>
+<p>也是不行的！要保证this指向正确，必须用obj.xxx()的形式调用！</p>
+<p>由于这是一个巨大的设计错误，要想纠正可没那么简单。ECMA决定，在strict模式下让函数的this指向undefined，因此，在strict模式下，你会得到一个错误：</p>
+<blockquote>
+<pre><code>'use strict';
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var y = new Date().getFullYear();
+        return y - this.birth;
+    }
+};
+var fn = xiaoming.age;
+fn(); // Uncaught TypeError: Cannot read property 'birth' of undefined
+</code></pre>
+</blockquote>
+<p>有些时候，喜欢重构的你把方法重构了一下：</p>
+<blockquote>
+<pre><code>'use strict';
+
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        function getAgeFromBirth() {
+            var y = new Date().getFullYear();
+            return y - this.birth;
+        }
+        return getAgeFromBirth();
+    }
+};
+xiaoming.age(); // Uncaught TypeError: Cannot read property 'birth' of undefined
+</code></pre>
+</blockquote>
+<p>结果又报错了！原因是this指针只在age方法的函数内指向xiaoming，在函数内部定义的函数，this又指向undefined了！（在非strict模式下，它重新指向全局对象window！）</p>
+<p>修复的办法也不是没有，我们用一个that变量首先捕获this：</p>
+<blockquote>
+<pre><code>'use strict';
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: function () {
+        var that = this; // 在方法内部一开始就捕获this
+        function getAgeFromBirth() {
+            var y = new Date().getFullYear();
+            return y - that.birth; // 用that而不是this
+        }
+        return getAgeFromBirth();
+    }
+};
+xiaoming.age(); // 25
+</code></pre>
+</blockquote>
+<p>用var that = this;，你就可以放心地在方法内部定义其他函数，而不是把所有语句都堆到一个方法中。</p>
+<p><span class="ESPAN" >apply</span></p>
+<p>虽然在一个独立的函数调用中，根据是否是strict模式，this指向undefined或window，不过，我们还是可以控制this的指向的！</p>
+<p>要指定函数的this指向哪个对象，可以用函数本身的apply方法，它接收两个参数，第一个参数就是需要绑定的this变量，第二个参数是Array，表示函数本身的参数。</p>
+<p>用apply修复getAge()调用：</p>
+<blockquote>
+<pre><code>function getAge() {
+    var y = new Date().getFullYear();
+    return y - this.birth;
+}
+var xiaoming = {
+    name: '小明',
+    birth: 1990,
+    age: getAge
+};
+xiaoming.age(); // 25
+getAge.apply(xiaoming, []); // 25, this指向xiaoming, 参数为空
+</code></pre>
+</blockquote>
+<p>另一个与apply()类似的方法是call()，唯一区别是：</p>
+<p>apply()把参数打包成Array再传入；</p>
+<p>call()把参数按顺序传入。</p>
+<p>比如调用Math.max(3, 5, 4)，分别用apply()和call()实现如下：</p>
+<blockquote>
+<pre><code>Math.max.apply(null, [3, 5, 4]); // 5
+Math.max.call(null, 3, 5, 4); // 5
+</code></pre>
+</blockquote>
+<p>对普通函数调用，我们通常把this绑定为null。</p>
+<p><span class="ESPAN" >装饰器</span></p>
+<p>利用apply()，我们还可以动态改变函数的行为。</p>
+<p>JavaScript的所有对象都是动态的，即使内置的函数，我们也可以重新指向新的函数。</p>
+<p>现在假定我们想统计一下代码一共调用了多少次parseInt()，可以把所有的调用都找出来，然后手动加上count += 1，不过这样做太傻了。最佳方案是用我们自己的函数替换掉默认的parseInt()：</p>
+<blockquote>
+<pre><code>var count = 0;
+var oldParseInt = parseInt; // 保存原函数
+window.parseInt = function () {
+    count += 1;
+    return oldParseInt.apply(null, arguments); // 调用原函数
+};
+// 测试:
+parseInt('10');
+parseInt('20');
+parseInt('30');
+count; // 3
+</code></pre>
+</blockquote>
+<h1 id="_14">高阶函数</h1>
+<p>高阶函数英文叫Higher-order function。那么什么是高阶函数？</p>
+<p>JavaScript的函数其实都指向某个变量。既然变量可以指向函数，函数的参数能接收变量，那么一个函数就可以接收另一个函数作为参数，这种函数就称之为高阶函数。</p>
+<p>一个最简单的高阶函数：</p>
+<blockquote>
+<pre><code>function add(x, y, f) {
+    return f(x) + f(y);
+}
+</code></pre>
+</blockquote>
+<p>当我们调用add(-5, 6, Math.abs)时，参数x，y和f分别接收-5，6和函数Math.abs，根据函数定义，我们可以推导计算过程为：</p>
+<blockquote>
+<pre><code>x = -5;
+y = 6;
+f = Math.abs;
+f(x) + f(y) ==&gt; Math.abs(-5) + Math.abs(6) ==&gt; 11;
+return 11;
+//用代码验证一下：
+add(-5, 6, Math.abs); // 11
+</code></pre>
+</blockquote>
+<p>编写高阶函数，就是让函数的参数能够接收别的函数。</p>
+<p><span class="ESPAN" >map</span></p>
+<p>举例说明，比如我们有一个函数f(x)=x2，要把这个函数作用在一个数组[1, 2, 3, 4, 5, 6, 7, 8, 9]上，就可以用map实现。</p>
+<p>由于map()方法定义在JavaScript的Array中，我们调用Array的map()方法，传入我们自己的函数，就得到了一个新的Array作为结果：</p>
+<blockquote>
+<pre><code>function pow(x) {
+    return x * x;
+}
+var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+arr.map(pow); // [1, 4, 9, 16, 25, 36, 49, 64, 81]
+</code></pre>
+</blockquote>
+<p>map()传入的参数是pow，即函数对象本身。</p>
+<p><span class="ESPAN" >reduce</span></p>
+<p>再看reduce的用法。Array的reduce()把一个函数作用在这个Array的[x1, x2, x3...]上，这个函数必须接收两个参数，reduce()把结果继续和序列的下一个元素做累积计算，其效果就是：</p>
+<blockquote>
+<pre><code>[x1, x2, x3, x4].reduce(f) = f(f(f(x1, x2), x3), x4)
+</code></pre>
+</blockquote>
+<p>比方说对一个Array求和，就可以用reduce实现：</p>
+<blockquote>
+<pre><code>var arr = [1, 3, 5, 7, 9];
+arr.reduce(function (x, y) {
+    return x + y;
+}); // 25
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >filter</span></p>
+<p>filter也是一个常用的操作，它用于把Array的某些元素过滤掉，然后返回剩下的元素。</p>
+<p>和map()类似，Array的filter()也接收一个函数。和map()不同的是，filter()把传入的函数依次作用于每个元素，然后根据返回值是true还是false决定保留还是丢弃该元素。</p>
+<p>例如，在一个Array中，删掉偶数，只保留奇数，可以这么写：</p>
+<blockquote>
+<pre><code>var arr = [1, 2, 4, 5, 6, 9, 10, 15];
+var r = arr.filter(function (x) {
+    return x % 2 !== 0;
+});
+r; // [1, 5, 9, 15]
+</code></pre>
+</blockquote>
+<p>把一个Array中的空字符串删掉，可以这么写：</p>
+<blockquote>
+<pre><code>var arr = ['A', '', 'B', null, undefined, 'C', '  '];
+var r = arr.filter(function (s) {
+    return s &amp;&amp; s.trim(); // 注意：IE9以下的版本没有trim()方法
+});
+arr; // ['A', 'B', 'C']
+</code></pre>
+</blockquote>
+<p>可见用filter()这个高阶函数，关键在于正确实现一个“筛选”函数。</p>
+<p>利用filter，可以巧妙地去除Array的重复元素：</p>
+<blockquote>
+<pre><code>'use strict';
+var
+    r,
+    arr = ['apple', 'strawberry', 'banana', 'pear', 'apple', 'orange', 'orange', 'strawberry'];
+r = arr.filter(function (element, index, self) {
+    return self.indexOf(element) === index;
+});
+alert(r.toString());
+</code></pre>
+</blockquote>
+<p>去除重复元素依靠的是indexOf总是返回第一个元素的位置，后续的重复元素位置与indexOf返回的位置不相等，因此被filter滤掉了。</p>
+<blockquote></blockquote>
+<h1 id="_15">排序算法</h1>
+<p>排序也是在程序中经常用到的算法。无论使用冒泡排序还是快速排序，排序的核心是比较两个元素的大小。如果是数字，我们可以直接比较，但如果是字符串或者两个对象呢？直接比较数学上的大小是没有意义的，因此，比较的过程必须通过函数抽象出来。</p>
+<p>通常规定，对于两个元素x和y，如果认为x &lt; y，则返回-1，如果认为x == y，则返回0，如果认为x &gt; y，则返回1，这样，排序算法就不用关心具体的比较过程，而是根据比较结果直接排序。</p>
+<p>JavaScript的Array的sort()方法就是用于排序的，但是排序结果可能让你大吃一惊：</p>
+<blockquote>
+<pre><code>// 看上去正常的结果:
+['Google', 'Apple', 'Microsoft'].sort(); // ['Apple', 'Google', 'Microsoft'];
+// apple排在了最后:
+['Google', 'apple', 'Microsoft'].sort(); // ['Google', 'Microsoft", 'apple']
+// 无法理解的结果:
+[10, 20, 1, 2].sort(); // [1, 10, 2, 20]
+</code></pre>
+</blockquote>
+<p>第二个排序把apple排在了最后，是因为字符串根据ASCII码进行排序，而小写字母a的ASCII码在大写字母之后。</p>
+<p>第三个排序结果是什么鬼？简单的数字排序都能错？</p>
+<p>这是因为Array的sort()方法默认把所有元素先转换为String再排序，结果'10'排在了'2'的前面，因为字符'1'比字符'2'的ASCII码小。</p>
+<p>如果不知道sort()方法的默认排序规则，直接对数字排序，绝对栽进坑里！</p>
+<p>幸运的是，sort()方法也是一个高阶函数，它还可以接收一个比较函数来实现自定义的排序。</p>
+<p>要按数字大小排序，我们可以这么写：</p>
+<blockquote>
+<pre><code>var arr = [10, 20, 1, 2];
+arr.sort(function (x, y) {
+    if (x &lt; y) {
+        return -1;
+    }
+    if (x &gt; y) {
+        return 1;
+    }
+    return 0;
+}); // [1, 2, 10, 20]
+</code></pre>
+</blockquote>
+<p>如果要倒序排序，我们可以把大的数放前面：</p>
+<blockquote>
+<pre><code>var arr = [10, 20, 1, 2];
+arr.sort(function (x, y) {
+    if (x &lt; y) {
+        return 1;
+    }
+    if (x &gt; y) {
+        return -1;
+    }
+    return 0;
+}); // [20, 10, 2, 1]
+</code></pre>
+</blockquote>
+<p>默认情况下，对字符串排序，是按照ASCII的大小比较的，现在，我们提出排序应该忽略大小写，按照字母序排序。要实现这个算法，不必对现有代码大加改动，只要我们能定义出忽略大小写的比较算法就可以：</p>
+<blockquote>
+<pre><code>var arr = ['Google', 'apple', 'Microsoft'];
+arr.sort(function (s1, s2) {
+    x1 = s1.toUpperCase();
+    x2 = s2.toUpperCase();
+    if (x1 &lt; x2) {
+        return -1;
+    }
+    if (x1 &gt; x2) {
+        return 1;
+    }
+    return 0;
+}); // ['apple', 'Google', 'Microsoft']
+</code></pre>
+</blockquote>
+<p>忽略大小写来比较两个字符串，实际上就是先把字符串都变成大写（或者都变成小写），再比较。</p>
+<p>最后友情提示，sort()方法会直接对Array进行修改，它返回的结果仍是当前Array：</p>
+<blockquote>
+<pre><code>var a1 = ['B', 'A', 'C'];
+var a2 = a1.sort();
+a1; // ['A', 'B', 'C']
+a2; // ['A', 'B', 'C']
+a1 === a2; // true, a1和a2是同一对象
+</code></pre>
+</blockquote>
+<h1 id="_16">闭包</h1>
+<p>注意到返回的函数在其定义内部引用了局部变量arr，所以，当一个函数返回了一个函数后，其内部的局部变量还被新函数引用，所以，闭包用起来简单，实现起来可不容易。</p>
+<p>另一个需要注意的问题是，返回的函数并没有立刻执行，而是直到调用了f()才执行。我们来看一个例子：</p>
+<p>通常，一个立即执行的匿名函数可以把函数体拆开，一般这么写：</p>
+<blockquote>
+<pre><code>(function (x) {
+    return x * x;
+})(3);
+</code></pre>
+</blockquote>
+<p>var x = initial || 0;的作用</p>
+<p>可以看看用initial=undefined / null / 0 / 1 / 2试试就知道了。</p>
+<p>这个赋值就是在没有初始值的时候给一个初始值</p>
+<blockquote></blockquote>
+<h1 id="generator">generator</h1>
+<p>generator跟函数很像，定义如下：</p>
+<blockquote>
+<pre><code>function* foo(x) {
+    yield x + 1;
+    yield x + 2;
+    return x + 3;
+}
+</code></pre>
+</blockquote>
+<p>generator和函数不同的是，generator由function<em>定义（注意多出的</em>号），并且，除了return语句，还可以用yield返回多次。</p>
+<p>大多数同学立刻就晕了，generator就是能够返回多次的“函数”？返回多次有啥用？</p>
+<p>还是举个栗子吧。</p>
+<p>我们以一个著名的斐波那契数列为例，它由0，1开头：</p>
+<p>0 1 1 2 3 5 8 13 21 34 ...</p>
+<p>要编写一个产生斐波那契数列的函数，可以这么写：</p>
+<blockquote>
+<pre><code>function fib(max) {
+    var
+        t,
+        a = 0,
+        b = 1,
+        arr = [0, 1];
+    while (arr.length &lt; max) {
+        t = a + b;
+        a = b;
+        b = t;
+        arr.push(t);
+    }
+    return arr;
+}
+// 测试:
+fib(5); // [0, 1, 1, 2, 3]
+fib(10); // [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+</code></pre>
+</blockquote>
+<p>函数只能返回一次，所以必须返回一个Array。但是，如果换成generator，就可以一次返回一个数，不断返回多次。用generator改写如下：</p>
+<blockquote>
+<pre><code>function* fib(max) {
+    var
+        t,
+        a = 0,
+        b = 1,
+        n = 1;
+    while (n &lt; max) {
+        yield a;
+        t = a + b;
+        a = b;
+        b = t;
+        n ++;
+    }
+    return a;
+}
+</code></pre>
+</blockquote>
+<p>直接调用试试：</p>
+<blockquote>
+<pre><code>fib(5); // fib {[[GeneratorStatus]]: "suspended", [[GeneratorReceiver]]: Window}
+</code></pre>
+</blockquote>
+<p>直接调用一个generator和调用函数不一样，fib(5)仅仅是创建了一个generator对象，还没有去执行它。</p>
+<p>调用generator对象有两个方法，一是不断地调用generator对象的next()方法：</p>
+<blockquote>
+<pre><code>var f = fib(5);
+f.next(); // {value: 0, done: false}
+f.next(); // {value: 1, done: false}
+f.next(); // {value: 1, done: false}
+f.next(); // {value: 2, done: false}
+f.next(); // {value: 3, done: true}
+</code></pre>
+</blockquote>
+<p>next()方法会执行generator的代码，然后，每次遇到yield x;就返回一个对象{value: x, done: true/false}，然后“暂停”。返回的value就是yield的返回值，done表示这个generator是否已经执行结束了。如果done为true，则value就是return的返回值。</p>
+<p>当执行到done为true时，这个generator对象就已经全部执行完毕，不要再继续调用next()了。</p>
+<p>第二个方法是直接用for ... of循环迭代generator对象，这种方式不需要我们自己判断done：</p>
+<blockquote>
+<pre><code>for (var x of fib(5)) {
+    console.log(x); // 依次输出0, 1, 1, 2, 3
+}
+</code></pre>
+</blockquote>
+<p>generator和普通函数相比，有什么用？</p>
+<p>因为generator可以在执行过程中多次返回，所以它看上去就像一个可以记住执行状态的函数，利用这一点，写一个generator就可以实现需要用面向对象才能实现的功能。</p>
+<p>generator还有另一个巨大的好处，就是把异步回调代码变成“同步”代码。</p>
+<p>没有generator之前的黑暗时代，用AJAX时需要这么写代码：</p>
+<blockquote>
+<pre><code>ajax('http://url-1', data1, function (err, result) {
+    if (err) {
+        return handle(err);
+    }
+    ajax('http://url-2', data2, function (err, result) {
+        if (err) {
+            return handle(err);
+        }
+        ajax('http://url-3', data3, function (err, result) {
+            if (err) {
+                return handle(err);
+            }
+            return success(result);
+        });
+    });
+});
+</code></pre>
+</blockquote>
+<p>回调越多，代码越难看。</p>
+<p>有了generator的美好时代，用AJAX时可以这么写：</p>
+<blockquote>
+<pre><code>try {
+    r1 = yield ajax('http://url-1', data1);
+    r2 = yield ajax('http://url-2', data2);
+    r3 = yield ajax('http://url-3', data3);
+    success(r3);
+}
+catch (err) {
+    handle(err);
+}
+</code></pre>
+</blockquote>
+<p>看上去是同步的代码，实际执行是异步的。</p>
+<blockquote></blockquote>
+<h1 id="_17">操作对象</h1>
+<p>总结一下，有这么几条规则需要遵守：</p>
+<blockquote>
+<pre><code>不要使用new Number()、new Boolean()、new String()创建包装对象；
+用parseInt()或parseFloat()来转换任意类型到number；
+用String()来转换任意类型到string，或者直接调用某个对象的toString()方法；
+通常不必把任意类型转换为boolean再判断，因为可以直接写if (myVar) {...}；
+typeof操作符可以判断出number、boolean、string、function和undefined；
+判断Array要使用Array.isArray(arr)；
+判断null请使用myVar === null；
+判断某个全局变量是否存在用typeof window.myVar === 'undefined'；
+函数内部判断某个变量是否存在用typeof myVar === 'undefined'。
+</code></pre>
+</blockquote>
+<p>最后有细心的同学指出，任何对象都有toString()方法吗？null和undefined就没有！确实如此，这两个特殊值要除外，虽然null还伪装成了object类型。</p>
+<p>更细心的同学指出，number对象调用toString()报SyntaxError：</p>
+<blockquote>
+<pre><code>123.toString(); // SyntaxError
+</code></pre>
+</blockquote>
+<p>遇到这种情况，要特殊处理一下：</p>
+<blockquote>
+<pre><code>123..toString(); // '123', 注意是两个点！
+(123).toString(); // '123'
+</code></pre>
+</blockquote>
+<h1 id="date">Date</h1>
+<p>在JavaScript中，Date对象用来表示日期和时间。</p>
+<p>要获取系统当前时间，用：</p>
+<blockquote>
+<pre><code>var now = new Date();
+now; // Wed Jun 24 2015 19:49:22 GMT+0800 (CST)
+now.getFullYear(); // 2015, 年份
+now.getMonth(); // 5, 月份，注意月份范围是0~11，5表示六月
+now.getDate(); // 24, 表示24号
+now.getDay(); // 3, 表示星期三
+now.getHours(); // 19, 24小时制
+now.getMinutes(); // 49, 分钟
+now.getSeconds(); // 22, 秒
+now.getMilliseconds(); // 875, 毫秒数
+now.getTime(); // 1435146562875, 以number形式表示的时间戳
+</code></pre>
+</blockquote>
+<p>注意，当前时间是浏览器从本机操作系统获取的时间，所以不一定准确，因为用户可以把当前时间设定为任何值。</p>
+<p>那么在JavaScript中如何进行时区转换呢？实际上，只要我们传递的是一个number类型的时间戳，我们就不用关心时区转换。任何浏览器都可以把一个时间戳正确转换为本地时间。</p>
+<p>时间戳是个什么东西？时间戳是一个自增的整数，它表示从1970年1月1日零时整的GMT时区开始的那一刻，到现在的毫秒数。</p>
+<p>所以，我们只需要传递时间戳，或者把时间戳从数据库里读出来，再让JavaScript自动转换为当地时间就可以了。</p>
+<blockquote></blockquote>
+<h1 id="regexp">正则表达式RegExp</h1>
+<p>JavaScript有两种方式创建一个正则表达式：</p>
+<p>第一种方式是直接通过/正则表达式/写出来，第二种方式是通过new RegExp('正则表达式')创建一个RegExp对象。</p>
+<p>两种写法是一样的：</p>
+<blockquote>
+<pre><code>var re1 = /ABC\-001/;
+var re2 = new RegExp('ABC\\-001');
+re1; // /ABC\-001/
+re2; // /ABC\-001/
+</code></pre>
+</blockquote>
+<p>注意，如果使用第二种写法，因为字符串的转义问题，字符串的两个\实际上是一个\。</p>
+<p>先看看如何判断正则表达式是否匹配：</p>
+<blockquote>
+<pre><code>var re = /^\d{3}\-\d{3,8}$/;
+re.test('010-12345'); // true
+re.test('010-1234x'); // false
+re.test('010 12345'); // false
+</code></pre>
+</blockquote>
+<p>RegExp对象的test()方法用于测试给定的字符串是否符合条件。</p>
+<blockquote></blockquote>
+<p><span class="ESPAN" >切分字符串</span></p>
+<p>用正则表达式切分字符串比用固定的字符更灵活，请看正常的切分代码：</p>
+<blockquote>
+<pre><code>'a b   c'.split(' '); // ['a', 'b', '', '', 'c']
+</code></pre>
+</blockquote>
+<p>嗯，无法识别连续的空格，用正则表达式试试：</p>
+<blockquote>
+<pre><code>'a b   c'.split(/\s+/); // ['a', 'b', 'c']
+</code></pre>
+</blockquote>
+<p>无论多少个空格都可以正常分割。加入,试试：</p>
+<blockquote>
+<pre><code>'a,b, c  d'.split(/[\s\,]+/); // ['a', 'b', 'c', 'd']
+</code></pre>
+</blockquote>
+<p>再加入;试试：</p>
+<blockquote>
+<pre><code>'a,b;; c  d'.split(/[\s\,\;]+/); // ['a', 'b', 'c', 'd']
+</code></pre>
+</blockquote>
+<p>如果用户输入了一组标签，下次记得用正则表达式来把不规范的输入转化成正确的数组。</p>
+<p><span class="ESPAN" >分组</span></p>
+<p>除了简单地判断是否匹配之外，正则表达式还有提取子串的强大功能。用()表示的就是要提取的分组（Group）。比如：</p>
+<p>^(\d{3})-(\d{3,8})$分别定义了两个组，可以直接从匹配的字符串中提取出区号和本地号码：</p>
+<blockquote>
+<pre><code>var re = /^(\d{3})-(\d{3,8})$/;
+re.exec('010-12345'); // ['010-12345', '010', '12345']
+re.exec('010 12345'); // null
+</code></pre>
+</blockquote>
+<p>如果正则表达式中定义了组，就可以在RegExp对象上用exec()方法提取出子串来。</p>
+<p>exec()方法在匹配成功后，会返回一个Array，第一个元素是正则表达式匹配到的整个字符串，后面的字符串表示匹配成功的子串。</p>
+<p>exec()方法在匹配失败时返回null。</p>
+<p><span class="ESPAN" >贪婪匹配</span></p>
+<p>需要特别指出的是，正则匹配默认是贪婪匹配，也就是匹配尽可能多的字符。</p>
+<p><span class="ESPAN" >全局搜索</span></p>
+<p>JavaScript的正则表达式还有几个特殊的标志，最常用的是g，表示全局匹配：</p>
+<blockquote>
+<pre><code>var r1 = /test/g;
+// 等价于:
+var r2 = new RegExp('test', 'g');
+</code></pre>
+</blockquote>
+<p>全局匹配可以多次执行exec()方法来搜索一个匹配的字符串。当我们指定g标志后，每次运行exec()，正则表达式本身会更新lastIndex属性，表示上次匹配到的最后索引：</p>
+<blockquote>
+<pre><code>var s = 'JavaScript, VBScript, JScript and ECMAScript';
+var re=/[a-zA-Z]+Script/g;
+// 使用全局匹配:
+re.exec(s); // ['JavaScript']
+re.lastIndex; // 10
+re.exec(s); // ['VBScript']
+re.lastIndex; // 20
+re.exec(s); // ['JScript']
+re.lastIndex; // 29
+re.exec(s); // ['ECMAScript']
+re.lastIndex; // 44
+re.exec(s); // null，直到结束仍没有匹配到
+</code></pre>
+</blockquote>
+<p>全局匹配类似搜索，因此不能使用/^...$/，那样只会最多匹配一次。</p>
+<p>正则表达式还可以指定i标志，表示忽略大小写，m标志，表示执行多行匹配。</p>
+<p><span class="ESPAN" >JSON(JavaScript Object Notation)</span></p>
+<p>JSON是JavaScript Object Notation的缩写，它是一种数据交换格式。</p>
+<p>在JSON出现之前，大家一直用XML来传递数据。因为XML是一种纯文本格式，所以它适合在网络上交换数据。XML本身不算复杂，但是，加上DTD、XSD、XPath、XSLT等一大堆复杂的规范以后，任何正常的软件开发人员碰到XML都会感觉头大了，最后大家发现，即使你努力钻研几个月，也未必搞得清楚XML的规范。</p>
+<p>在JSON中，一共就这么几种数据类型：</p>
+<blockquote>
+<pre><code>number：和JavaScript的number完全一致；
+boolean：就是JavaScript的true或false；
+string：就是JavaScript的string；
+null：就是JavaScript的null；
+array：就是JavaScript的Array表示方式——[]；
+object：就是JavaScript的{ ... }表示方式。
+</code></pre>
+</blockquote>
+<p>以及上面的任意组合。</p>
+<p>并且，JSON还定死了字符集必须是UTF-8，表示多语言就没有问题了。为了统一解析，JSON的字符串规定必须用双引号""，Object的键也必须用双引号""。</p>
+<p>把任何JavaScript对象变成JSON，就是把这个对象序列化成一个JSON格式的字符串，这样才能够通过网络传递给其他计算机。</p>
+<p>如果我们收到一个JSON格式的字符串，只需要把它反序列化成一个JavaScript对象，就可以在JavaScript中直接使用这个对象了。</p>
+<p><span class="ESPAN" >序列化</span></p>
+<p>让我们先把小明这个对象序列化成JSON格式的字符串：</p>
+<blockquote>
+<pre><code>var xiaoming = {
+    name: '小明',
+    age: 14,
+    gender: true,
+    height: 1.65,
+    grade: null,
+    'middle-school': '\"W3C\" Middle School',
+    skills: ['JavaScript', 'Java', 'Python', 'Lisp']
+};
+JSON.stringify(xiaoming); // '{"name":"小明","age":14,"gender":true,"height":1.65,"grade":null,"middle-school":"\"W3C\" Middle School","skills":["JavaScript","Java","Python","Lisp"]}'
+</code></pre>
+</blockquote>
+<p>要输出得好看一些，可以加上参数，按缩进输出：</p>
+<blockquote>
+<pre><code>JSON.stringify(xiaoming, null, '  ');
+</code></pre>
+</blockquote>
+<p>结果：</p>
+<blockquote>
+<pre><code>{
+  "name": "小明",
+  "age": 14,
+  "gender": true,
+  "height": 1.65,
+  "grade": null,
+  "middle-school": "\"W3C\" Middle School",
+  "skills": [
+    "JavaScript",
+    "Java",
+    "Python",
+    "Lisp"
+  ]
+}
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >反序列化</span></p>
+<p>拿到一个JSON格式的字符串，我们直接用JSON.parse()把它变成一个JavaScript对象：</p>
+<blockquote>
+<pre><code>JSON.parse('[1,2,3,true]'); // [1, 2, 3, true]
+JSON.parse('{"name":"小明","age":14}'); // Object {name: '小明', age: 14}
+JSON.parse('true'); // true
+JSON.parse('123.45'); // 123.45
+</code></pre>
+</blockquote>
+<h1 id="_18">面向对象编程</h1>
+<p>JavaScript的所有数据都可以看成对象，那是不是我们已经在使用面向对象编程了呢？</p>
+<p>当然不是。如果我们只使用Number、Array、string以及基本的{...}定义的对象，还无法发挥出面向对象编程的威力。</p>
+<p>JavaScript的面向对象编程和大多数其他语言如Java、C#的面向对象编程都不太一样。如果你熟悉Java或C#，很好，你一定明白面向对象的两个基本概念：</p>
+<ul>
+<li>
+<p>类：类是对象的类型模板，例如，定义Student类来表示学生，类本身是一种类型，Student表示学生类型，但不表示任何具体的某个学生；</p>
+</li>
+<li>
+<p>实例：实例是根据类创建的对象，例如，根据Student类可以创建出xiaoming、xiaohong、xiaojun等多个实例，每个实例表示一个具体的学生，他们全都属于Student类型。</p>
+</li>
+</ul>
+<p>所以，类和实例是大多数面向对象编程语言的基本概念。</p>
+<p>不过，在JavaScript中，这个概念需要改一改。JavaScript不区分类和实例的概念，而是通过原型（prototype）来实现面向对象编程。</p>
+<p>原型是指当我们想要创建xiaoming这个具体的学生时，我们并没有一个Student类型可用。那怎么办？恰好有这么一个现成的对象：</p>
+<blockquote>
+<pre><code>var robot = {
+    name: 'Robot',
+    height: 1.6,
+    run: function () {
+        console.log(this.name + ' is running...');
+    }
+};
+</code></pre>
+</blockquote>
+<p>我们看这个robot对象有名字，有身高，还会跑，有点像小明，干脆就根据它来“创建”小明得了！</p>
+<p>于是我们把它改名为Student，然后创建出xiaoming：</p>
+<blockquote>
+<pre><code>var Student = {
+    name: 'Robot',
+    height: 1.2,
+    run: function () {
+        console.log(this.name + ' is running...');
+    }
+};
+var xiaoming = {
+    name: '小明'
+};
+xiaoming.__proto__ = Student;
+</code></pre>
+</blockquote>
+<p>注意最后一行代码把xiaoming的原型指向了对象Student，看上去xiaoming仿佛是从Student继承下来的：</p>
+<blockquote>
+<pre><code>xiaoming.name; // '小明'
+xiaoming.run(); // 小明 is running...
+</code></pre>
+</blockquote>
+<p>xiaoming有自己的name属性，但并没有定义run()方法。不过，由于小明是从Student继承而来，只要Student有run()方法，xiaoming也可以调用。</p>
+<p>JavaScript的原型链和Java的Class区别就在，它没有“Class”的概念，所有对象都是实例，所谓继承关系不过是把一个对象的原型指向另一个对象而已。</p>
+<p>请注意，上述代码仅用于演示目的。在编写JavaScript代码时，不要直接用obj.<strong>proto</strong>去改变一个对象的原型，并且，低版本的IE也无法使用<strong>proto</strong>。Object.create()方法可以传入一个原型对象，并创建一个基于该原型的新对象，但是新对象什么属性都没有，因此，我们可以编写一个函数来创建xiaoming：</p>
+<blockquote>
+<pre><code>// 原型对象:
+var Student = {
+    name: 'Robot',
+    height: 1.2,
+    run: function () {
+        console.log(this.name + ' is running...');
+    }
+};
+function createStudent(name) {
+    // 基于Student原型创建一个新对象:
+    var s = Object.create(Student);
+    // 初始化新对象:
+    s.name = name;
+    return s;
+}
+var xiaoming = createStudent('小明');
+xiaoming.run(); // 小明 is running...
+xiaoming.__proto__ === Student; // true
+</code></pre>
+</blockquote>
+<p>这是创建原型继承的一种方法，JavaScript还有其他方法来创建对象，我们在后面会一一讲到。</p>
+<p><span class="ESPAN" >要特别注意相等运算符==。JavaScript在设计时，有两种比较运算符：</span></p>
+<p>第一种是==比较，它会自动转换数据类型再比较，很多时候，会得到非常诡异的结果；</p>
+<p>第二种是===比较，它不会自动转换数据类型，如果数据类型不一致，返回false，如果一致，再比较。</p>
+<p>由于JavaScript这个设计缺陷，不要使用==比较，始终坚持使用===比较。</p>
+<p>另一个例外是NaN这个特殊的Number与所有其他值都不相等，包括它自己：</p>
+<blockquote>
+<pre><code>NaN === NaN; // false
+</code></pre>
+</blockquote>
+<p>唯一能判断NaN的方法是通过isNaN()函数：</p>
+<blockquote>
+<pre><code>isNaN(NaN); // true
+</code></pre>
+</blockquote>
+<p>最后要注意浮点数的相等比较：</p>
+<blockquote>
+<pre><code>1 / 3 === (1 - 2 / 3); // false
+</code></pre>
+</blockquote>
+<p>这不是JavaScript的设计缺陷。浮点数在运算过程中会产生误差，因为计算机无法精确表示无限循环小数。要比较两个浮点数是否相等，只能计算它们之差的绝对值，看是否小于某个阈值：</p>
+<blockquote>
+<pre><code>Math.abs(1 / 3 - (1 - 2 / 3)) &lt; 0.0000001; // true
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >对象</span></p>
+<p>JavaScript的对象是一组由键-值组成的无序集合，例如：</p>
+<blockquote>
+<pre><code>  var person = {
+      name: 'Bob',
+      age: 20,
+      tags: ['js', 'web', 'mobile'],
+      city: 'Beijing',
+      hasCar: true,
+      zipcode: null
+  };
+</code></pre>
+</blockquote>
+<p>JavaScript对象的键都是字符串类型，值可以是任意数据类型。</p>
+<p>JavaScript在设计之初，为了方便初学者学习，并不强制要求用var申明变量。这个设计错误带来了严重的后果：如果一个变量没有通过var申明就被使用，那么该变量就自动被申明为全局变量：</p>
+<blockquote>
+<pre><code>i = 10; // i现在是全局变量
+</code></pre>
+</blockquote>
+<p>在同一个页面的不同的JavaScript文件中，如果都不用var申明，恰好都使用了变量i，将造成变量i互相影响，产生难以调试的错误结果。</p>
+<p>启用strict模式的方法是在JavaScript代码的第一行写上：</p>
+<blockquote>
+<pre><code>'use strict';
+</code></pre>
+</blockquote>
+<p>这是一个字符串，不支持strict模式的浏览器会把它当做一个字符串语句执行，支持strict模式的浏览器将开启strict模式运行JavaScript。</p>
+<p>不用var申明的变量会被视为全局变量，为了避免这一缺陷，所有的JavaScript代码都应该使用strict模式。我们在后面编写的JavaScript代码将全部采用strict模式。</p>
+<blockquote></blockquote>
+<h1 id="_19">模板字符串</h1>
+<p>要把多个字符串连接起来，可以用+号连接：</p>
+<blockquote>
+<pre><code>var name = '小明';
+var age = 20;
+var message = '你好, ' + name + ', 你今年' + age + '岁了!';
+alert(message);
+</code></pre>
+</blockquote>
+<p>如果有很多变量需要连接，用+号就比较麻烦。ES6新增了一种模板字符串，表示方法和上面的多行字符串一样，但是它会自动替换字符串中的变量：</p>
+<blockquote>
+<pre><code>var name = '小明';
+var age = 20;
+var message = `你好, ${name}, 你今年${age}岁了!`;
+alert(message);
+</code></pre>
+</blockquote>
+<p>需要特别注意的是，字符串是不可变的，如果对字符串的某个索引赋值，不会有任何错误，但是，也没有任何效果：</p>
+<blockquote>
+<pre><code>var s = 'Test';
+s[0] = 'X';
+alert(s); // s仍然为'Test'
+</code></pre>
+</blockquote>
+<h1 id="_20">迭代</h1>
+<p>遍历Array可以采用下标循环，遍历Map和Set就无法使用下标。为了统一集合类型，ES6标准引入了新的iterable类型，Array、Map和Set都属于iterable类型。</p>
+<p>具有iterable类型的集合可以通过新的for ... of循环来遍历。</p>
+<p>for ... of循环是ES6引入的新的语法。</p>
+<p>用for ... of循环遍历集合，用法如下：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+var s = new Set(['A', 'B', 'C']);
+var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+for (var x of a) { // 遍历Array
+    alert(x);
+}
+for (var x of s) { // 遍历Set
+    alert(x);
+}
+for (var x of m) { // 遍历Map
+    alert(x[0] + '=' + x[1]);
+}
+</code></pre>
+</blockquote>
+<p><span class="ESPAN" >你可能会有疑问，for ... of循环和for ... in循环有何区别？</span></p>
+<p>for ... in循环由于历史遗留问题，它遍历的实际上是对象的属性名称。一个Array数组实际上也是一个对象，它的每个元素的索引被视为一个属性。</p>
+<p>当我们手动给Array对象添加了额外的属性后，for ... in循环将带来意想不到的意外效果：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+a.name = 'Hello';
+for (var x in a) {
+    alert(x); // '0', '1', '2', 'name'
+}
+</code></pre>
+</blockquote>
+<p>for ... in循环将把name包括在内，但Array的length属性却不包括在内。</p>
+<p>for ... of循环则完全修复了这些问题，它只循环集合本身的元素：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+a.name = 'Hello';
+for (var x of a) {
+    alert(x); // 'A', 'B', 'C'
+}
+</code></pre>
+</blockquote>
+<p>这就是为什么要引入新的for ... of循环。</p>
+<p>然而，更好的方式是直接使用iterable内置的forEach方法，它接收一个函数，每次迭代就自动回调该函数。以Array为例：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+a.forEach(function (element, index, array) {
+    // element: 指向当前元素的值
+    // index: 指向当前索引
+    // array: 指向Array对象本身
+    alert(element);
+});
+</code></pre>
+</blockquote>
+<p>注意，forEach()方法是ES5.1标准引入的，你需要测试浏览器是否支持。</p>
+<p>Set与Array类似，但Set没有索引，因此回调函数的前两个参数都是元素本身：</p>
+<blockquote>
+<pre><code>var s = new Set(['A', 'B', 'C']);
+s.forEach(function (element, sameElement, set) {
+    alert(element);
+});
+</code></pre>
+</blockquote>
+<p>Map的回调函数参数依次为value、key和map本身：</p>
+<blockquote>
+<pre><code>var m = new Map([[1, 'x'], [2, 'y'], [3, 'z']]);
+m.forEach(function (value, key, map) {
+    alert(value);
+});
+</code></pre>
+</blockquote>
+<p>如果对某些参数不感兴趣，由于JavaScript的函数调用不要求参数必须一致，因此可以忽略它们。例如，只需要获得Array的element：</p>
+<blockquote>
+<pre><code>var a = ['A', 'B', 'C'];
+a.forEach(function (element) {
+    alert(element);
+});
+</code></pre>
+</blockquote>
+<h1 id="return">小心你的return语句</h1>
+<p>前面我们讲到了JavaScript引擎有一个在行末自动添加分号的机制，这可能让你栽到return语句的一个大坑：</p>
+<blockquote>
+<pre><code>function foo() {
+    return { name: 'foo' };
+}
+foo(); // { name: 'foo' }
+如果把return语句拆成两行：
+</code></pre>
+</blockquote>
+<pre><code>function foo() {
+    return
+        { name: 'foo' };
+}
+foo(); // undefined
+</code></pre>
+<p>要小心了，由于JavaScript引擎在行末自动添加分号的机制，上面的代码实际上变成了：</p>
+<blockquote>
+<pre><code>function foo() {
+    return; // 自动添加了分号，相当于return undefined;
+        { name: 'foo' }; // 这行语句已经没法执行到了
+}
+</code></pre>
+</blockquote>
+<p>所以正确的多行写法是：</p>
+<pre><code>function foo() {
+    return { // 这里不会自动加分号，因为{表示语句尚未结束
+        name: 'foo'
+    };
+}
+</code></pre>
+<blockquote></blockquote>
+<h1 id="javascript_2">JavaScript中的匿名函数及函数的闭包：</h1>
+<p>匿名函数没有实际名字，也没有指针，怎么执行滴？ </p>
+<p>1、</p>
+<p>记住（）是运算符</p>
+<p>（表达式）则表达式的结果将会返回</p>
+<p>（function(){...}）这样就返回了一个函数</p>
+<p>但是 当 （）和函数连接在一起的时候 则表示 函数运算</p>
+<p>（function(){...}）()  一前一后2个括号 就是调用里面的函数让他执行</p>
+<p>2、</p>
+<p>最常见的用法： </p>
+<blockquote>
+<pre><code>(function() { 
+alert('water'); 
+})();
+</code></pre>
+</blockquote>
+<p>当然也可以带参数： </p>
+<blockquote>
+<pre><code>(function(o) { 
+alert(o); 
+})('water');
+</code></pre>
+</blockquote>
+<p>想用匿名函数的链式调用？很简单： </p>
+<blockquote>
+<pre><code>(function(o) { 
+alert(o); 
+return arguments.callee; 
+})('water')('down');
+</code></pre>
+</blockquote>
+<p>常见的匿名函数都知道了，看看不常见的： </p>
+<blockquote>
+<pre><code>~(function(){ 
+alert('water'); 
+})();//写法有点酷~
+
+void function(){ 
+alert('water'); 
+}();//据说效率最高~ 
++function(){ 
+alert('water'); 
+}();
+
+-function(){ 
+alert('water'); 
+}();
+
+(function(){ 
+alert('water'); 
+}());//有点强制执行的味道~
+</code></pre>
+</blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../electron/index.html" class="btn btn-neutral float-right" title="electron">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../ReactJS/index.html" class="btn btn-neutral" title="ReactJS"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../ReactJS/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../electron/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

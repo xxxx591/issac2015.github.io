@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Linux指令 - issac个人笔记</title>
+  
+
+  <link rel="shortcut icon" href="../img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Linux指令";
+    var mkdocs_page_input_path = "Linux.md";
+    var mkdocs_page_url = "/Linux/index.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../index.html" class="icon icon-home"> issac个人笔记</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../index.html">前言</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>JavaScript</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../AngularJS/index.html">AngularJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ReactJS/index.html">ReactJS</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../JavaScript/index.html">JavaScript</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../electron/index.html">electron</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Nodejs/index.html">Nodejs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../webpack/index.html">webpack</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>操作系统</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../win32/index.html">win32</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="index.html">Linux指令</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#_1">解压</a></li>
+                
+                    <li><a class="toctree-l4" href="#_2">定时任务</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#debian">Debian常用指令</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_3">设置全局变量</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#_4">配置环境变量</a></li>
+                
+                    <li><a class="toctree-l4" href="#1export">1、直接用export命令：</a></li>
+                
+                    <li><a class="toctree-l4" href="#2profile">2、修改profile文件：</a></li>
+                
+                    <li><a class="toctree-l4" href="#3-bashrc">3. 修改.bashrc文件：</a></li>
+                
+                    <li><a class="toctree-l4" href="#_5">端口</a></li>
+                
+                    <li><a class="toctree-l4" href="#rsync">rsync指令：</a></li>
+                
+                    <li><a class="toctree-l4" href="#debian-pptp">debian PPTP 客户端连接</a></li>
+                
+                    <li><a class="toctree-l4" href="#ubuntu">Ubuntu 系统</a></li>
+                
+                    <li><a class="toctree-l4" href="#log">log</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../mac/index.html">Mac指令</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../vim/index.html">Vim编辑器</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Antlr/index.html">Antlr</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>后台语言</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../java/index.html">java</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../php/index.html">php</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../python/index.html">python</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Django/index.html">Django</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>相关</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MkDocs/index.html">MkDocs和Wekan</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../MySQL/index.html">MySQL数据库</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../Redmine/index.html">Redmine</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../selenium/index.html">selenium</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../index.html">issac个人笔记</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../index.html">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>操作系统 &raquo;</li>
+        
+      
+    
+    <li>Linux指令</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <style>
+p {text-indent:2em;margin-bottom:3px;}
+.ESPAN {color: #099;font-weight: 300;font-size: 104%;}
+.hSPAN {color: #2980b9;font-weight: 300;font-size: 135%;}
+
+</style>
+
+<p>1、tar.gz格式</p>
+<blockquote>
+<blockquote>
+<pre><code>解压：[＊＊＊＊＊＊＊]$ tar zxvf FileName.tar.gz
+
+压缩：[＊＊＊＊＊＊＊]$ tar zcvf FileName.tar.gz DirName
+</code></pre>
+</blockquote>
+</blockquote>
+<p>Zip格式</p>
+<blockquote>
+<blockquote>
+<pre><code>解压：[＊＊＊＊＊＊＊]$ unzip FileName.zip
+
+压缩：[＊＊＊＊＊＊＊]$ zip FileName.zip DirName
+</code></pre>
+</blockquote>
+</blockquote>
+<p>bzip2格式</p>
+<blockquote>
+<blockquote>
+<pre><code># tar -xjf all.tar.bz2
+</code></pre>
+</blockquote>
+</blockquote>
+<h1 id="_1">解压</h1>
+<blockquote>
+<blockquote>
+<pre><code>tar –xvf file.tar  解压 tar包
+tar -xzvf file.tar.gz 解压tar.gz
+tar -xjvf file.tar.bz2   解压 tar.bz2
+tar –xZvf file.tar.Z   解压tar.Z
+unrar e file.rar 解压rar
+unzip file.zip 解压zip
+</code></pre>
+</blockquote>
+</blockquote>
+<pre><code>xz -d ***.tar.xz
+tar -xvf  ***.tar
+</code></pre>
+<p>2、更改文件夹或文件权限</p>
+<blockquote>
+<blockquote>
+<pre><code>[＊＊＊＊＊＊＊]$ chmod 777 FileName
+
+[＊＊＊＊＊＊＊]$ chmod 644 /etc/my.cnf
+
+
+[＊＊＊＊＊＊＊]$ chmod -R 777 *  也就是加上-R的参数，同时更改子目录和目录中所有文件
+</code></pre>
+</blockquote>
+</blockquote>
+<p>3、开启wekan</p>
+<blockquote>
+<blockquote>
+<pre><code>[＊＊＊＊＊＊＊]$ cd /home/wekan
+
+[＊＊＊＊＊＊＊]$ docker-compose start
+</code></pre>
+</blockquote>
+</blockquote>
+<p>4、开启mkdocs</p>
+<blockquote>
+<blockquote>
+<pre><code>[＊＊＊＊＊＊＊]$ cd my-project
+[＊＊＊＊＊＊＊]$ mkdocs serve
+</code></pre>
+</blockquote>
+</blockquote>
+<p>5、开启django</p>
+<p>启动了Django开发服务器</p>
+<blockquote>
+<blockquote>
+<pre><code>[＊＊＊＊＊＊＊]$ python manage.py runserver
+</code></pre>
+</blockquote>
+</blockquote>
+<p>进入Python的交互式shell</p>
+<blockquote>
+<blockquote>
+<pre><code>[＊＊＊＊＊＊＊]$ python manage.py shell
+</code></pre>
+</blockquote>
+</blockquote>
+<p>from polls.models import Question, Choice      # Import the model classes we just wrote.</p>
+<p>删除文件指令：</p>
+<blockquote>
+<blockquote>
+<pre><code>1、rm -rf /var/log/httpd/access
+2、rm -f /var/log/httpd/access.log  将会强制删除/var/log/httpd/access.log这个文件
+
+chmod 777 fileame
+-rw------- (600) -- 只有属主有读写权限。 
+-rw-r--r-- (644) -- 只有属主有读写权限；而属组用户和其他用户只有读权限。 
+-rwx------ (700) -- 只有属主有读、写、执行权限。 
+-rwxr-xr-x (755) -- 属主有读、写、执行权限；而属组用户和其他用户只有读、执行权限。 
+-rwx--x--x (711) -- 属主有读、写、执行权限；而属组用户和其他用户只有执行权限。 
+-rw-rw-rw- (666) -- 所有用户都有文件读、写权限。这种做法不可取。 
+-rwxrwxrwx (777) -- 所有用户都有读、写、执行权限。更不可取的做法。 
+chmod
+</code></pre>
+</blockquote>
+</blockquote>
+<p>更新：apt-get update</p>
+<p>建立文件目录，以供安装时使用</p>
+<blockquote>
+<blockquote>
+<pre><code># mkdir /usr/local/perl
+</code></pre>
+</blockquote>
+</blockquote>
+<p>Debian系统怎样卸载一个软件（mysql），卸载方式有多种，比如apt-get remove命令、dpkg -r命令；就像Windows一样安装完成一个软件之后，都会产生一些配置文件，而这些配置文件，有时不能全部被删除。可以使用“apt-get remove --purge”命令完全删除软件包和配置文件。</p>
+<p>安装好以后，修改操作系统PATH路径，加入/usr/local/ruby/bin：</p>
+<blockquote>
+<blockquote>
+<pre><code>export PATH=/usr/local/ruby/bin:$PATH
+
+sudo apt-get update 和 sudo apt-get upgrade
+</code></pre>
+</blockquote>
+</blockquote>
+<p>你的ubuntu server 能否连接网络呢？你执行以下命令看看，能否ping通：</p>
+<blockquote>
+<blockquote>
+<pre><code>ping -c 4 mirrors.163.com
+</code></pre>
+</blockquote>
+</blockquote>
+<p>pip的更新指令：</p>
+<p>Requirement already satisfied (use --upgrade to upgrade): pyasn1 in /usr/lib/python2.7/dist-packages</p>
+<blockquote>
+<blockquote>
+<pre><code>pip install pyasn1 --upgrade
+</code></pre>
+</blockquote>
+</blockquote>
+<h2 id="_2">定时任务</h2>
+<p>执行.sh文件，输出log到autoConnectVpn.log</p>
+<p>/usr/local/bin/autoConnectVpn.sh &gt;&gt; /var/log/autoConnectVpn.log     </p>
+<p>在终端输出</p>
+<p>tail -f /var/log/autoConnectVpn.log</p>
+<h1 id="debian">Debian常用指令</h1>
+<p>mkdir file      新建文件夹file</p>
+<p>pwd          pwd用于显示当前目录。</p>
+<p>ls -a        显示所有文件，包括隐藏文件（.git）</p>
+<p>touch readme.txt     创建文件</p>
+<p>apt-get install XXX
+apt-get remove XXX</p>
+<h1 id="_3">设置全局变量</h1>
+<p>1、建立软链接</p>
+<p>ln -s /home/issac2015/software/node_v6_9_2/bin/node /usr/local/bin/node
+ln -s /home/issac2015/software/node_v6_9_2/bin/npm /usr/local/bin/npm
+ln -s /home/issac2015/software/node_v6_9_2/bin/express /usr/local/bin/express</p>
+<h1 id="_4">配置环境变量</h1>
+<p>一般来说，配置交叉编译工具链的时候需要指定编译工具的路径，此时就需要设置环境变量。例如我的mips-linux-gcc编译器在“/opt/au1200_rm/build_tools/bin”目录下，build_tools就是我的编译工具，则有如下三种方法来设置环境变量：</p>
+<h3 id="1export">1、直接用export命令：</h3>
+<p>控制台中设置，不赞成这种方式，因为他只对当前的shell 起作用，换一个shell设置就无效了：</p>
+<pre><code>#export PATH=$PATH:/opt/au1200_rm/build_tools/bin
+</code></pre>
+<p>查看是否已经设好，可用命令export查看：</p>
+<pre><code>[root@localhost bin]# export
+</code></pre>
+<h3 id="2profile">2、修改profile文件：</h3>
+<p>修改 /etc/profile 文件，如果你的计算机仅仅作为开发使用时推存使用这种方法，因为所有用户的shell都有权使用这个环境变量，可能会给系统带来安全性问题。这里是针对所有的用户的，所有的shell</p>
+<p>在/etc/profile的最下面添加：  export PATH="$PATH:/NEW_PATH"</p>
+<pre><code>#vim /etc/profile
+</code></pre>
+<p>在里面加入:</p>
+<pre><code>export PATH="$PATH:/opt/au1200_rm/build_tools/bin"
+或者
+export PATH="$PATH:/home/issac/1software/node-v7.5.0-linux-x64/bin/"
+export PATH="$PATH:/home/zengluqiang/sdk/node_v7/bin/"
+</code></pre>
+<p>修改完成后，使用source /etc/profile 命令进行更新；</p>
+<h3 id="3-bashrc">3. 修改.bashrc文件：</h3>
+<pre><code># vi /root/.bashrc
+</code></pre>
+<p>在里面加入：
+    export PATH="$PATH:/opt/au1200_rm/build_tools/bin"</p>
+<p>后两种方法一般需要重新注销系统才能生效，最后可以通过echo命令测试一下：</p>
+<pre><code># echo $PATH
+输出：/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+</code></pre>
+<p>看看输出里面是不是已经有了/my_new_path这个路径了。</p>
+<p>dpkg -l <em>php5</em></p>
+<p>看看所有php5的模块</p>
+<h2 id="_5">端口</h2>
+<p>查看端口 netstat -tln | grep 9980
+    tcp        0      0 127.0.0.1:9980          0.0.0.0:*               LISTEN</p>
+<p>查看 lsof -i:9980</p>
+<pre><code>COMMAND    PID USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+docker-pr 3005 root    4u  IPv4  19199      0t0  TCP localhost:9980 (LISTEN)
+</code></pre>
+<p>例如查看rsync</p>
+<pre><code>ps aux |grep rsync
+
+netstat -lnp | grep rsync
+</code></pre>
+<p>终端输出：  netstat -lnp | grep rsync
+    tcp        0      0 0.0.0.0:873             0.0.0.0:<em>               LISTEN      30775/rsync   <br />
+    tcp6       0      0 :::873                  :::</em>                    LISTEN      30775/rsync 
+    注释：上面命令中的 rsync 是进程名称.上面的873就是监控的端口号，30775 是进程的进程id。</p>
+<p>杀掉进程（通过PID）</p>
+<pre><code>kill -9 3005
+</code></pre>
+<p>rsync --list-only root@10.251.120.213::
+rsync --list-only root@10.251.120.213::linuxsirhome</p>
+<p>set RSYNC_PASSWORD=8473489 &amp;&amp; rsync.exe -rtv --progress --delete --port=873 root@10.251.120.213::logs "/cygdrive/D/KuGou"</p>
+<p>rsync.exe -avzP root@10.251.120.213::linuxsirhome "/cygdrive/D/KuGou"</p>
+<p>set RSYNC_PASSWORD=12345 &amp;&amp; rsync.exe -rtv --progress --delete --port 873 root@10.251.120.213::client "/cygdrive/D/KuGou"</p>
+<h2 id="rsync">rsync指令：</h2>
+<p>rm -rf /var/run/rsyncd.pid</p>
+<p>[root@mail video]# ps -ef | grep rsync 
+root     27284     1  0 10:26 ?        00:00:00 rsync –daemon –config=/etc/rsyncd.conf 
+root     30516 29986  0 18:35 pts/3    00:00:00 grep rsync 
+[root@mail video]# kill -9 27284 </p>
+<p>/usr/bin/rsync --daemon --config=/etc/rsyncd/rsyncd.conf</p>
+<p>防火墙
+iptables -A INPUT -p tcp -m state --state NEW  -m tcp --dport 873 -j ACCEPT</p>
+<p>rsync --list-only root@10.251.120.213::</p>
+<p>我虚拟机的下载指令
+cmd = 'set RSYNC_PASSWORD='+config.sync.password+'&amp;&amp;'+ rsync +' -avzP --progress --iconv=utf8,gb2312 --delete --port 873 root@10.251.120.213::client "/cygdrive/D/新大话西游2"';
+                console.log(cmd);</p>
+<p>electron调试主进程：</p>
+<p>QAuto.exe --debug=5858 "D:\qtr\src\dist\MyApp-win32-x64\resources\app"</p>
+<p>远程服务器  密码：lu1638473489
+/home/zengluqiang/sdk/rsyncd/rsyncd</p>
+<h3 id="rsync_1">rsync参数的具体解释如下：</h3>
+<pre><code>1 -v, --verbose 详细模式输出
+2 -q, --quiet 精简输出模式
+3 -c, --checksum 打开校验开关，强制对文件传输进行校验
+4 -a, --archive 归档模式，表示以递归方式传输文件，并保持所有文件属性，等于-rlptgoD
+5 -r, --recursive 对子目录以递归模式处理
+6 -R, --relative 使用相对路径信息
+7 -b, --backup 创建备份，也就是对于目的已经存在有同样的文件名时，将老的文件重新命名为~filename。可以使用--suffix选项来指定不同的备份文件前缀。
+8 --backup-dir 将备份文件(如~filename)存放在在目录下。
+9 -suffix=SUFFIX 定义备份文件前缀
+10 -u, --update 仅仅进行更新，也就是跳过所有已经存在于DST，并且文件时间晚于要备份的文件。(不覆盖更新的文件)
+11 -l, --links 保留软链结
+12 -L, --copy-links 想对待常规文件一样处理软链结
+13 --copy-unsafe-links 仅仅拷贝指向SRC路径目录树以外的链结
+14 --safe-links 忽略指向SRC路径目录树以外的链结
+15 -H, --hard-links 保留硬链结
+16 -p, --perms 保持文件权限
+17 -o, --owner 保持文件属主信息
+18 -g, --group 保持文件属组信息
+19 -D, --devices 保持设备文件信息
+20 -t, --times 保持文件时间信息
+21 -S, --sparse 对稀疏文件进行特殊处理以节省DST的空间
+22 -n, --dry-run现实哪些文件将被传输
+23 -W, --whole-file 拷贝文件，不进行增量检测
+24 -x, --one-file-system 不要跨越文件系统边界
+25 -B, --block-size=SIZE 检验算法使用的块尺寸，默认是700字节
+26 -e, --rsh=COMMAND 指定使用rsh、ssh方式进行数据同步
+27 --rsync-path=PATH 指定远程服务器上的rsync命令所在路径信息
+28 -C, --cvs-exclude 使用和CVS一样的方法自动忽略文件，用来排除那些不希望传输的文件
+29 --existing 仅仅更新那些已经存在于DST的文件，而不备份那些新创建的文件
+30 --delete 删除那些DST中SRC没有的文件
+31 --delete-excluded 同样删除接收端那些被该选项指定排除的文件
+32 --delete-after 传输结束以后再删除
+33 --ignore-errors 及时出现IO错误也进行删除
+34 --max-delete=NUM 最多删除NUM个文件
+35 --partial 保留那些因故没有完全传输的文件，以是加快随后的再次传输
+36 --force 强制删除目录，即使不为空
+37 --numeric-ids 不将数字的用户和组ID匹配为用户名和组名
+38 --timeout=TIME IP超时时间，单位为秒
+39 -I, --ignore-times 不跳过那些有同样的时间和长度的文件
+40 --size-only 当决定是否要备份文件时，仅仅察看文件大小而不考虑文件时间
+41 --modify-window=NUM 决定文件是否时间相同时使用的时间戳窗口，默认为0
+42 -T --temp-dir=DIR 在DIR中创建临时文件
+43 --compare-dest=DIR 同样比较DIR中的文件来决定是否需要备份
+44 -P 等同于 --partial
+45 --progress 显示备份过程
+46 -z, --compress 对备份的文件在传输时进行压缩处理
+47 --exclude=PATTERN 指定排除不需要传输的文件模式
+48 --include=PATTERN 指定不排除而需要传输的文件模式
+49 --exclude-from=FILE 排除FILE中指定模式的文件
+50 --include-from=FILE 不排除FILE指定模式匹配的文件
+51 --version 打印版本信息
+52 --address 绑定到特定的地址
+53 --config=FILE 指定其他的配置文件，不使用默认的rsyncd.conf文件
+54 --port=PORT 指定其他的rsync服务端口
+55 --blocking-io 对远程shell使用阻塞IO
+56 -stats 给出某些文件的传输状态
+57 --progress 在传输时现实传输过程
+58 --log-format=formAT 指定日志文件格式
+59 --password-file=FILE 从FILE中得到密码
+60 --bwlimit=KBPS 限制I/O带宽，KBytes per second
+61 -h, --help 显示帮助信息
+</code></pre>
+<p>查看自己的VPS主机到底是安装了哪个操作系统版本，可以执行命令：</p>
+<pre><code>cat /etc/issue 或者 cat /etc/redhat-release。
+</code></pre>
+<h2 id="debian-pptp">debian PPTP 客户端连接</h2>
+<p>pptpsetup --create fwvpn --server u.ueuz.com --username admin123 --password mimi341 --start</p>
+<h2 id="ubuntu">Ubuntu 系统</h2>
+<p>ubuntu获取文件路径：</p>
+<pre><code>1. 可视化界面查看（ctrl + L）。
+
+2. 直接在终端输入pwd
+</code></pre>
+<p>修改hosts后生效的方法：</p>
+<p>Windows
+开始 -&gt; 运行 -&gt; 输入cmd -&gt; 在CMD窗口输入  </p>
+<pre><code>ipconfig /flushdns
+</code></pre>
+<p>Linux</p>
+<pre><code>sudo rcnscd restart
+</code></pre>
+<p>或者重启网络</p>
+<pre><code>sudo /etc/init.d/networking restart
+</code></pre>
+<p>也可以直接点击右上角的网络连接图标，选择断开，然后再选中连接即可。</p>
+<h2 id="log">log</h2>
+<p>动态显示log：</p>
+<pre><code>tail -f msg.log
+tail -f /var/www/nextcloud/data/nextcloud.log
+</code></pre>
+<blockquote></blockquote>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../mac/index.html" class="btn btn-neutral float-right" title="Mac指令">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../win32/index.html" class="btn btn-neutral" title="win32"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../win32/index.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../mac/index.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
