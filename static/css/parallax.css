@@ -49,6 +49,17 @@ header h1 {
 p.center {
 	text-align:center;
 }
+ul.center {
+	padding: 0px;
+	text-align:center;
+}
+ul li{
+	list-style-type:none;
+	margin: 8px;
+}
+a {
+	text-decoration:none;
+}
 .pos {
 	width:400px;
 	margin:50px auto;
