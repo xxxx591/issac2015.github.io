@@ -11,6 +11,11 @@ body {
   overflow-y: auto;
 }
 
+.myWeiBo {
+	width: 450px;
+  margin: 0px auto;
+}
+
 /* Demo Buttons Style */
 .codrops-demos {
 	font-size: 0.8em;
@@ -44,3 +49,6 @@ body {
 	position: absolute;
     z-index: 1;
 }
+
+
+
